@@ -1,0 +1,42 @@
+\begin{xcase}{Muzikos (ne)importavimas į iTunes}
+  \xcgoal
+  {
+    Pridėti keletą naujų muzikos albumų į iTunes muzikos grotuvo biblioteką.
+  }
+  
+  \xctools
+  {
+    \ref{fig:case_4_add_to_library_menu},
+    \ref{fig:case_4_add_to_library_dialog} ir
+    \ref{fig:case_4_processing} paveikslėliuose pateikta veiksmų seka, kuri
+    buvo atlikta siekiant pridėti naujus albumus į biblioteką.
+
+    \ximage{fig:case_4_add_to_library_menu}{Funkcijos pasirinkimas}{vytautas/images/case_4_add_to_library_menu.png}
+    \ximage{fig:case_4_add_to_library_dialog}{Norimų pridėti albumų pasirinkimas}{vytautas/images/case_4_add_to_library_dialog.png}
+    \ximage{fig:case_4_processing}{Įkėlimas}{vytautas/images/case_4_processing.png}
+  }
+  
+  \xcresult
+  {
+    Patikrinus paaiškėjo, kad buvo pridėti tik patys pirmieji albumai.
+    Pakartojus procedūrą, nebuvo pridėtas nei vienas naujas albumas. 
+  }
+  
+  \xcprinciples
+  {
+    \xpentry{Nuspėjamumas}{Pažeistas}
+    {
+      Buvo tikėtasi, kad į biblioteką bus pridėti visi failai, kuriuos buvo nurodyta pridėti.
+    }
+  }
+  
+  \xcthoughts
+  {
+    Greičiausiai programa importuoja visus failus iš eilės tol, kol suranda
+    tokį, kurį jau turi bibliotekoje. Tai paaiškintų, kodėl pirmąjį kartą
+    buvo pridėti keli pirmieji albumai, o antrąjį – nieko. Tokiu atveju
+    turbūt paprasčiausias ir geriausias sprendimas būtų tiesiog paklausti
+    naudotojo: „Šis failas bibliotekoje jau yra. Ką norite daryti? Pridėti,
+    ignoruoti ar nutraukti?“.
+  }
+\end{xcase}

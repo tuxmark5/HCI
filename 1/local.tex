@@ -1,0 +1,29 @@
+% Dokumento versijos numeris.
+\newcommand\docversion{0.2}
+
+% Komandos pavadinimas.
+\newcommand\docname{Pastebėti esamų sąsajų nepatogumai}
+
+\newenvironment{xcase}[1]
+{
+  \newcommand\xcgoal[1]{\subsection{Tikslas}##1}
+  \newcommand\xctools[1]{\subsection{Priemonės}##1}
+  \newcommand\xcresult[1]{\subsection{Rezultatas}##1}
+  \newcommand\xcthoughts[1]{\subsection{Tikslas}##1}
+  \section{#1}
+}
+{
+}
+
+\newcommand\xcprinciples[1]
+{
+  \newcommand\xpentry[3]{ e [ @textbf{##1} | ##2 | ##3 ] }
+  \subsection{Panaudojamumo principas}
+  \xtable
+  {
+    a [ p | p | p ]
+    w [ 1 | 1 | 4 ]
+    h [ Principas | Ryšys | Komentaras ]
+    #1
+  }
+}

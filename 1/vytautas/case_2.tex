@@ -1,0 +1,49 @@
+\begin{xcase}{Klaidinanti Opera Mini mygtuko antraštė}
+  \xcgoal
+  {
+    Parsisiųsti failą iš interneto, naudojant mobilųjį telefoną.
+  }
+  
+  \xctools
+  {
+    \ref{fig:case_2} paveikslėliuose pateikta naršyklės pateikiamų dialogų
+    seka, kai yra bandoma parsisiųsti failą. Paskutiniame dialoge
+    (\ref{fig:case_2_final_dialog}) tampa neaišku kas atsitiko: parašyta,
+    jog „Atsiuntimas baigtas“, bet tuo pačiu tėra vienintelis
+    pasirinkimas „Atsisakyti“ ir jis yra virš dešiniojo funkcinio
+    mygtuko (virš kairiojo mygtuko paprastai būna pasirinkimai tokie,
+    kaip „Gerai“, „Ok“, „Taip“, o virš dešiniojo „Atšaukti“,
+    „Ne“ ir „Išeiti“).
+    
+    \ximagerow{fig:case_2}{Failo parsisiuntimas Opera Mini naršyklėje}{3}
+    {
+      \ximagecell{fig:case_2_save_dialog}{Failo išsaugojimas}{vytautas/images/case_2_save_dialog.png}
+      \ximagecell{fig:case_2_in_progress}{Siunčiama}{vytautas/images/case_2_in_progress.png}
+      \ximagecell{fig:case_2_final_dialog}{Failas parsiųstas}{vytautas/images/case_2_final_dialog.png}
+    }
+  }
+  
+  \xcresult
+  {
+    Pasirinkus vienintelį galima pasirinkimą „Atsisakyti“ ir paskui patikrinus
+    atsisiųstąjį failą, paaiškėjo, kad su juo viskas yra gerai.
+  }
+  
+  \xcprinciples
+  {
+    \xpentry{Nuspėjamumas}{Pažeistas}
+    {
+      Buvo neaišku kas
+      atsitiks nuspaudus vienintelį galimą mygtuką. Taip pat buvo pažeistas
+      ir darnos principas: kadangi failo atsiuntimas pavyko, tai apie tai
+      pranešančio dialogo uždarymui neturėtų būti naudojamas tas pats
+      mygtukas, kuris įprastai yra skirtas operacijų atšaukimui.
+    }
+  }
+  
+  \xcthoughts
+  {
+    Greičiausiai, šis pranešimas yra tiesiog programavimo klaida: mygtukui
+    nurodytas neteisingas tipas.
+  }
+\end{xcase}

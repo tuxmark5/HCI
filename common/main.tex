@@ -1,0 +1,19 @@
+\documentclass[12pt, a4paper, xcolor=table]{documentation}
+
+\usepackage{style}
+
+\begin{document}
+  \input{./common/global.tex}
+  \input{../\TARGET/local.tex}
+  \input{./common/title.tex}
+  {
+    \singlespacing
+    \tableofcontents
+  }
+  
+  \pagestyle{plain}
+  \input{../\TARGET/annotation.tex}
+  \input{../\TARGET/prolog.tex}
+  \input{../\TARGET/chapters.tex}
+  \input{../\TARGET/conclusion.tex}
+\end{document}

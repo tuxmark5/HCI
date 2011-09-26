@@ -1,0 +1,216 @@
+\ProvidesPackage{style}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% UTIL                                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{verbatim} % comments
+
+\newcommand\ximage[3]
+{
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[width=0.6\textwidth]{\TARGET/#3}
+    \end{center}
+    \caption{#2}
+    \label{#1}
+  \end{figure}
+}
+
+\newcommand\ximagerow[4]
+{
+  \newcommand\ximagecell[3]
+  {
+    \subfloat[##2]
+    {
+      \label{##1}
+      \includegraphics[width=0.9\textwidth/#3]{\TARGET/##3}
+    }
+  }
+  \begin{figure}[H]
+    \centering
+    #4
+    \caption{#2}
+    \label{#1}
+  \end{figure}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FONT                                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fontspec}
+\newfontfamily\sss{Times New Roman}
+\setmainfont{Times New Roman}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE                                                                                         %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[top=2.0cm, bottom=2.0cm, left=3.0cm, right=1.0cm]{geometry}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PARAGRAPH                                                                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{indentfirst}
+\usepackage{setspace}
+\onehalfspacing
+
+\setlength{\parindent}{1.0cm} 
+
+\def\xsmallsec#1
+{
+  \noindent\textbf{#1}\par
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLES                                                                                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{colortbl}
+\usepackage{longtable}
+\usepackage{pgf}
+\usepackage{pgffor}
+\usepackage{pgfmath}
+
+\definecolor{myblue}{rgb}{0.8, 0.8, 0.8}
+
+\newcommand\ruby[2]
+{
+  \newwrite\rubyArg
+  \immediate\openout\rubyArg = "input.tmp"
+  \immediate\write\rubyArg {#1}
+  \immediate\write\rubyArg {#2}
+  \immediate\closeout\rubyArg
+  \immediate\write18 {./common/rubytex.rb}
+  \input output.tmp
+}
+
+\def\xtable#1{\ruby{xtable}{#1}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ENUMERATION                                                                                  %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{enumerate}
+\usepackage{enumitem}
+\setenumerate{noitemsep,topsep=0.0cm,parsep=0.0cm,partopsep=0.0cm,leftmargin=0.5cm}
+\setitemize{noitemsep,topsep=0.0cm,parsep=0.0cm,partopsep=0.0cm,leftmargin=0.5cm}
+
+\newenvironment{xenum}
+{
+  \begin{minipage}{\linewidth}
+  \vspace{0.2cm}
+  \begin{enumerate}
+  \setlength\itemsep{0.0cm}
+}
+{
+  \end{enumerate}
+  \vspace{0.2cm}
+  \end{minipage}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTERS & TOC                                                                               %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewcommand{\thechapter}{\arabic{chapter}.}
+\renewcommand{\thesection}{\thechapter\arabic{section}.}
+\renewcommand{\thesubsection}{\thesection\arabic{subsection}.}
+\renewcommand{\thesubsubsection}{\thesubsection\arabic{subsubsection}.}
+
+\usepackage{titlesec}
+
+\titleformat\chapter{\normalfont\Huge\bf\centering\uppercase}{\thechapter}{1em}{}
+\titleformat\section{\large\bf}{\thesection}{1em}{}
+\titleformat\subsection{\normalfont\bf}{\thesubsection}{1em}{}
+\titleformat\subsubsection{\normalfont\bf}{\thesubsubsection}{1em}{}
+\titlespacing\chapter{0.0cm}{*1}{1.0cm}
+
+\newcommand{\schapter}[1]
+{
+  \chapter{\uppercase{#1}}
+}
+
+\newcommand{\xchapter}[1]
+{
+  \addcontentsline{toc}{chapter}{\protect\numberline{} #1}
+  \chapter*{#1}
+}
+
+\renewpagestyle{plain}
+{
+  \setfoot{}{\hfill{}\thepage}{}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tocloft}
+\renewcommand\cfttoctitlefont{\Large\bf}
+\renewcommand\contentsname{\hfill{TURINYS}\hfill}
+\renewcommand\cftbeforetoctitleskip{0cm}
+\renewcommand\cftaftertoctitleskip{1cm}
+
+\renewcommand\cftchapdotsep{1}
+\renewcommand\cftsecdotsep{1}
+\renewcommand\cftsubsecdotsep{1}
+\renewcommand\cftsubsubsecdotsep{1}
+\setcounter{tocdepth}{3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% FIGURES                                                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage[lithuanian]{babel}
+
+\renewcommand{\thefigure}{\thechapter\arabic{figure}.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[acronym,translate=false]{glossaries}
+%\usepackage{glossaries-babel}
+
+
+\usepackage{amssymb}
+\usepackage{xltxtra}
+\usepackage[]{hyperref}
+\usepackage[]{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+%\usepackage{mathtools}
+\usepackage{alltt}
+%\usepackage[ampersand]{easylist}
+%\usepackage{listings}
+\usepackage[]{graphicx}
+\usepackage[]{hyperref}
+\usepackage[all]{hypcap}
+\usepackage{float}
+%\usepackage{paralist}
+\usepackage{subfig}
+
+\hypersetup{pdfborder={0 0 0 0}}
+
+\defaultfontfeatures{Mapping=tex-text}
+
+% Matematiniai žymėjimai.
+\renewcommand{\emptyset}{\varnothing}
+\renewcommand{\liminf}{\varliminf}
+\renewcommand{\limsup}{\varlimsup}
+
+\renewcommand{\tan}{\mathop{\operator@font tg}\nolimits} 
+\renewcommand{\arctan}{\mathop{\operator@font arctg}\nolimits} 
+\renewcommand{\cot}{\mathop{\operator@font ctg}\nolimits} 
+\newcommand{\arccot}{\mathop{\operator@font arcctg}\nolimits} 
+
+% Numeravimo stiliaus pakeitimas.
+\renewcommand{\theenumii}{\arabic{enumii}}
+\renewcommand{\labelenumii}{\theenumii}
+\renewcommand{\theenumiii}{\arabic{enumiii}}
+\renewcommand{\labelenumiii}{\theenumiii}
+
+% Nurodymas sugeneruoti terminų žodynėlį.
+%\makeglossaries
+
+%\input{./translations.tex}              % LaTeX raktažodžių vertimai.
+%\input{./glossary.tex}                  % Terminų žodynėlis.
