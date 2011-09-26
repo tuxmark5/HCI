@@ -1,0 +1,45 @@
+\begin{xcase}{XMonad}
+  \xcgoal
+  {
+    Atsidaryti daugiau negu 2 notepad (ar kokios kitos programos) langus taip, kad visi 
+    tilptų į ekraną.
+  }
+  
+  \xctools
+  {
+    Langų valdyklės pradinė būsena minimali (pav. \ref{fig:xmonad_1a}), niekaip nesufleruojanti apie galimas elgesio
+    anomalijas.
+    \ximagerow{fig:xmonad_1}{XMonad interfeisas}{2}
+    {
+      \ximagecell{fig:xmonad_1a}{Pradinė būsena}{audrius/images/xmonad_1.png}
+      \ximagecell{fig:xmonad_1b}{Tikėtinas rezultatas}{audrius/images/xmonad_3.png}
+    }
+  }
+  
+  \xcresult
+  {
+    Rezultatas - stulbinantis. Ne tik langų rankiniu būdu ekrane nereikėjo dėlioti, bet šie
+    ir proporcingai pasiskirstė po ekraną taip, kad nei vienas iš jų nepersidengtų \ref{fig:xmonad_2}.
+    \ximage{fig:xmonad_2}{4 atidaryti langai su XMonad langų valdykle}{audrius/images/xmonad_2.png}
+  }
+  
+  \xcprinciples
+  {
+    \xpentry{Užduočių perkėlimas}{Įgyvendintas}
+    {
+      Vartotojas turi galimybę pozicionuoti langus ir rankiniu būdų, tačiau tai daug efektyviau
+      atliekama automatiškai pasinaudojus XMonad galimybėmis.
+    }
+    \xpentry{Nuspėjamumas}{Pažeistas}
+    {
+      Tikėtasi, jog langai persidengs (pav. @ref{fig:xmonad_1b}).
+    }
+  }
+  
+  \xcthoughts
+  {
+    Nors ir nuspėjamumo panaudojimo principas buvo pažeistas, tačiau tai yra „malonus 
+    siurprizas“, nes rankinis langų tvarkymas - tai operacija, kurią modernios operacinės
+    sitemos tikrai turėtu automatizuoti.
+  }
+\end{xcase}

@@ -1,0 +1,48 @@
+\begin{xcase}{Klaidinantis GCC klaidos pranešimas}
+  \xcgoal
+  {
+    Pagal pateiktą klaidos pranešimą (\ref{fig:gcc}) greitai ir efektyviai pašalinti iškilusią problemą ir
+    toliau tęsti GCC kompiliavimą.
+    \ximage{fig:gcc}{Kompiliavimo metu gautas klaidos pranešimas}{audrius/images/gcc.png}
+  }
+  
+  \xctools
+  {
+    Klaidos pranešime buvo nurodyta, jog kažko sistemoje nebuvo rasta, tačiau ko konkrečiai - 
+    neįvardinta.
+  }
+  
+  \xcresult
+  {
+    Ne tik iš klaidos pranešimo nepavyko suprasti, kas atstikiko blogai, tačiau nepavyko 
+    surasti ir internete šiai klaidai pašalinti reikalingos informacijos.
+    Klaida buvo galiausiai netiesiogiai pašalinta pradedant GCC kompiliavimo procesą iš naujo
+    vadovaujantis internete rastu gidu-aprašymu, kaip tai tiksliai reikia atlikti. Pasirodo,
+    papildomai reikėjo parsisiųsti ir sukompiliuoti BINUTILS paketą prieš pradedant GCC 
+    kompiliavimą.
+  }
+  
+  \xcprinciples
+  {
+    \xpentry{Darna}{Pažeistas}
+    {
+      GCC kompiliavimo procesą vykdo speciali kompiliavimo sistema Automake, kuri yra atsakinga
+      už klaidų aptikimą ir prasmingų pranešimų atspausdinimą. Šiuo atveju ne tik Automake 
+      sistema nepatikė informatyvaus klaidos pranešimo, bet ir neužtiko pačios klaidos.
+    }
+    \xpentry{Nuspėjamumas}{Pažeistas}
+    {
+      Iš pateikto klaidos pranešimo visiškai nepavyko nustatyti galimos klaidos priežasties.
+    }
+  }
+  
+  \xcthoughts
+  {
+    GCC kompiliavimas yra pakankamai sudėtinga procedūra, kurios paprasti vartotojai 
+    (ir net programuotojai) dažniausiai patys neatlikinėja. Labiausiai tikėtina, jog GCC
+    autoriai laikė tai savaime suprantamu dalyku, kad prieš GCC kompiliavimą reikia instaliuoti
+    ir BINUTILS paketą, tačiau tai nepaaiškina, kodėl nebuvo pateikta joks prasmingas klaidos
+    pranešimas kompiliavimo pradžioje. Aprašomas klaidos pranešimas buvo pateiktas po 20 minučių
+    nuo kompiliavimo pradžios.
+  }
+\end{xcase}

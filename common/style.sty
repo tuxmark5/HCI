@@ -10,7 +10,7 @@
 {
   \begin{figure}[H]
     \begin{center}
-      \includegraphics[width=0.6\textwidth]{\TARGET/#3}
+      \includegraphics[width=0.8\textwidth]{\TARGET/#3}
     \end{center}
     \caption{#2}
     \label{#1}
@@ -76,9 +76,9 @@
 
 \definecolor{myblue}{rgb}{0.8, 0.8, 0.8}
 
+\newwrite\rubyArg
 \newcommand\ruby[2]
 {
-  \newwrite\rubyArg
   \immediate\openout\rubyArg = "input.tmp"
   \immediate\write\rubyArg {#1}
   \immediate\write\rubyArg {#2}
