@@ -1,28 +1,32 @@
-\begin{xcase}{<ATVEJO PAVADINIMAS>}
+﻿\begin{xcase}{„Recovery Toolbox for Word“ programos išjungimas}
   \xcgoal
   {
-    <KĄ BANDEI PADARYTI SU KONKREČIA PROGRAMA? (ko buvo siekta?)>
+    Išjungti „Recovery Toolbox for Word“ programą.
   }
-  
   \xctools
   {
-    <KĄ PROGRAMA SUFLERAVO, KAS TURĖJO PALENGVINTI TIKSLO SIEKIMĄ?>
+    \ref{fig:case_1} paveikslėlyje parodytas programos išjungimo patvirtinimo dialogas, kuris atrodo kaip įspėjimas, kad nebaigta naudotis programa. Programa sufleruoja spausti „Yes“ mygtuką norint užbaigti darbą.
+
+    \ximage{fig:case_1}{Programos langas bei išjungimo patvirtinimo dialogas}{justinas/images/case_1.jpg}
   }
-  
   \xcresult
   {
-    <KAS GAVOSI?>
+    Kadangi nebuvo norima užbaigti darbo prieš išjungiant programą, buvo pasirinktas mygtukas „No“, po kurio paspaudimo nieko neįvyko. Procesas kartotas keletą kartų iki tol, kol buvo nuspręsta išbandyti „Yes“ mygtuką, kad pavyktų atlikti tai, kas buvo norima.
   }
-  
   \xcprinciples
   {
-    \xpentry{<PAŽEISTAS/ĮGYVENDINTAS PRINCIPAS 1>}{pažeistas/įgyvendintas}{kodėl taip manai?}
-    %\xpentry{<PAŽEISTAS/ĮGYVENDINTAS PRINCIPAS 2>}{pažeistas/įgyvendintas}{kodėl taip manai?}
-    %\xpentry{darna}{pažeistas}{tikėtasi kito rezultato}
+    \xpentry{Nuspėjamumas}{Pažeistas}
+    {
+      Buvo tikėtasi, kad programa siūlo baigti darbą prieš ją išjungiant, rodydama tokį patvirtinimo dialogą.
+    }
+	\xpentry{Atpažįstamumas}{Pažeistas}
+	{
+	  Didžioji dauguma programų įspėja, kad nebaigtas darbas rodydamos panašų dialogą, tik klausdamos ar norima išsaugoti prieš uždarant.
+	  Taip pat daugumoje programų išjungimo patvirtinimo dialogo tekstas būna panašus į „Do you really want to quit?“.
+	}
   }
-  
   \xcthoughts
   {
-    <MINTYS>
+    Tikėtina, kad buvo norima pabrėžti programos galimybes dažniau naudojant žodį „Recovery“. Norint išvengti tokių nesupratimų, turėtų būti vengiama dviprasmiškų pranešimų.
   }
 \end{xcase}
