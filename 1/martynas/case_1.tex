@@ -1,28 +1,53 @@
-\begin{xcase}{<ATVEJO PAVADINIMAS>}
+\begin{xcase}{Simbolių šalinimas Samsung GT-C5130S mobiliojo telefono
+              Java ME programose}
   \xcgoal
   {
-    <KĄ BANDEI PADARYTI SU KONKREČIA PROGRAMA? (ko buvo siekta?)>
+    Kaip ir daugelis kitų mobiliųjų telefonų, Samsung GT-C5130S gali vykdyti
+    Java Platform, Micro Edition platformos programas. Tokių programų
+    teksto laukų redagavimui telefono virtuali mašina suteikia standartinę
+    sąsają. Rašant tekstą dažnai tenka jį taisyti, pavyzdžiui, ištrinant
+    netinkamą simbolį.
   }
   
   \xctools
   {
-    <KĄ PROGRAMA SUFLERAVO, KAS TURĖJO PALENGVINTI TIKSLO SIEKIMĄ?>
+    Norint pašalinti simbolį, reikia atlikti tokius veiksmus:
+    \begin{enumerate} % TODO: iliustracijos
+      \item Kairiuoju funkciniu mygtuku pasirinkti „Meniu“.
+      \item Atsidariusiame meniu pasirinkti „Valyti“.
+      \item Atsidariusiame žemesnio lygio meniu pasirinkti veiksmą „Valyti“.
+    \end{enumerate}
   }
   
   \xcresult
   {
-    <KAS GAVOSI?>
+    Ištrinamas prieš žymeklį buvęs simbolis.
   }
   
   \xcprinciples
   {
-    \xpentry{<PAŽEISTAS/ĮGYVENDINTAS PRINCIPAS 1>}{pažeistas/įgyvendintas}{kodėl taip manai?}
-    %\xpentry{<PAŽEISTAS/ĮGYVENDINTAS PRINCIPAS 2>}{pažeistas/įgyvendintas}{kodėl taip manai?}
-    %\xpentry{darna}{pažeistas}{tikėtasi kito rezultato}
+    \xpentry{Darna}{Pažeistas}
+    {
+      Šiame telefone rašant tekstą kitose sąsajose (pavyzdžiui, rašant
+      žinutę ar telefono numerį) funkcija „Valyti“ vykdoma nuspaudus
+      dešinįjį funkcinį mygtuką. Šioje sąsajoje dešinysis mygtukas atlieka
+      funkciją „Atsisakyti“, kuri išjungia teksto laiko redagavimą ir
+      ištrina visą anksčiau įvestą tekstą.
+    }
+    \xpentry{Našumas}{Pažeistas}
+    {
+      Simbolio šalinimas yra dažnai naudojama funkcija. Tai, kad jai
+      įvykdyti reikia mažiausiai 3 mygtukų paspaudimų stipriai mažina
+      sąsajos naudojimo našumą.
+    }
   }
   
   \xcthoughts
   {
-    <MINTYS>
+    Labai keista, kad šios sąsajos programuotojai nesiėmė standartinės, kone
+    visuose telefonuose taikomos praktikos, ir taip apsunkino tokią paprastą
+    simbolio šalinimo procedūrą. Ji ne tik užima santykinai daug laiko, bet
+    ir kelia pavojų, kad dėl įpročių naudojantis kitomis telefono įvesties
+    sąsajomis per klaidą bus ištrintas visas parašytas tekstas.
   }
 \end{xcase}
