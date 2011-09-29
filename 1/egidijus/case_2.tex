@@ -1,0 +1,48 @@
+\begin{xcase}{Failų peržiųra Nokia Symbian v52.0.101 operacinėje sistemoje}
+  \xcgoal
+  	Norėta peržiūrėti failus, esančius telefono atminties kortelėje. 
+	Buvo naudojama Nokia Symbian v52.0.101 \footnote{Nokia Symbian puslapis: \url{http://symbian.nokia.com/}.} 
+	operacinės sistemos failų tvarkyklės programa (File Manager). 
+  }
+  
+  \xctools
+  {
+    Nokia Symbian operacinės sistemos failų tvarkyklė leidžia neviguoti po
+	katalogus, esančius telefono vidinėje bei išorinėse atmintinėse. Taip 
+	pat, suradus norimą failą, jį galima tiesiogiai atidaryti peržiūrai.
+  }
+  
+  \xcresult
+  {
+    Atminties kortelėje radus dainą, ant jos pavadinimo paspaudus atsidaro muzikos
+	grotuvo langas ir daina pradeda groti. Tada paspausta muzikos grotuve mygtukas 
+	Atgal("Back") (pav. @ref{fig:case_2_music_player}), kad uždaryti grotuvo langą 
+	ir grįžti į failų tvarkyklę. Tačiau, užsidarius muzikos grotuvui, grįžtama ne į
+	failų tvarkyklės langą, bet į pagrindinį meniu (pav. @ref{fig:case_2_home_menu}). 
+	Tik įdėmiau įsižiūrėjus galima pastebėti, jog failų tvarkyklė liko aktyvi fone 
+	(pav. @ref{fig:case_2_background}) ir į ją reikia vėl persijungti.
+	
+	\ximagerow{fig:case_2_nokia}{Failo peržiūra Nokia Symbian su File Manager}{4}
+    {
+      \ximagecell{fig:case_2_file_manager}{Failų tvarkyklė}{egidijus/images/case_2_file_manager.jpg}
+	  \ximagecell{fig:case_2_music_player}{Atsidaro muzikos grotuvas}{egidijus/images/case_2_music_player.png}
+	  \ximagecell{fig:case_2_home_menu}{Grįžtama į pagrindinį meniu}{egidijus/images/case_2_home_menu.jpg}
+	  \ximagecell{fig:case_2_background}{Failų tvarkyklė lieka fone}{egidijus/images/case_2_background.jpg}
+    }
+  }
+  
+  \xcprinciples
+  {
+    \xpentry{Nuspėjamumas}{Pažeistas}{
+		Muzikos grotuvo lange paspaudus mygtuką Atgal("Back") (pav. @ref{fig:case_2_music_player}) buvo tikėtasi grįžti 
+		į prieš tai buvusį aktyvų failų tvarkyklės langą. Tačiau buvo atidarytas 
+		pagrindinio meniu langas (pav. @ref{fig:case_2_home_menu}).
+	}
+  }
+  
+  \xcthoughts
+  {
+    Greičiausiai tai yra programavimo klaida, kai nesuderinami procesų tarpusavio gryžimo keliai
+	tarp dviejų atskirai veikiančių programų.
+  }
+\end{xcase}

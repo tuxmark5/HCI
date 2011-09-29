@@ -1,28 +1,52 @@
-\begin{xcase}{<ATVEJO PAVADINIMAS>}
+\begin{xcase}{Tekstinės žinutės keitimas iOS ver.3.2.3}
   \xcgoal
-  {
-    <KĄ BANDEI PADARYTI SU KONKREČIA PROGRAMA? (ko buvo siekta?)>
+  	Naudojant iPhone 3Gs 
+	iOS 4.3.5)\footnote{Produkto puslapis: \url{http://www.apple.com/iphone}.}
+	buvo mėginama parašyti trumpąją žinutę, bet surinkus tekstą, pastebėta 
+	viename žodžių padaryta rašybos klaida. Todėl norėta grįžti i blogo 
+	simbolio vietą bei ištaisyti klaidą.
+	
+	\ximage{fig:case_1_iPhone_sms_window}{iPhone SMS rašymo langas}{egidijus/images/case_1_iPhone_sms_screen.png}
   }
   
   \xctools
   {
-    <KĄ PROGRAMA SUFLERAVO, KAS TURĖJO PALENGVINTI TIKSLO SIEKIMĄ?>
+    Žinutės rašymo lange yra matomas jau surinktas tekstas bei galima 
+    naviguoti tarp žodžių pirštu paspaudžiant norimoje vietoje. 
   }
   
   \xcresult
   {
-    <KAS GAVOSI?>
+    Paspaudus norimoje vietoje, rašymo žymeklis atsiranda arba žodžio
+    pabaigoje, arba pradžioje. Kadangi nėra jokių klavišų navigavimui tarp
+    atskirų pavienių raidžių, tai, norint ištaisyti klaidą 
+	įrašytą atsitiktinę raidę), reikia ištrinti visą žodžio dalį, o ne tik 
+    klaidingą simbolį, bei perrašyti trūkstamą žodžio dalį pakartotinai. Tai 
+    užima papildomai laiko bei dėmesio sutelkimo.
   }
   
   \xcprinciples
   {
-    \xpentry{<PAŽEISTAS/ĮGYVENDINTAS PRINCIPAS 1>}{pažeistas/įgyvendintas}{kodėl taip manai?}
-    %\xpentry{<PAŽEISTAS/ĮGYVENDINTAS PRINCIPAS 2>}{pažeistas/įgyvendintas}{kodėl taip manai?}
-    %\xpentry{darna}{pažeistas}{tikėtasi kito rezultato}
+    \xpentry{Nuspėjamumas}{Pažeistas}{
+		Buvo tikėtasi, jog paspaudus ant žodžio toje vietoje, kur padaryta klaida,
+		ten atsiras ir rašymo žymeklis bei bus galima ištrinti nereikalingą vieną
+		simbolį.
+	}
+    \xpentry{Lankstumas>}{Pažeistas}{
+		Vartotojui nėra palikta galimybė pasirinkti redaguoti visą parašyta žodį
+		ar tik jo dalį.
+	}
   }
   
   \xcthoughts
   {
-    <MINTYS>
+    iOS mobiliojo telefono operacinė sistema turi įdiegtus daugelio kalbų
+    žodynus bei gramatikos tikrinimą. Todėl tekstą rašant anglų kalba, 
+    klaidos dažniausia automatiškai ištaisomos bei nėra poreikio taisyti 
+    žodžių vidurinę dalį. Dėl to, gali būti, jog kūrėjai nenorėjo daryti 
+    papildomų mygtukų bei užimti vietą ekrane. 
+    Tačiau rašant lietuviškai, automatinis teksto taisymas nėra pakankamai 
+    gerai ištobulintas, kad jį būtų patogu naudoti. Vartotojai dažnai šią
+    funkciją išjungia, rašydami padaro klaidų ir prisireikia jas taisyti.
   }
 \end{xcase}
