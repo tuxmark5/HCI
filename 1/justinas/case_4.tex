@@ -5,31 +5,42 @@
   }
   \xctools
   {
-    \ref{fig:case_4} paveikslėlyje parodytas pranešimas, kad kažkokia programa jau naudoja garso tvarkyklę, todėl yra siūloma išjungti bet kokias programas, kurios gali ją naudoti, arba žaisti be garso.
+    \ref{fig:case_4} paveikslėlyje parodytas pranešimas, kad kažkokia programa jau naudoja 
+    garso tvarkyklę, todėl yra siūloma išjungti bet kokias programas, kurios gali ją naudoti, 
+    arba žaisti be garso.
 
     \ximage{fig:case_4}{Įspėjimas apie naudojamą garso tvarkyklę}{justinas/images/case_4.jpg}
   }
   \xcresult
   {
-    Kadangi vis dėlto norima buvo žaisti su garsu, buvo bandoma išjungti bet kokias programas galinčias naudoti garso tvarkyklę. Išjungus didžiąją dalį programų ir vis tiek susidūrus su ta pačia problema buvo ieškomas kitas sprendimas, kol galiausiai paaiškėjo, kad kompiuteryje garso tvarkyklė išvis nebuvo įdiegta.
+    Kadangi vis dėl to norima buvo žaisti su garsu, buvo bandoma išjungti bet kokias programas 
+    potencialiai galinčias naudoti garso tvarkyklę. Išjungus didžiąją dalį programų ir vis tiek 
+    susidūrus su  ta pačia problema buvo ieškomas kitas sprendimas, kol galiausiai paaiškėjo, 
+    kad kompiuteryje garso tvarkyklė išvis nebuvo įdiegta.
   }
   \xcprinciples
   {
-	\xpentry{Nuspėjamumas}{Pažeistas}
-	{
-	  Buvo tikėtasi, kad kaip programa ir praneša, klaida įvyko, nes garso tvarkyklė jau buvo naudojama.
-	}
-	\xpentry{Sintezavimas}{Pažeistas}
-	{
-	  Nebuvo įmanoma įvertinti, kurie atlikti veiksmai iššaukė tokią klaidą, kadangi pranešama klaida neatitiko realybės.
-	}
-	\xpentry{Atpažįstamumas}{Pažeistas}
-	{
-	  Buvo manoma, kad problema pažįstama ir žinomas jos sprendimo būdas, tačiau sprendimo būdas buvo visiškai kitoks, nei įprasta.
-	}
+    \xpentry{Nuspėjamumas}{Pažeistas}
+    {
+      Buvo tikėtasi, kad kaip programa ir praneša, klaida įvyko, nes garso tvarkyklė jau 
+      buvo naudojama.
+    }
+    \xpentry{Sintezavimas}{Pažeistas}
+    {
+      Nebuvo įmanoma įvertinti, kurie atlikti veiksmai iššaukė tokią klaidą, kadangi pranešama 
+      klaida neatitiko realybės.
+    }
+    \xpentry{Atpažįstamumas}{Pažeistas}
+    {
+      Buvo manoma, kad problema pažįstama ir žinomas jos sprendimo būdas, tačiau sprendimo 
+      būdas buvo visiškai kitoks, nei įprasta.
+    }
   }
   \xcthoughts
   {
-    Tikėtina, kad buvo netinkamai įvertintos visos priežastys, dėl kurių gali kilti tokia problema. Norint išvengti tokių nesusipratimų, jeigu priežastis nėra tiksliai žinoma, reikėtų pranešti abstrakčiau, kad vartotojas neatmestų gero problemos sprendimo būdo, kaip netinkamo.
+    Tikėtina, kad buvo netinkamai įvertintos visos priežastys, dėl kurių gali kilti tokia 
+    problema. Norint išvengti tokių nesusipratimų, jeigu priežastis nėra tiksliai žinoma, 
+    reikėtų pranešti abstrakčiau, kad vartotojas neatmestų gero problemos sprendimo būdo, 
+    kaip netinkamo.
   }
 \end{xcase}
