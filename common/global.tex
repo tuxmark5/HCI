@@ -1,5 +1,31 @@
 % Komandos pavadinimas.
-\newcommand{\teamname}{ReSoft}
+\newcommand\teamname{ReSoft}
 
 % Kuriamos sistemos pavadinimas.
-\newcommand{\systemname}{RSys}
+\newcommand\systemname{RSys}
+
+\newcommand\xdoclist[1]
+{
+  \newcounter{xdocListCounter}
+  \xtable
+  {
+    w [ 1 | 29 ]
+    a [ p | p  ]
+    #1
+  }
+}
+
+\newcommand\xdocentry[3]
+{\unexpanded{
+  e [ \addtocounter{xdocListCounter}{1} \arabic{xdocListCounter}. 
+    | #1. \textbf{#2}. \par #3 ]
+}}
+
+\newcommand\xdocentryWeb[5]
+{\unexpanded{
+  e [ \addtocounter{xdocListCounter}{1} \arabic{xdocListCounter}. 
+    | #1. \textbf{#2}, #3 \par 
+      &Lžiūrėta #4&R. Prieeiga per internetą: \par
+      <\url{#5}>
+    ]
+}}

@@ -4,4 +4,39 @@
 % Komandos pavadinimas.
 \newcommand\docname{Naudotojų poreikiai}
 
+
+\newcounter{xreqCounter0}
+\newcounter{xreqCounter1}
+
 % Tools
+\newcommand\xreq[2]
+{
+  \addtocounter{xreqCounter0}{1}
+  \setcounter{xreqCounter1}{0}
+  \label{#1}
+  \colorbox{gray}{ \textbf { Reikalavimas R\arabic{xreqCounter0}. } } #2
+  \par
+}
+
+\newcommand\yreq[2]
+{
+  \addtocounter{xreqCounter1}{1}
+  \label{#1}
+  \hspace{0.7cm}
+  \colorbox{gray}{ \textbf { R\arabic{xreqCounter0}.\arabic{xreqCounter1}. } } #2
+  \par
+}
+
+\newcommand\xchars[1]
+{
+  \xtable
+  {
+    w [ 2 | 6 ]
+    a [ p | p ]
+    #1
+  }
+}
+
+\newcommand\xcharSystems[1]{ e [ Programų sistemos ir aparatūra, kuriomis moka naudotis | \unexpanded{#1} ] }
+\newcommand\xcharSkills[1]{ e [ Naudotojų įgūdžiai ir motyvacija | \unexpanded{#1} ] }
+\newcommand\xcharEnv[1]{ e [ Aplinka | \unexpanded{#1} ] }

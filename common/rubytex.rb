@@ -17,7 +17,8 @@ end;
 
 class String
   def xo
-    $dst.write(" #{self} ");
+    out = gsub("&L", "[").gsub("&R", "]").gsub("&&", "&");
+    $dst.write(" #{out} ");
   end;
 end;
 

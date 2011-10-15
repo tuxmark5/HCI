@@ -78,7 +78,7 @@
 \definecolor{myblue}{rgb}{0.8, 0.8, 0.8}
 
 \newwrite\rubyArg
-\newcommand\ruby[2]
+\def\ruby#1#2
 {
   \immediate\openout\rubyArg = "input.tmp"
   \immediate\write\rubyArg {#1}
