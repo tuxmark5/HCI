@@ -63,6 +63,10 @@ class Table
       {|>{\\columncolor[gray]{0.8}}c|}
       {\\bf #{cell}} \\\\ \\hline";
   end;
+  
+  def xrow_ee(cell)
+    @rows << "\\multicolumn{#{@widths.length}}{|l|}{#{cell}} \\\\ \\hline";
+  end;
 
   def xrow_e(y)
     @rows << y.join2("", " & ", "\\\\ \\hline")
