@@ -64,3 +64,18 @@
 \renewcommand\labelenumii{\theenumi.\arabic{enumii}.}
 \renewcommand\labelenumiii{\theenumi.\theenumii.\arabic{enumiii}.}
 \renewcommand\labelenumiv{\theenumi.\theenumii.\theenumiii.\arabic{enumiv}.}
+
+% sh - StakeHolder
+\newcommand\xshClass[2]
+{
+  \textbf{#1}
+  \begin{itemize}
+    #2
+  \end{itemize}
+  \vspace{0.5cm}
+}
+
+\newcommand\xshEntry[2]
+{
+  \item \textbf{#1} – #2.
+}
