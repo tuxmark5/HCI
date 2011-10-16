@@ -7,7 +7,7 @@
   % FIXME Ar tinkamai suformuluota metafora? Ar galima naudoti tokią
   % metaforą?
   % FIXME Kas būtent turi būti apibrėžiama metaforų žodyne?
-  
+
   Sistemoje naudojamų savokų paaiškinimai:
   \xtable
   {
@@ -25,16 +25,25 @@
 }
 
 \subsection{Formuluojamos užduotys}
-\xreq{r:interfeisai}{Sistemoje turi būti šie interfeisai:}
-  \yreq{r:iface_base}{Bazinis interfeisas.}
-  \yreq{r:iface_pa}{Padalinių įvedimo interfeisas.}
-  \yreq{r:iface_pp}{Paramos priemonių įvedimo interfeisas.}
-  \yreq{r:iface_is}{IS įvedimo interfeisas.}
-  \yreq{r:iface_pa_is}{IS-Padalinių įvedimo interfeisas.}
-  \yreq{r:iface_pa_pp}{Paramos administravimo kaštų įvedimo interfeisas.}
-  \yreq{r:iface_data}{Istorinių duomenų įvedimo interfeisas.}
-  \yreq{r:iface_visual}{Apkrovų vizualizacijos interfeisas.}
-  \yreq{r:iface_login}{Prisijungimo interfeisas.}
+\xreq{r:iface}{Sistemoje turi būti šie sąsajos:}
+  \yreq{r:iface_base}{Bazinė – iš jos galima pasiekti visas kitas sąsajas
+  bei atsijungti nuo sistemos.}
+  \yreq{r:iface_pa}{Padalinių įvedimo – naudojantis ja galima įvesti
+  informaciją apie padalinius.}
+  \yreq{r:iface_pp}{Paramos priemonių įvedimo – naudojantis ja gali įvesti
+  informaciją apie paramos priemones.}
+  \yreq{r:iface_is}{IS įvedimo – naudojantis ja galima įvesti informaciją
+  apie IS.}
+  \yreq{r:iface_pa_is}{IS-Padalinių įvedimo – naudojantis ja galima
+  nurodyti, kokie padaliniai kokias IS naudoja.}
+  \yreq{r:iface_pa_pp}{Paramos administravimo kaštų įvedimo – naudojantis
+  ja galima nurodyti, kiek kuriam padaliniui kainuoja konkrečios
+  paramos priemonės vieno vieneto apdorojimas.}
+  \yreq{r:iface_data}{Istorinių duomenų įvedimo – naudojantis juo
+  galima įvesti istorinę informaciją apie apdorotas paraiškas.}
+  \yreq{r:iface_visual}{Apkrovų vizualizacijos – jame galima vizualiai
+  pamatyti kokios apkrovos tenka padaliniams ir sistemoms.}
+  \yreq{r:iface_login}{Prisijungimo – per jį prisijungiama prie sistemos.}
 
 \subsection{Užduočių formulavimo kalbos reikalavimai}
 \xreq{r:ui_components}
