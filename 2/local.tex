@@ -40,3 +40,27 @@
 \newcommand\xcharSystems[1]{ e [ Programų sistemos ir aparatūra, kuriomis moka naudotis | \unexpanded{#1} ] }
 \newcommand\xcharSkills[1]{ e [ Naudotojų įgūdžiai ir motyvacija | \unexpanded{#1} ] }
 \newcommand\xcharEnv[1]{ e [ Aplinka | \unexpanded{#1} ] }
+
+\newcommand\xtasks[1]
+{
+  \xtable
+  {
+    w [ 6 | 2 | 2 ]
+    a [ p | p | p ]
+    h [ Užduotis | Trukmė | Dažnis ]
+    #1
+  }
+}
+
+\newcommand\xtask[3]
+{
+  e [ \unexpanded{#1}
+    | \unexpanded{#2}
+    | \unexpanded{#3}
+    ]
+}
+
+\renewcommand\labelenumi{\arabic{enumi}.}
+\renewcommand\labelenumii{\theenumi.\arabic{enumii}.}
+\renewcommand\labelenumiii{\theenumi.\theenumii.\arabic{enumiii}.}
+\renewcommand\labelenumiv{\theenumi.\theenumii.\theenumiii.\arabic{enumiv}.}
