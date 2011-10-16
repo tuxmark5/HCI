@@ -4,8 +4,8 @@
   Naudotojo sąsajų užduotys turi būti formuluojamos naudojantis darbo
   su skaičiuokle metafora. Naudotojui informacija pateikiama lentelių
   ir grafikų pavidalu.
-  % FIXME Ar tinkamai suformuluota metafora? Ar galima naudoti tokią
-  % metaforą?
+  % FIXME DĖSTYTOJA Ar tinkamai suformuluota metafora? Ar galima
+  % naudoti tokią metaforą?
   % FIXME Kas būtent turi būti apibrėžiama metaforų žodyne?
 
   Sistemoje naudojamų savokų paaiškinimai:
@@ -47,68 +47,89 @@
 
 \subsection{Užduočių formulavimo kalbos reikalavimai}
 \xreq{r:ui_components}
-{Visos užduotys turi būti formuluojamos standartiniais grafinio vartotojo interfeiso 
-komponentais.}
+{Visos užduotys turi būti formuluojamos naudojantis LIMP (langas, ikona,
+meniu ir pelė) sąsajos priemonėmis.}
 
 \xreq{r:ui_kbd_mouse}
-{Duomenys į sistemą turi būti pateikiami naudojantis pele ir klaviatūra.}
+{Duomenys sistemai turi būti pateikiami naudojantis pele ir klaviatūra.}
 
 \xreq{r:ui_opt_mouse:1}
-{Turi būti galimybė daugumą duomenų sistemai pateikti vien tik klaviatūra, nesinaudojant pele.}
+{Turi būti galimybė bent 80 procentų funkcijų, kurios nėra skirtos
+sistemos parametrų keitimui, pasiekti naudojantis vien tik pele.}
 
 \xreq{r:ui_opt_mouse:2}
-{Apkrovų vizualizacijos interfeisui turi būti galimybė pateikti laiko intervalą, kurio duomenis 
-  norima vizualizuoti.}
+{Apkrovų vizualizacijos sąsajai turi būti galimybė pateikti laiko
+intervalą, kurio duomenis norima vizualizuoti.}
 
 \subsection{Užduočių formulavimo būdo (protokolo) reikalavimai}
+% FIXME Citata iš Čaplinsko: „Šiame poskyryje kiekvienai naudotojo
+% sąsajai pateikiama atitinkama UML sekų diagrama, vaizduojanti
+% naudotojo ir sistemos sąveiką formuluojant užduotis, ir tą diagramą
+% paaiškinantis tekstas.
+
 \xreq{r:ui_composition}
-{Kiekvienas iš pagrindinių sistemos vartotojo interfeisų turi būti pateikiamas vienoje arba
-  keliose bazinio interfeiso kortelėse.}
+{Kiekviena iš pagrindinių sistemos naudotojo sąsajų turi būti
+pateikiama vienoje arba keliose bazinės sąsajos kortelėse.}
 
 \xreq{r:ui_base}{Bazinio interfeiso reikalavimai:}
+  % FIXME DĖSTYTOJA Ar čia nėra per daug detalu? Bent jau man, po šito tai 
+  % net ir eskizo nebereikia…
   \yreq{r:ui_base:mainwnd}{Pagrindiniame langą turi sudaryti menu, įrankių juosta(-os), 
   kortelių komponentas ir būsenos juosta. }
   \yreq{r:ui_base:messages}{Bazinis interfeisas yra atsakingas už įvairių pranešimų pateikimą 
   naudotojui.}
   
-\xreq{r:ui_tables}{Visose vartotojo interfeiso lentelėse turi būti galimybė keisti stulpelių 
-plotį.}
+\xreq{r:ui_tables}{Visose naudotojo sąsajos lentelėse turi būti
+galimybė keisti stulpelių  plotį.}
 
 \subsection{Interfeiso darnos ir standartizavimo reikalavimai}
-\xreq{r:ui_os_look}{Vartotojo interfeisas turi atitikti tos operacinės sistemos sistemos
-išvaizdą, kurioje dirba taikomoji varotojo aplikacija.}
+\xreq{r:ui_os_look}{Naudotojo sąsaja turi atitikti tos operacinės
+sistemos sistemos išvaizdą, kurioje dirba taikomoji aplikacija.}
 
-\xreq{r:ui_unicode}{Grafiniame vartotojo interfeise pateikiamas tekstas ir pranešimai turi
-būti UTF-8 arba UTF-16 koduotėje.}
+\xreq{r:ui_unicode}{Grafinėje naudotojo sąsajoje pateikiamas tekstas
+ir pranešimai turi būti UTF-8 arba UTF-16 koduotėje.}
 
-\xreq{r:ui_cua}{Teksto įvedimo laukai turi palaikyti CUA įvedimo modelį.}
+\xreq{r:ui_cua}{Teksto įvedimo laukai turi palaikyti CUA 
+% FIXME Reikia paaiškinimo kas yra CUA. Vikipedijoje paieška pagal
+% Common User Access duoda ne tai ko reikia.
+įvedimo modelį.}
 
-\xreq{r:ui_passwords}{Jokie konfidencialūs duomenys neturi būti pateikiami vartotojo
-interfeise.}
+\xreq{r:ui_passwords}{Jokie konfidencialūs duomenys
+% FIXME Gal tiesiog naudotojo slaptažodžiai negali būti rodomi naudotojo
+% sąsajoje? Nes dabar galima suprasti, kad apskritai jokia konfidenciali
+% informacija, tai yra ir aptarnautų padalinių kiekis, negali būti
+% rodomas.
+neturi būti rodomi naudotojo sąsajoje.}
 
 \subsection{Pranešimų formulavimo reikalavimai}
-\xreq{r:ui_messages:groups}{Pateikiami pranešimai turi būti suskirstyti į 4 grupes: 
-informacinio pobūdžio, perspėjimo, klaidų ir kritiniai.}
+\xreq{r:ui_messages:groups}{Pateikiami pranešimai turi būti
+suskirstyti į 4 grupes: informacinio pobūdžio, perspėjimo, klaidų
+ir kritiniai.
+% FIXME Trūksta paaiškinimo, kuo skiriasi klaidų pranešimai, nuo kritinių.
+% Ir apskritai, turbūt derėtų apibrėžti kiekvieną iš rūšių.
+}
 
-\xreq{r:ui_messages:icons}{Kiekvienas iš 4 pranešimų tipų turi būti paženklintas 
-atitinkama ikona.}
+\xreq{r:ui_messages:icons}{
+Skirtingiems tipams priklausantys pranešimai turi būti pažymėti
+skirtingomis ikonėlėmis.}
 
 \xreq{r:ui_messages:error}{Klaidos pobūdžio pranešimuose turi būti pateikta detali klaidos
 priežastis.}
 
-\xreq{r:ui_messages:critical}{Kritinio pobūdžio pranešimuose turi būti galimybė peržiūrėti 
-techninę klaidos priežasties informaciją, kurios pagalba sistemos administratorius galėtų 
+\xreq{r:ui_messages:critical}{Kritinio pobūdžio pranešimuose turi
+būti galimybė peržiūrėti techninę klaidos priežasties
+informaciją, kurios pagalba sistemos administratorius galėtų
 identifikuoti ir pašalinti įvykusią problemą.}
 
-\xreq{r:ui_messages:log}{Visi vartotojui pateikiami pranešimai kartu su jų pateikimo 
-laiku ir kontekstu turi būti saugomi pranešimų žurnale.}
+\xreq{r:ui_messages:log}{Visi naudotojui pateikiami pranešimai kartu su
+jų pateikimo laiku ir kontekstu turi būti saugomi pranešimų žurnale.}
 
-\xreq{r:ui_messages:id}{Kiekvienai galimai klaidai turi būti suteiktas unikalus numeris. Tokio
-paties pobūdžio klaidos yra laikomos skirtingomis, jei jų atsiradimo priežastys yra skirtingos
-arba klaidos pasirodo skirtingame kontekste. Pvz.: apibendrinta klaida „nepavyko atidaryti failo“
-turi būti išskirstyta į „nepavyko atidaryti duomenų bazės failo“, „nepavyko atidaryti nustatymų
-failo“.}
+\xreq{r:ui_messages:id}{Kiekvienai galimai klaidai turi būti suteiktas
+unikalus numeris. Tokio paties pobūdžio klaidos yra laikomos
+skirtingomis, jei jų atsiradimo priežastys yra skirtingos arba klaidos
+pasirodo skirtingame kontekste. Pavyzdžiui, apibendrinta klaida „nepavyko
+atidaryti failo“ turi būti išskirstyta į „nepavyko atidaryti
+duomenų bazės failo“, „nepavyko atidaryti nustatymų failo“.}
 
-\subsection{Interfeiso individualizavimo reikalavimai}
-\xreq{r:tool_dock}{Turi būti galimybė slėpti ir judinti skirtingus vartotojo interfeiso
-elementus (pvz.: užduočių juostas, dock langus).}
+\subsection{Sąsajos individualizavimo reikalavimai}
+\xreq{r:tool_dock}{Turi būti galimybė paslėpti užduočių juostą.}
