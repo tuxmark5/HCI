@@ -1,11 +1,91 @@
+\subsection{Užduotis „apkrovų skaičiavimas“}
+
+\textbf{Norint įvertinti padalinių/IS apkrovas, reikia:}
 \begin{enumerate}
-  \item aa
-  \item bb
+  \item Prisijungti prie sistemos.
+  
+  \item Įvesti pradinius duomenis.
   \begin{enumerate}
-    \item bbb
-    \begin{enumerate}
-      \item bbbd
-      \item bbcd
-    \end{enumerate}
+    \item Importuoti duomenis iš failo.
+    \item Įvesti reikalingą informaciją klaviatūra.
   \end{enumerate}
+  
+  \item Įvesti istorinius duomenis.
+  \begin{enumerate}
+    \item Importuoti istorinius duomenis iš failo.
+    \item Įvesti istorinius duomenis klaviatūra.
+  \end{enumerate}
+  
+  \item Skaičiuoti apkrovas.
+  \item Filtruoti rezultatus.
+  \begin{enumerate}
+    \item Pasirinkti, kieno apkrovas rodyti - padalinių ar IS.
+    \item Pasirinkti dominančius padalinius/IS.
+    \item Nurodyti aktualų laiko intervalą.
+    \item Pasirinkti norimą rodymo rėžimą: ar duomenis rodyti grafiškai, ar lentelės pavidalu.
+  \end{enumerate}
+\end{enumerate}
+
+\vspace{1cm}
+\textbf{Planai:}
+\begin{enumerate}
+  \item Atlikti 1-5. Jei pradiniai duomenys jau įvesti, tai 2 galima praleisti.
+  Jei istoriniai duomenys jau įvesti, tai 3 galima praleisti.
+  Jei rezultatų filtravimas nedomina, tai 5 galima praleisti.
+  
+  \item Atlikti 2.1, jei norimi duomenys yra saugomi faile. Atlikti 2.2, jei reikia papildyti
+  pradinius duomenis arba jei visi norimi duomenys yra įvedami klaviatūra.
+  
+  \item Atlikti 3.1, jei istoriniai duomenys yra saugomi faile. Atlikti 3.1, jei reikia papildyti
+  istorinius duomenis arba jei visi istoriniai duomenys yra įvedami klaviatūra.
+  
+  \item Atlikti 5.1-5.4 bet kuria tvarka. Bet kurį punktą galima praleisti, jei tokios filtravimo
+  rūšies nereikia ir tenkina esami rezultatai.
+\end{enumerate}
+
+\subsection{Užduotis „apkrovų prognozavimas“}
+
+\textbf{Prielaidos:} prisijungta prie sistemos, pradiniai duomenys įvesti.
+
+\textbf{Norint apskaičiuoti prognozuojamas padalinių/IS apkrovas, reikia:}
+\begin{enumerate}
+  \item Įvesti planuojamas paramos priemonių apimtis.
+  \begin{enumerate}
+    \item Importuoti planuojamas apimtis iš failo.
+    \item Įvesti reikalingus duomenis klaviatūra.
+  \end{enumerate}
+  
+  \item Prognozuoti apkrovas.
+  \item Filtruoti rezultatus (žr. užd. „apkrovų skaičiavimas“).
+\end{enumerate}
+
+\vspace{1cm}
+\textbf{Planai:}
+\begin{enumerate}
+  \item Atlikti 1-3. 3 galima praleisti.
+  \item Atlikti 1.1, jei norima planuojamus kiekius importuoti iš failo. Taip pat importuotus
+  kiekius po to galima papildyti su 1.2 arba juos įvesti naudojantis vien tik 1.2.
+\end{enumerate}
+
+\subsection{Užduotis „laisviausių laiko intervalų paieška“}
+
+\textbf{Prielaidos:} prisijungta prie sistemos, pradiniai duomenys įvesti.
+
+\textbf{Norint apskaičiuoti mažiausiai apkrautus laiko intervalus tam tikros IS atnaujinimui ar
+padalinio darbuotojų kvalifikacijos kėlimui/patalpų remontui, reikia:}
+\begin{enumerate}
+  \item Prognozuoti IS/padalinių apkrovas.
+  \item Pasirinkti dominančią IS/padalinį.
+  \item Pasirinkti laiko intervalą, kuriame ieškoma mažiausia apkrova.
+  \item Pasirinkti kokio ilgio intervalo ieškoma.
+  \item Pasirinkti, ar ieškomas intervalo ilgis keičiasi dinamiškai nuo dabartinio sezono.
+  \item Ieškoti mažiausių apkrovų.
+\end{enumerate}
+
+\vspace{1cm}
+\textbf{Planai:}
+\begin{enumerate}
+  \item Atlikti 1 (žr. užd. „apkrovų prognozavimas“). Atlikti 2-4 bet kokia tvarka ir tada 6,
+  jei ieškoma fiksuoto ilgio laiko intervalo. Atlikti 2-3, 5 bet kokia tvarka ir tada 6, jei
+  ieškomo intervalo ilgis keičiasi dinamiškai.
 \end{enumerate}
