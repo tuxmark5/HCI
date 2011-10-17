@@ -12,18 +12,18 @@
     a [ p | p ]
     h [ Metafora | Paaiškinimas ]
     e [ Informacinė sistema |
-      Sistema skirta informacijai apdoroti, formuoti (kurti) ir skleisti
+      Sistema, skirta informacijai apdoroti, formuoti (kurti) ir skleisti
       (siųsti ir gauti).]
     e [ IS | Termino „informacinė sistema“ trumpinys. ]
     e [ Padalinys | Organizacijos struktūrinis vienetas. ]
     e [ Paramos priemonė |
       Metodika, pagal kurią organizacijos klientai gali gauti paramą. ]
     e [ Padalinio vadovas |
-      Žmogus prižiūrintis jam paskirtų organizacijos padalinių veiklą. ]
+      Žmogus, prižiūrintis jam paskirtų organizacijos padalinių veiklą. ]
     e [ IT vadovas |
-      Žmogus prižiūrintis jam paskirtų informacinių sistemų veiklą. ]
+      Žmogus, prižiūrintis jam paskirtų informacinių sistemų veiklą. ]
     e [ Asistentas |
-      Žmogus atsakingas už istorinių duomenų į sistemą įvedimą.]
+      Žmogus, atsakingas už istorinių duomenų įvedimą į sistemą.]
   }
 }
 
@@ -31,18 +31,18 @@
 \xreq{r:iface}{Sistemoje turi būti šios sąsajos:}
   \yreq{r:iface_base}{Bazinė – iš jos galima pasiekti visas kitas sąsajas
   bei atsijungti nuo sistemos.}
-  \yreq{r:iface_pa}{Padalinių įvedimo – naudojantis ja galima įvesti
+  \yreq{r:iface_pa}{Padalinių įvedimo – naudojantis ja, galima įvesti
   informaciją apie padalinius.}
-  \yreq{r:iface_pp}{Paramos priemonių įvedimo – naudojantis ja galima įvesti
+  \yreq{r:iface_pp}{Paramos priemonių įvedimo – naudojantis ja, galima įvesti
   informaciją apie paramos priemones.}
-  \yreq{r:iface_is}{IS įvedimo – naudojantis ja galima įvesti informaciją
+  \yreq{r:iface_is}{IS įvedimo – naudojantis ja, galima įvesti informaciją
   apie IS.}
-  \yreq{r:iface_pa_is}{IS-Padalinių įvedimo – naudojantis ja galima
+  \yreq{r:iface_pa_is}{IS-Padalinių įvedimo – naudojantis ja, galima
   nurodyti, kokie padaliniai kokias IS naudoja.}
   \yreq{r:iface_pa_pp}{Paramos administravimo kaštų įvedimo – naudojantis
-  ja galima nurodyti, kiek kuriam padaliniui kainuoja konkrečios
+  ja, galima nurodyti, kiek kuriam padaliniui kainuoja konkrečios
   paramos priemonės vieno vieneto apdorojimas.}
-  \yreq{r:iface_data}{Istorinių duomenų įvedimo – naudojantis ja galima
+  \yreq{r:iface_data}{Istorinių duomenų įvedimo – naudojantis ja, galima
   įvesti istorinę informaciją apie apdorotas paraiškas.}
   \yreq{r:iface_visual}{Apkrovų vizualizacijos – joje galima vizualiai
   pamatyti, kokios apkrovos tenka padaliniams ir sistemoms.}
@@ -89,14 +89,14 @@ galimybė keisti stulpelių  plotį.}
 % naudotojo ir sistemos sąveiką formuluojant užduotis, ir tą diagramą
 % paaiškinantis tekstas.
 
-\xreq{r:ui_login}{Prieš bet kokį darbą su sistema, vartotojas turi prie jos prisijungti
-  per tam skirtą interfeisą.}
+\xreq{r:ui_login}{Prieš pradedant bet kokį darbą su sistema, naudotojas turi
+  prie jos prisijungti per tam skirtą interfeisą.}
 
-\xreq{r:ui_dyn_upd}{Pateiktus bet kurioje lentelėje pradinius duomenis, sistema automatiškai
-  turi anaujinti atitinkamas rezultatų lenteles/grafikus.}
+\xreq{r:ui_dyn_upd}{Bet kurioje lentelėje pakeitus pradinius duomenis, sistema automatiškai
+  turi atnaujinti atitinkamas rezultatų lenteles/grafikus.}
   
-\xreq{r:ui_import}{Bet kuriuo momentu vartotojui turi būti galimybė importuoti istorinius duomenis/
-  planuojamus paraiškų kiekius iš išorinio failo.}
+\xreq{r:ui_import}{Bet kuriuo momentu naudotojui turi būti galimybė importuoti istorinius
+  duomenis/planuojamus paraiškų kiekius iš išorinio failo.}
   
 \subsection{Interfeiso darnos ir standartizavimo reikalavimai}
 \xreq{r:ui_os_look}{Naudotojo sąsaja turi atitikti tos operacinės
@@ -113,22 +113,22 @@ būti rodoma.}
 ir kritiniai.
 }
   \yreq{r:ui_messages:info}{
-    Informacinis pranešimas praneša, apie sistemos įvykį. Pavyzdžiui,
+    Informacinis pranešimas praneša apie sistemos įvykį. Pavyzdžiui,
     „duomenys iš failo buvo sėkmingai importuoti“.
     }
   \yreq{r:ui_messages:warning}{
-    Perspėjimo pranešimas praneša, apie klaidą, kurią sistemai pavyko
+    Perspėjimo pranešimas praneša apie klaidą, kurią sistemai pavyko
     ištaisyti. Pavyzdžiui, „Sistemos vardas turi prasidėti didžiąja
     raide. Pakeista“.
     }
   \yreq{r:ui_messages:error}{
-    Klaidos pranešimas praneša, apie įvykusią darbo klaidą. Pavyzdžiui,
-    „duomenų failo eilutės X stulpelyje Y buvo tikėtasi datos
-    formatu „metai-mėnuo-data“. Vietoj to rastas skaičius“.
+    Klaidos pranešimas praneša apie įvykusią darbo klaidą. Pavyzdžiui,
+    „Duomenų failo eilutės X stulpelyje Y buvo tikėtasi datos
+    formatu „metai-mėnuo-data“. Vietoje to rastas skaičius“.
     }
   \yreq{r:ui_messages:severe}{
-    Kritinis pranešimas praneša, apie įvykusią sistemos klaidą. Pavyzdžiui,
-    „nepavyko aktyvuoti komunikacijos su duomenų baze modulio“.
+    Kritinis pranešimas praneša apie įvykusią sistemos klaidą. Pavyzdžiui,
+    „Nepavyko aktyvuoti komunikacijos su duomenų baze modulio“.
     }
 
 \xreq{r:ui_messages:icons}{
@@ -140,7 +140,7 @@ nurodyta galima klaidos priežastis.}
 
 \xreq{r:ui_messages:critical}{Kritinio pobūdžio pranešimuose turi
 būti galimybė peržiūrėti techninę klaidos priežasties
-informaciją, kurios pagalba sistemos administratorius galėtų
+informaciją, kuria naudodamasis sistemos administratorius galėtų
 identifikuoti ir pašalinti įvykusią problemą.}
 
 \xreq{r:ui_messages:log}{Visi naudotojui pateikiami pranešimai kartu su
