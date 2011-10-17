@@ -14,3 +14,7 @@ pull:
 
 show:
 	xdg-open dist/main.pdf
+
+check:
+	grep -nri --color=always FIXME ${TARGET}/* common/*
+	grep -nri --color=always TODO ${TARGET}/* common/*
