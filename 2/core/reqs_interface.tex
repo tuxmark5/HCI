@@ -111,9 +111,25 @@ būti rodoma.}
 \subsection{Pranešimų formulavimo reikalavimai}
 \xreq{r:ui_messages:groups}{Pateikiami pranešimai gali būti 4 skirtingų tipų: informacinio pobūdžio, perspėjimo, klaidų
 ir kritiniai.
-% TODO Trūksta paaiškinimo, kuo skiriasi klaidų pranešimai, nuo kritinių.
-% Ir apskritai, turbūt derėtų apibrėžti kiekvieną iš rūšių.
 }
+  \yreq{r:ui_messages:info}{
+    Informacinis pranešimas praneša, apie sistemos įvykį. Pavyzdžiui,
+    „duomenys iš failo buvo sėkmingai importuoti“.
+    }
+  \yreq{r:ui_messages:warning}{
+    Perspėjimo pranešimas praneša, apie klaidą, kurią sistemai pavyko
+    ištaisyti. Pavyzdžiui, „Sistemos vardas turi prasidėti didžiąja
+    raide. Pakeista“.
+    }
+  \yreq{r:ui_messages:error}{
+    Klaidos pranešimas praneša, apie įvykusią darbo klaidą. Pavyzdžiui,
+    „duomenų failo eilutės X stulpelyje Y buvo tikėtasi datos
+    formatu „metai-mėnuo-data“. Vietoj to rastas skaičius“.
+    }
+  \yreq{r:ui_messages:severe}{
+    Kritinis pranešimas praneša, apie įvykusią sistemos klaidą. Pavyzdžiui,
+    „nepavyko aktyvuoti komunikacijos su duomenų baze modulio“.
+    }
 
 \xreq{r:ui_messages:icons}{
 Skirtingiems tipams priklausantys pranešimai turi būti pažymėti
