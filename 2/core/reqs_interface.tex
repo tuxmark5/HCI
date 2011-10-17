@@ -4,9 +4,6 @@
   Naudotojo sąsajų užduotys turi būti formuluojamos naudojantis darbo
   su skaičiuokle metafora. Naudotojui informacija pateikiama lentelių
   ir grafikų pavidalu.
-  % FIXME DĖSTYTOJA Ar tinkamai suformuluota metafora? Ar galima
-  % naudoti tokią metaforą?
-  % FIXME Kas būtent turi būti apibrėžiama metaforų žodyne?
 
   Sistemoje naudojamų savokų paaiškinimai:
   \xtable
@@ -61,37 +58,36 @@ meniu ir pelė) sąsajos priemonėmis.}
 
 \xreq{r:ui_opt_mouse:1}
 {Turi būti galimybė bent 80 procentų funkcijų, kurios nėra skirtos
-sistemos parametrų keitimui, pasiekti naudojantis vien tik pele.}
+sistemos parametrų keitimui, pasiekti naudojantis vien tik klaviatūra.}
 
 \xreq{r:ui_opt_mouse:2}
 {Apkrovų vizualizacijos sąsajai turi būti galimybė pateikti laiko
 intervalą, kurio duomenis norima vizualizuoti.}
-
-\subsection{Užduočių formulavimo būdo (protokolo) reikalavimai}
-% FIXME Citata iš Čaplinsko: „Šiame poskyryje kiekvienai naudotojo
-% sąsajai pateikiama atitinkama UML sekų diagrama, vaizduojanti
-% naudotojo ir sistemos sąveiką formuluojant užduotis, ir tą diagramą
-% paaiškinantis tekstas.
 
 \xreq{r:ui_composition}
 {Kiekviena iš pagrindinių sistemos naudotojo sąsajų turi būti
 pateikiama vienoje arba keliose bazinės sąsajos kortelėse.}
 
 \xreq{r:ui_base}{Bazinio interfeiso reikalavimai:}
-  % FIXME DĖSTYTOJA Ar čia nėra per daug detalu? Bent jau man, po šito tai 
-  % net ir eskizo nebereikia… 
-  % čia abstraktu - kokie toolbarai, menu irasai, issidestymai numatys detalus reikalavimai/maketai
-  \yreq{r:ui_base:mainwnd}{Pagrindinį langą turi sudaryti menu, įrankių
+  \yreq{r:ui_base:mainwnd}{Pagrindinį langą turi sudaryti meniu, įrankių
   juosta(-os), kortelių komponentas ir būsenos juosta.}
   \yreq{r:ui_base:messages}{Bazinis interfeisas yra atsakingas už įvairių pranešimų pateikimą 
   naudotojui.}
-  \yreq{r:ui_base:menu_toolbars}{Papildomos ir rečiau naudojamos funkcijos turi būti pasiekiamos
-  per menu. Vidutiniškai dažnai naudojamos funkcijos turi būti pasiekiamos ir per užduočių
-  juostas.}
+  \yreq{r:ui_base:menu}{Visos funkcijos turi būti pasiekiamos
+    per meniu.}
+  \yreq{r:ui_base:toolbars}{Vidutiniškai dažnai naudojamos funkcijos
+    turi būti pasiekiamos ir per užduočių juostas.
+    }
   \yreq{r:ui_base:statusbar}{Sistemos būsena turi būti indikuojama būsenos juostoje.}
   
 \xreq{r:ui_tables}{Visose naudotojo sąsajos lentelėse turi būti
 galimybė keisti stulpelių  plotį.}
+
+\subsection{Užduočių formulavimo būdo (protokolo) reikalavimai}
+% FIXME Citata iš Čaplinsko: „Šiame poskyryje kiekvienai naudotojo
+% sąsajai pateikiama atitinkama UML sekų diagrama, vaizduojanti
+% naudotojo ir sistemos sąveiką formuluojant užduotis, ir tą diagramą
+% paaiškinantis tekstas.
 
 \xreq{r:ui_login}{Prieš bet kokį darbą su sistema, vartotojas turi prie jos prisijungti
   per tam skirtą interfeisą.}
