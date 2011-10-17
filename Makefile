@@ -11,3 +11,6 @@ all: common/main.pdf
 pull:
 	git checkout -- dist/main.pdf
 	git pull
+
+show:
+	xdg-open dist/main.pdf
