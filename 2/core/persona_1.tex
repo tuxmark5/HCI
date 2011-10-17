@@ -41,15 +41,33 @@
   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
   e [ Projekto tikslai 
   | 
-    TODO 
+    Paramos priemonių paraiškų nargrinėjimas yra nuolat besitęsiantis procesas, nes vos ne
+    kas mėnesį atsiranda naujų paraiškos priemonių, kurias organizacijos padaliniai turi būti
+    pasiruošę apdoroti. Tado tikslas – taip išbalansuoti paraiškų nagrinėjimą, kad kiekvienas
+    jam pavaldus padalinys būtų apkrautas optimaliai.
   ]
   e [ Esamos situacijos problemos 
   | 
-    TODO 
+    Kadangi paramos priemonių paraiškų nagrinėjimas yra nuolatinė veikla, tai Tadui tenka 
+    balansuoti padalinių apkrovas taip pat nuolatos, tačiau centralizuotos duomenų bazės
+    nebuvimas reiškia, kad padalinių apkrovas tenka iškvosti iš tuose padaliniuose dirbančių
+    darbuotojų. Kad išvengti padalinių perkrovų, Tadas dabar naudodamasis Microsoft Office
+    skaičiuoklės moduliu pats bando prognozuotis ateities apkrovas, tačiau tokią analizę 
+    rankomis atlikti yra sudėtinga, todėl yra stipriai apribotos eksperimentavimo su
+    apkrovų duomenimis galimybės.
   ]
   e [ Būsimos sistemos vizija 
   | 
-    TODO  
+    Tadas norėtų turėti įrankį, leidžiantį \textbf{kaupti apdorotų paramos priemonių paraiškų
+    istorinę informaciją} ir kuris leistų tą informaciją panaudoti \textbf{padalinių apkrovų 
+    skaičiavimui ir prognozavimui}.
+    Kadangi Tadui tenka skaičiuoti apkrovas bent kartą per savaitę, tai jei Tadui naujasis 
+    įrankis leistų apskaičiuoti 4-10 padalinių apkrovas bent per 30 min., 
+    tai laikas praleistas mokantis naudotis nauja sistema būtų laikomas naudinga investicija.
+    Taip pat Tadas norėtų, jog įsivaizduojama sistema gebėtų \textbf{indentifikuoti padalinių
+    mažiausios apkrovos intervalus}, per kuriuos pvz. būtų galima kelti darbuotojų kvalifikaciją.
+    Kad toks funkcionalumas būtų naudingas praktiškai, tai juo turėtų būti ypač greita 
+    (daugiausiai 10 min.) pasinaudoti.
   ]
 }
 
@@ -59,16 +77,32 @@
   w [ 1 | 1 | 1 | 1 ]
   a [ p | p | p | p ]
   h [ Užduotis | Tikslas | Kriterijus | Sėkmės matas ]
+  %
+  hh [ Instaliavimas ]
+  ee [ w ]
+  %
+  hh [ Apmokymas ]
+  ee 
+  [ 
+    Kadangi sistemos grafinio interfeiso panašumas bus derinamas taip, kad būtų kuo panašesnis
+    į Microsoft Excel interfeisą, tai specialių apmokymų, kaip naudotis sistema nereikės. Tačiau
+    jei vis dėl to iškils klausimų, tai visuomet bus galima perskaityti pateiktą sistemos naudojimosi
+    aprašą. 
+  ]
+  %
   hh [ Riboto panaudojimo etapas ]
+  e [ Suskaičiuoti 5 padalinių apkrovas | Efektyvumas | Sugaištas laikas | < 60 min. ]
+  e [ Prognozuoti 5 padalinių apkrovas | Efektyvumas | Sugaištas laikas | < 60 min. ]
   %
-  e [ X | Y | Z | W ]
-  ee [ Paaiškinimas ]
-  %
-  e [ X | Y | Z | W ]
-  ee [ Paaiškinimas ]
+  hh [ Pilno panaudojimo etapas ]
+  e [ Suskaičiuoti 5 padalinių apkrovas | Efektyvumas | Sugaištas laikas | < 30 min. ]
+  e [ Prognozuoti 5 padalinių apkrovas | Efektyvumas | Sugaištas laikas | < 30 min. ]
+  e [ Mažiausios apkrovos intervalų paieška | Efektyvumas | Sugaištas laikas | < 10 min. ]
+  ee 
+  [ 
+    Esminė sistemos kūrimo priežastis – skaičiavimo efektyvumo padidinimas: visus skaičiuojamus
+    parametrus jau ir dabar galima suskaičiuoti pasinaudojant Microsoft Excel, tačiau toks
+    darbo pobūdis šiuo metu užima pernelyg daug laiko.
+  ]
 }
 
-TODO: (reikalavimai)
-* Panaudojamumo tikslai pateikti esminėms užduotims
-* Panaudojamumo tikslai pateikti aktualiems naudojimo gyvavimo ciklo
-etapams (nurodytas matavimo kriterijus ir sėkmės matas)

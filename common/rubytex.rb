@@ -65,7 +65,10 @@ class Table
   end;
   
   def xrow_ee(cell)
-    @rows << "\\multicolumn{#{@widths.length}}{|l|}{#{cell}} \\\\ \\hline";
+    @rows << 
+      "\\multicolumn{#{@widths.length}}
+       {|p{0.96\\linewidth}|}
+       {#{cell}} \\\\ \\hline";
   end;
 
   def xrow_e(y)
@@ -73,9 +76,10 @@ class Table
   end;
 
   def xrow_w(y)
-    y         = y.map { |x| x.to_f }
-    sum       = y.inject(:+) * 1.1
-    @widths   = y.map { |x| x / sum }
+    y           = y.map { |x| x.to_f }
+    @widthMult  = 1 - 0.025 * y.length;
+    sum         = y.inject(:+) / @widthMult;
+    @widths     = y.map { |x| x / sum }
   end;
 end;
 
