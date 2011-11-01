@@ -1,4 +1,4 @@
-TARGET    := 2
+TARGET    := 3
 TEXINPUTS := .:./common:./${TARGET}:
 export TEXINPUTS
 
