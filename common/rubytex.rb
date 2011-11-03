@@ -1,5 +1,7 @@
 #! /usr/bin/ruby
 
+require 'enumerator'
+
 class Array
   def collect_inter(sep)
     out = "";
@@ -51,10 +53,10 @@ class Table
   end;
 
   def xrow_h(y)
-    @rows << y.map do |cell| 
+    @rows << y.each_with_index.map do |cell, index| 
       "\\multicolumn{1}
-      {|>{\\columncolor[gray]{0.8}}c|}
-      {\\bf #{cell}}"
+      {|>{\\centering\\columncolor[gray]{0.8}}p{#{@widths[index]}\\linewidth}|}
+      {\\textbf{#{cell}}}"
     end.join2("", " & ", "\\\\ \\hline");
   end;
   
