@@ -1,7 +1,7 @@
 \subsection{Užduotis „Apkrovų skaičiavimas“}
 
-\xtable{
-  w [ 1 | 1 | 1 | 1 ]
+\xtableu{
+  w [ 1 | 20 | 20 | 20 ]
   a [ p | p | p | p ]
   h [
     |
@@ -9,8 +9,110 @@
     Ar naudotojas žino (mato), ką ir kaip jam veikti? |
     Ar naudotojui suprantamas sistemos atsakas? ]
   %
-  ei [ Prisijungti prie sistemos. | Kuku | Lialia ]
+  ei [
+    Prisijungti prie sistemos. |
+    Taip, paleidus programą, pradiniame lange yra sritis „Prisijungimas“,
+    su laukais, skirtais įvesti prisijungimo duomenis bei mygtukas
+    „Prisijungti“. |
+    Taip, parodomas pranešimas „Sėkmingai prisijungta!“ bei mygtukas
+    „Prisijungti“ tampa neaktyvus, o „Atsijungti“ – aktyvus. ]
+  ei [
+    Importuoti pradinius duomenis iš failo. |
+    Ne, įrankių juostoje nėra mygtuko „importuoti“ bei meniu juostoje
+    nesimato jokio meniu su užrašu „importavimas“, „duomenys“ ar „failas“,
+    bet pasirinkus vienintelį neprieštaraujantį meniu „Sistema“, jame
+    pamatoma komanda „Importuoti“. |
+    Taip, parodomas standartinis failo atvėrimo dialogas.
+    ]
+  e [||
+    Taip, suradus norimą failą renkamasi vienintelį tinkamą pasirinkimą
+    „Atverti“. |
+    Taip, būsenos juostoje parodomas pranešimas kiek ir kokių duomenų
+    buvo importuota.
+    ]
+  ei [
+    Įvesti pradinius duomenis klaviatūra. |
+    Taip, tarp kortelių yra viena su pavadinimu „Informacinės sistemos“. |
+    Ją nuspaudus parodomas informacinių sistemų sąrašas.
+    ]
+  e [||
+    Ne, nėra akivaizdu, kad paskutinė tuščia eilutė yra skirta naujų
+    duomenų įvedimui. |
+    Taip, įvedus duomenis atsiranda dar viena tuščia eilutė.
+    ]
+  ei [
+    Importuoti istorinius duomenis iš failo. |
+    Ne, įrankių juostoje nėra mygtuko „importuoti“ bei meniu juostoje
+    nesimato jokio meniu su užrašu „importavimas“, „duomenys“ ar „failas“,
+    bet pasirinkus vienintelį neprieštaraujantį meniu „Sistema“, jame
+    pamatoma komanda „Importuoti“. |
+    Taip, parodomas standartinis failo atvėrimo dialogas.
+    ]
+  e [||
+    Taip, suradus norimą failą renkamasi vienintelį tinkamą pasirinkimą
+    „Atverti“. |
+    Taip, būsenos juostoje parodomas pranešimas kiek ir kokių duomenų
+    buvo importuota.
+    ]
+  ei [
+    Įvesti pradinius duomenis klaviatūra. |
+    Taip, tarp kortelių yra viena su pavadinimu „Istoriniai duomenys“. |
+    Ją nuspaudus parodomas istorinių duomenų sąrašas.
+    ]
+  e [||
+    Ne, nėra akivaizdu, kad paskutinė tuščia eilutė yra skirta naujų
+    duomenų įvedimui. |
+    Taip, įvedus duomenis atsiranda dar viena tuščia eilutė.
+    ]
+  ei [
+    Skaičiuoti apkrovas. |
+    Taip, dešinėje lango pusėje, apačioje yra kortelė su užrašu „Apkrova“. |
+    Taip, parodomos įvairios diagramos rodančios apkrovas.
+    ]
+  ei [
+    Filtruoti rezultatus. Pasirinkti, kieno apkrovas rodyti –
+    padalinių ar IS. |
+    Taip, yra matomas meniu punktas „Rodyti“, kuriame galima pasirinkti
+    analizuojamą sritį „Informacinės sistemos“ arba „Padaliniai“. |
+    Taip, dešinėje lango pusėje sąrašas pasikeitė į pasirinktųjų elementų
+    sąrašą.
+    ]
+  ei [
+    Filtruoti rezultatus. Pasirinkti dominančius padalinius/IS. |
+    Taip, dešinėje matomas padalinių / IS sąrašas, kuriame galima pažymėti
+    norimus matyti padalinius / IS. |
+    Taip, pažymėjus (atžymėjus) varnelę atitinkamo padalinio / IS 
+    grafikas atsiranda (dingsta).
+    ]
+  ei [
+    Filtruoti rezultatus. Nurodyti aktualų laiko intervalą. |
+    Taip, dešinėje matoma frazė „Filtruoti nuo … iki …“ ir du laukai
+    leidžiantys keisti datą.
+    TODO: Pridėti nuotrauką ir antraštes laukams. |
+    Taip, keičiant datą, keičiasi grafikai / lentelės.
+    ]
+  ei [
+    Filtruoti rezultatus. Pasirinkti norimą rodymo rėžimą: ar
+    duomenis rodyti grafiškai, ar lentelės pavidalu. |
+    Taip, užvedus pelę ant grafiko / lentelės atsiranda pasirinkimo
+    mygtukai. |
+    Taip, nuspaudus ant atitinkamo mygtuko grafikas (lentelė) pasikeičia
+    į lentelę (grafiką).
+    ]
 }
+
+Rasti defektai:
+\begin{itemize}
+  \item Nėra akivaizdu, kad „importuoti“ reikia ieškoti meniu „Sistema“
+    (\ref{fig:meniu_sistema}). TODO: Pasiūlyti pataisymą.
+  \item Nėra akivaizdu, kad paskutinė tuščioji eilutė skirta naujiems
+    duomenims (\ref{fig:visas_langas_IS_su_prognoze}). Galimas pataisymas:
+    tuščiosios eilutės langelio fone pasvirusiu šriftu įrašyti
+    „Pridėti naują IS sistemą“. (TODO: Ekrano nuotrauka.)
+\end{itemize}
+
+\ximage{fig:meniu_sistema}{Meniu „Sistema“.}{layout/images/Screens/Sistema_meniu.png}
+\ximage{fig:visas_langas_IS_su_prognoze}{Informacinių sistemų įvedimo langas.}{layout/images/Screens/visas_langas_IS_su_prognoze.png}
 
 \subsection{Užduotis „Apkrovų prognozavimas“}
 
