@@ -28,6 +28,7 @@ class Table
     @header = [];
     @widths = [];
     @rows   = [];
+    @line   = 1;
   end;
 
   def with
@@ -73,6 +74,12 @@ class Table
 
   def xrow_e(y)
     @rows << y.join2("", " & ", "\\\\ \\hline")
+  end;
+  
+  def xrow_ei(y)
+    y.unshift(@line.to_s);
+    @line += 1;
+    xrow_e(y);
   end;
 
   def xrow_w(y)
