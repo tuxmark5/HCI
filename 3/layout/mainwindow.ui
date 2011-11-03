@@ -1,0 +1,1892 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>983</width>
+    <height>588</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_8">
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="minimumSize">
+       <size>
+        <width>567</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Plain</enum>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <widget class="QSplitter" name="splitter">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <widget class="QTabWidget" name="tabWidget">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="tabPosition">
+           <enum>QTabWidget::South</enum>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::Triangular</enum>
+          </property>
+          <property name="currentIndex">
+           <number>7</number>
+          </property>
+          <property name="elideMode">
+           <enum>Qt::ElideNone</enum>
+          </property>
+          <widget class="QWidget" name="prisijungimas_tab">
+           <attribute name="title">
+            <string>Prisijungimas</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_8">
+            <item>
+             <widget class="QLabel" name="label_7">
+              <property name="text">
+               <string>Prisijungimas</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_7">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_2">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QHBoxLayout" name="horizontalLayout_4">
+               <item>
+                <spacer name="horizontalSpacer">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <widget class="QGroupBox" name="Prisijungimo_group">
+                 <property name="minimumSize">
+                  <size>
+                   <width>370</width>
+                   <height>0</height>
+                  </size>
+                 </property>
+                 <property name="title">
+                  <string>Prisijungimo duomenys</string>
+                 </property>
+                 <layout class="QFormLayout" name="formLayout">
+                  <property name="fieldGrowthPolicy">
+                   <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                  </property>
+                  <property name="margin">
+                   <number>5</number>
+                  </property>
+                  <item row="1" column="0">
+                   <widget class="QLabel" name="DB_label">
+                    <property name="minimumSize">
+                     <size>
+                      <width>150</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Duomenų bazės adresas</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="1" column="1">
+                   <widget class="QLineEdit" name="DB_input">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="0">
+                   <widget class="QLabel" name="DB_name_lbel">
+                    <property name="minimumSize">
+                     <size>
+                      <width>150</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Duomenų bazės pavadinimas</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="2" column="1">
+                   <widget class="QLineEdit" name="db_name_input">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="0">
+                   <widget class="QLabel" name="username">
+                    <property name="minimumSize">
+                     <size>
+                      <width>150</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Vartotojo vardas</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="3" column="1">
+                   <widget class="QLineEdit" name="username_input">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="0">
+                   <widget class="QLabel" name="password">
+                    <property name="minimumSize">
+                     <size>
+                      <width>150</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string>Slaptažodis</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="4" column="1">
+                   <widget class="QLineEdit" name="username_input_2">
+                    <property name="minimumSize">
+                     <size>
+                      <width>200</width>
+                      <height>0</height>
+                     </size>
+                    </property>
+                    <property name="maximumSize">
+                     <size>
+                      <width>300</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="text">
+                     <string notr="true"/>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="0">
+                   <widget class="QPushButton" name="disconnect">
+                    <property name="enabled">
+                     <bool>false</bool>
+                    </property>
+                    <property name="text">
+                     <string>Atsijungti</string>
+                    </property>
+                    <property name="checkable">
+                     <bool>false</bool>
+                    </property>
+                    <property name="checked">
+                     <bool>false</bool>
+                    </property>
+                   </widget>
+                  </item>
+                  <item row="5" column="1">
+                   <widget class="QPushButton" name="connect">
+                    <property name="text">
+                     <string>Prisijungti</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>155</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_2">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>40</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <spacer name="verticalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Vertical</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>20</width>
+                <height>40</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="PARAMOS_TAB">
+           <attribute name="title">
+            <string>Paramos priemonės</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="text">
+               <string>Paramos priemonės</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_4">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <attribute name="horizontalHeaderHighlightSections">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>1.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>2.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>3.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>4.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>5.</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Priemonė</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignLeft|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Pavadinimas</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>PR1</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>PR2</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="2" column="0">
+               <property name="text">
+                <string>PR3</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>PR4</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="4" column="0">
+               <property name="text">
+                <string>PR5</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="padaliniai_tab">
+           <attribute name="title">
+            <string>Padaliniai</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_6">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="text">
+               <string>Padaliniai</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_5">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_2">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <attribute name="horizontalHeaderHighlightSections">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>1.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>2.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>3.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>4.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>5.</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Padalinys</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignLeft|AlignVCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Pavadinimas</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>PA1</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="0" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>PA2</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="1" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="2" column="0">
+               <property name="text">
+                <string>PA3</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="2" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>PA4</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="3" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="4" column="0">
+               <property name="text">
+                <string>PA5</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="is_tab">
+           <attribute name="title">
+            <string>Informacinės sistemos</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="text">
+               <string>Informacinės sistemos</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_3">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <attribute name="horizontalHeaderHighlightSections">
+               <bool>true</bool>
+              </attribute>
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>1.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>2.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>3.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>4.</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>5.</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>IS</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Pavadinimas</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>IS1</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="0" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>IS2</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="1" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="2" column="0">
+               <property name="text">
+                <string>IS3</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="2" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>IS4</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+              <item row="3" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="4" column="0">
+               <property name="text">
+                <string>IS5</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="priem_admin_tab">
+           <attribute name="title">
+            <string>Priemonių administravimas</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="text">
+               <string>Priemonių adminsitravimas</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_4">
+              <row>
+               <property name="text">
+                <string>PR1</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR2</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR3</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR4</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR5</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>PA1</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>PA2</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>PA3</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>PA4</string>
+               </property>
+              </column>
+              <item row="0" column="1">
+               <property name="text">
+                <string>12</string>
+               </property>
+              </item>
+              <item row="1" column="3">
+               <property name="text">
+                <string>15</string>
+               </property>
+              </item>
+              <item row="2" column="2">
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>11</string>
+               </property>
+              </item>
+              <item row="3" column="3">
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item row="4" column="1">
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="is_admin_Tab">
+           <attribute name="title">
+            <string>IS administravimas</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>Informacinių sistemų administravimas</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_5">
+              <row>
+               <property name="text">
+                <string>PA1</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PA2</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PA3</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PA4</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>IS1</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>IS2</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>IS3</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>IS4</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>IS5</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>+</string>
+               </property>
+              </item>
+              <item row="0" column="1">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="0" column="2">
+               <property name="text">
+                <string>+</string>
+               </property>
+              </item>
+              <item row="1" column="1">
+               <property name="text">
+                <string>+</string>
+               </property>
+              </item>
+              <item row="1" column="3">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="1" column="4">
+               <property name="text">
+                <string>+</string>
+               </property>
+              </item>
+              <item row="2" column="1">
+               <property name="text">
+                <string>+</string>
+               </property>
+              </item>
+              <item row="2" column="2">
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>+</string>
+               </property>
+              </item>
+              <item row="3" column="3">
+               <property name="text">
+                <string>+</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="planai_Tab">
+           <attribute name="title">
+            <string>Planuojami kiekiai</string>
+           </attribute>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="text">
+               <string>Planuojami kiekiai</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_8">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_6">
+              <attribute name="verticalHeaderVisible">
+               <bool>false</bool>
+              </attribute>
+              <row>
+               <property name="text">
+                <string>PR1</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR5</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string/>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>Priemonė</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Kiekis</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Pradžia</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Pabaiga</string>
+               </property>
+              </column>
+              <item row="0" column="0">
+               <property name="text">
+                <string>PR1</string>
+               </property>
+              </item>
+              <item row="0" column="1">
+               <property name="text">
+                <string>15</string>
+               </property>
+              </item>
+              <item row="0" column="2">
+               <property name="text">
+                <string>2011-05-12</string>
+               </property>
+              </item>
+              <item row="0" column="3">
+               <property name="text">
+                <string>2011-06-25</string>
+               </property>
+              </item>
+              <item row="1" column="0">
+               <property name="text">
+                <string>PR2</string>
+               </property>
+              </item>
+              <item row="1" column="1">
+               <property name="text">
+                <string>26</string>
+               </property>
+              </item>
+              <item row="1" column="2">
+               <property name="text">
+                <string>2011-04-15</string>
+               </property>
+              </item>
+              <item row="1" column="3">
+               <property name="text">
+                <string>2011-06-25</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTableWidget" name="tableWidget_8">
+              <row>
+               <property name="text">
+                <string>PR1</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR2</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR3</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR4</string>
+               </property>
+              </row>
+              <row>
+               <property name="text">
+                <string>PR5</string>
+               </property>
+              </row>
+              <column>
+               <property name="text">
+                <string>PA1</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>PA2</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>PA3</string>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>PA4</string>
+               </property>
+              </column>
+              <item row="0" column="1">
+               <property name="text">
+                <string>12</string>
+               </property>
+              </item>
+              <item row="1" column="3">
+               <property name="text">
+                <string>15</string>
+               </property>
+              </item>
+              <item row="2" column="2">
+               <property name="text">
+                <string>5</string>
+               </property>
+              </item>
+              <item row="3" column="0">
+               <property name="text">
+                <string>11</string>
+               </property>
+              </item>
+              <item row="3" column="3">
+               <property name="text">
+                <string>3</string>
+               </property>
+              </item>
+              <item row="4" column="1">
+               <property name="text">
+                <string>8</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="tab">
+           <attribute name="title">
+            <string>Istoriniai duomenys</string>
+           </attribute>
+           <widget class="QLabel" name="label_8">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>241</width>
+              <height>16</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string>Istoriniai duomenys</string>
+            </property>
+           </widget>
+           <widget class="Line" name="line_6">
+            <property name="geometry">
+             <rect>
+              <x>70</x>
+              <y>40</y>
+              <width>118</width>
+              <height>3</height>
+             </rect>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+           </widget>
+           <widget class="QTableWidget" name="tableWidget_7">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>50</y>
+              <width>471</width>
+              <height>151</height>
+             </rect>
+            </property>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <row>
+             <property name="text">
+              <string>PR1</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string>PR5</string>
+             </property>
+            </row>
+            <row>
+             <property name="text">
+              <string/>
+             </property>
+            </row>
+            <column>
+             <property name="text">
+              <string>Priemonė</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Kiekis</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Pradžia</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>Pabaiga</string>
+             </property>
+            </column>
+            <item row="0" column="0">
+             <property name="text">
+              <string>PR1</string>
+             </property>
+            </item>
+            <item row="0" column="1">
+             <property name="text">
+              <string>15</string>
+             </property>
+            </item>
+            <item row="0" column="2">
+             <property name="text">
+              <string>2011-05-12</string>
+             </property>
+            </item>
+            <item row="0" column="3">
+             <property name="text">
+              <string>2011-06-25</string>
+             </property>
+            </item>
+            <item row="1" column="0">
+             <property name="text">
+              <string>PR2</string>
+             </property>
+            </item>
+            <item row="1" column="1">
+             <property name="text">
+              <string>26</string>
+             </property>
+            </item>
+            <item row="1" column="2">
+             <property name="text">
+              <string>2011-04-15</string>
+             </property>
+            </item>
+            <item row="1" column="3">
+             <property name="text">
+              <string>2011-06-25</string>
+             </property>
+            </item>
+           </widget>
+          </widget>
+         </widget>
+         <widget class="QTabWidget" name="tabWidget_2">
+          <property name="cursor">
+           <cursorShape>IBeamCursor</cursorShape>
+          </property>
+          <property name="tabPosition">
+           <enum>QTabWidget::South</enum>
+          </property>
+          <property name="tabShape">
+           <enum>QTabWidget::Triangular</enum>
+          </property>
+          <property name="currentIndex">
+           <number>1</number>
+          </property>
+          <property name="elideMode">
+           <enum>Qt::ElideRight</enum>
+          </property>
+          <widget class="QWidget" name="apkrova_Tab">
+           <attribute name="title">
+            <string>Apkrova</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <widget class="QFrame" name="frame_6">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_13">
+               <item>
+                <widget class="QScrollArea" name="scrollArea_5">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_5">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>330</width>
+                    <height>93</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea_6">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_6">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>330</width>
+                    <height>92</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea_7">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_7">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>330</width>
+                    <height>93</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea_8">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_8">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>330</width>
+                    <height>92</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_6">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>358</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_5">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_12">
+               <item>
+                <widget class="QCheckBox" name="checkBox_4">
+                 <property name="text">
+                  <string>PA1</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_5">
+                 <property name="text">
+                  <string>PA2</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_6">
+                 <property name="text">
+                  <string>PA3</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_5">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="prognoze_Tab">
+           <attribute name="title">
+            <string>Prognozė</string>
+           </attribute>
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <item>
+             <widget class="QFrame" name="frame_4">
+              <property name="frameShape">
+               <enum>QFrame::NoFrame</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_9">
+               <item>
+                <widget class="QFrame" name="frame_7">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>27</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>27</height>
+                  </size>
+                 </property>
+                 <property name="frameShape">
+                  <enum>QFrame::StyledPanel</enum>
+                 </property>
+                 <property name="frameShadow">
+                  <enum>QFrame::Raised</enum>
+                 </property>
+                 <widget class="QDateEdit" name="dateEdit">
+                  <property name="geometry">
+                   <rect>
+                    <x>50</x>
+                    <y>0</y>
+                    <width>110</width>
+                    <height>22</height>
+                   </rect>
+                  </property>
+                 </widget>
+                 <widget class="QDateEdit" name="dateEdit_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>180</x>
+                    <y>0</y>
+                    <width>110</width>
+                    <height>22</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea_4">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_4">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>330</width>
+                    <height>84</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea_3">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_3">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>330</width>
+                    <height>85</height>
+                   </rect>
+                  </property>
+                  <zorder>scrollArea_4</zorder>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea_2">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents_2">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>330</width>
+                    <height>84</height>
+                   </rect>
+                  </property>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QScrollArea" name="scrollArea">
+                 <property name="widgetResizable">
+                  <bool>true</bool>
+                 </property>
+                 <widget class="QWidget" name="scrollAreaWidgetContents">
+                  <property name="geometry">
+                   <rect>
+                    <x>0</x>
+                    <y>0</y>
+                    <width>330</width>
+                    <height>84</height>
+                   </rect>
+                  </property>
+                  <layout class="QVBoxLayout" name="verticalLayout_10"/>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <spacer name="horizontalSpacer_3">
+                 <property name="orientation">
+                  <enum>Qt::Horizontal</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>358</width>
+                   <height>20</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QFrame" name="frame_3">
+              <property name="frameShape">
+               <enum>QFrame::Box</enum>
+              </property>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <item>
+                <widget class="QCheckBox" name="checkBox_3">
+                 <property name="text">
+                  <string>PA1</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox_2">
+                 <property name="text">
+                  <string>PA2</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <widget class="QCheckBox" name="checkBox">
+                 <property name="text">
+                  <string>PA3</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item>
+                <spacer name="verticalSpacer_4">
+                 <property name="orientation">
+                  <enum>Qt::Vertical</enum>
+                 </property>
+                 <property name="sizeHint" stdset="0">
+                  <size>
+                   <width>20</width>
+                   <height>40</height>
+                  </size>
+                 </property>
+                </spacer>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>983</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuLabas">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNaujas_2"/>
+    <addaction name="actionAtverti_2"/>
+    <addaction name="separator"/>
+    <addaction name="actionFile"/>
+    <addaction name="actionI_saugoti_kaip"/>
+    <addaction name="separator"/>
+    <addaction name="actionImportuoti"/>
+    <addaction name="actionEksportuoti"/>
+    <addaction name="separator"/>
+    <addaction name="actionNustatymai"/>
+    <addaction name="actionSpausdinti"/>
+    <addaction name="actionAtsijungti"/>
+    <addaction name="actionU_daryti"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>&amp;Keisti</string>
+    </property>
+    <addaction name="actionPaie_ka"/>
+   </widget>
+   <widget class="QMenu" name="menu_inynas">
+    <property name="title">
+     <string>&amp;Apie</string>
+    </property>
+    <addaction name="actionPagalba"/>
+   </widget>
+   <widget class="QMenu" name="menuRodyti">
+    <property name="title">
+     <string>&amp;Rodyti</string>
+    </property>
+    <widget class="QMenu" name="menuAnalizuojama_sritis">
+     <property name="title">
+      <string>Analizuojama sritis</string>
+     </property>
+     <addaction name="actionInformacin_s_sistemos"/>
+     <addaction name="actionPadaliniai"/>
+    </widget>
+    <addaction name="menuAnalizuojama_sritis"/>
+   </widget>
+   <addaction name="menuLabas"/>
+   <addaction name="menuEdit"/>
+   <addaction name="menuRodyti"/>
+   <addaction name="menu_inynas"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>24</width>
+     <height>24</height>
+    </size>
+   </property>
+   <property name="toolButtonStyle">
+    <enum>Qt::ToolButtonIconOnly</enum>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNaujas_2"/>
+   <addaction name="actionFile"/>
+   <addaction name="actionAtverti_2"/>
+   <addaction name="actionAtsijungti"/>
+   <addaction name="separator"/>
+   <addaction name="actionPaie_ka"/>
+   <addaction name="actionSpausdinti"/>
+   <addaction name="actionNustatymai"/>
+   <addaction name="separator"/>
+   <addaction name="actionInformacin_s_sistemos"/>
+   <addaction name="actionPadaliniai"/>
+   <addaction name="separator"/>
+   <addaction name="actionPagalba"/>
+  </widget>
+  <action name="actionFile">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Lock.png</normaloff>icons/Lock.png</iconset>
+   </property>
+   <property name="text">
+    <string>Išsaugoti</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionI_saugoti_kaip">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Lock.png</normaloff>icons/Lock.png</iconset>
+   </property>
+   <property name="text">
+    <string>Išsaugoti kaip...</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="actionU_daryti">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Keys.png</normaloff>icons/Keys.png</iconset>
+   </property>
+   <property name="text">
+    <string>Uždaryti</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+X</string>
+   </property>
+  </action>
+  <action name="actionImportuoti">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Symbol - Add.png</normaloff>icons/Symbol - Add.png</iconset>
+   </property>
+   <property name="text">
+    <string>Importuoti</string>
+   </property>
+  </action>
+  <action name="actionEksportuoti">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Symbol - Remove.png</normaloff>icons/Symbol - Remove.png</iconset>
+   </property>
+   <property name="text">
+    <string>Eksportuoti</string>
+   </property>
+  </action>
+  <action name="actionSpausdinti">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Print.png</normaloff>icons/Print.png</iconset>
+   </property>
+   <property name="text">
+    <string>Spausdinti</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+P</string>
+   </property>
+  </action>
+  <action name="actionInformacin_s_sistemos">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Chart Bar.png</normaloff>icons/Chart Bar.png</iconset>
+   </property>
+   <property name="text">
+    <string>Informacinės sistemos</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+I</string>
+   </property>
+  </action>
+  <action name="actionPadaliniai">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Buddy Group.png</normaloff>icons/Buddy Group.png</iconset>
+   </property>
+   <property name="text">
+    <string>Padaliniai</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+P</string>
+   </property>
+  </action>
+  <action name="actionPaie_ka">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Find Search.png</normaloff>icons/Find Search.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paieška</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="actionNaujas_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Font.png</normaloff>icons/Font.png</iconset>
+   </property>
+   <property name="text">
+    <string>Naujas</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionAtverti_2">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Folders.png</normaloff>icons/Folders.png</iconset>
+   </property>
+   <property name="text">
+    <string>Atverti</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionAtsijungti">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Symbol - Delete.png</normaloff>icons/Symbol - Delete.png</iconset>
+   </property>
+   <property name="text">
+    <string>Atsijungti</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+D</string>
+   </property>
+  </action>
+  <action name="actionNustatymai">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Settings.png</normaloff>icons/Settings.png</iconset>
+   </property>
+   <property name="text">
+    <string>Nustatymai</string>
+   </property>
+   <property name="shortcut">
+    <string>Alt+S</string>
+   </property>
+  </action>
+  <action name="actionPagalba">
+   <property name="icon">
+    <iconset>
+     <normaloff>icons/Help.png</normaloff>icons/Help.png</iconset>
+   </property>
+   <property name="text">
+    <string>Pagalba</string>
+   </property>
+   <property name="shortcut">
+    <string>F1</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
