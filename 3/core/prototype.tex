@@ -1,0 +1,43 @@
+\subsection{Užduoties „Apkrovų skaičiavimas“ scenarijus}
+\begin{enumerate}
+  \item \textbf{Prisijungti prie sistemos.} Paveiksle \ref{f:main_connect} parodytas prisijungimo
+  interfeisas.
+  \item Suvedus vartotojo vardą ir slaptažodį į minėtą interfeisą, pasirodo pagrindinis interfeisas neutralioje būsenoje (pav. \ref{f:main}) su sėkmingo prisijungimo pranešimu (pav. \ref{f:status_connected}).
+  \item \textbf{Importuoti duomenis.} Duomenis importuoti galima spaudžiant įrankių juostoje (pav. \ref{f:toolbar}) esantį mygtuką „Importuoti“ arba pasirinkus menu punktą „Sistema“ ir jame paspaudus „Importuoti“ (pav. \ref{f:menu_sistema}).
+  \item Atsidarius standartiniam OS failų pasirinkimo dialogui, jame \textbf{pasirinkti importuojamą failą} (pav. \ref{f:open_file}).
+  \item Importavus duomenis bus parodytas sėkmingo importavimo pranešimas su importuotais duomenų kiekiais (pav. \ref{f:status_imported}).
+  \item Toliau reikia \textbf{pasirinkti dominantį rėžimą}: informacinių sistemų arba padalinių. Tai galima padaryti per įrankių juostą (pav. \ref{f:toolbar}) arba per meniu „Rodyti“ (pav. \ref{f:menu_rodyti}).
+  \item Pasirinkus dominantį rėžimą pasikeičia įrankių juostos būsena. Pasirinkus rėžimą „Informacinės sistemos“ atitinkamas įrankių juostos mygukas įsispaudžia (pav. \ref{f:toolbar_is}). Pasirinkus antrąjį rėžimą pirmasis mygtukas atsispaudžia ir pasikeičia antrojo būsena (pav. \ref{f:toolbar_padaliniai}).
+  \item Vos pakeitus rėžimą atitinkamai pasikeičia sistemos skaičiavimo rėžimas ir atjaujinama grafikuose ir lentelėse matoma informacija.
+  \item \textbf{Pasirinkti dominantį laiko intervalą.} Tai galima padaryti įrankių juostoje keičiant intervalo pradžios ir pabaigos laukus (pav. \ref{f:toolbar}) ir tai padarius paspausti mygtuką „Rodyti“ esantį šalia intervalo pradžios/pabaigos įvedimo laukų.
+  \item Tai padarius vėl bus atnaujintas interfeisas ir jame rodomi duomenys tik iš pageidauto intervalo.
+  \item Jei duomenų kiekis vaizduojamas interfeise yra per didelis, tai galima \textbf{išjungti/įjungti individualių IS/padalinių apkrovų skaičiavimą ir vizualizavimą}. Tai galima padaryti pagrindiniame interfeise dešinėjė pusėje atžymint arba pažymint atitinkamus padalinius (pav. \ref{f:main}).
+  \item Jei ir toliau netenkina kurio nors padalinio/IS apkrovų vizualizavimas, tai galima \textbf{pakeisti rodymo rėžimą individualiai kiekvienam grafikui} užvedus ant jo pelės kursorių. Tai padarius ant atitinkamo grafiko atsiras rėžimo pasirinkimo mygtukai (pav. \ref{f:diag_mover}), su kuriais bus galima kontroliuoti šio padalinio/IS apkrovos vizualizaciją.
+\end{enumerate}
+
+
+\subsection{Užduoties „Apkrovų prognozavimas“ scenarijus}
+Šią užduotį atliekant yra daroma prielaida, jog jau yra \textbf{prisijungta prie sistemos} ir reikiami \textbf{duomenys yra importuoti}. Jei tai nėra padaryta, tai reikia atlikti atitinamus žingsnius, kurie yra pateikti užduoties „Apkrovų skaičiavimas“ scenarijuje.
+
+\begin{enumerate}
+  \item Pirmiausia kairėje interfeiso pusejė reikia \textbf{pasirinkti kortelę „Planuojami kiekiai“} (pav. \ref{f:main}).
+  \item Ten reikia \textbf{suvesti planuojamus administruojamų paramos priemonių kiekius ir intervalus bei jų administravimo kaštus}.
+  \item Tai padarius automatiškai bus atnaujinami grafikai ir lentelės, kuriuose matysis pageidaujami pasikeitimai dešiniojoje pagrindinio interfeiso (pav. \ref{f:main}) pusejė.
+\end{enumerate}
+
+
+\subsection{Užduoties „Laisviausių laiko intervalų paieška“ scenarijus}
+Šią užduotį atliekant yra daroma prielaida, jog jau yra \textbf{prisijungta prie sistemos} ir reikiami \textbf{duomenys yra importuoti}. Jei tai nėra padaryta, tai reikia atlikti atitinamus žingsnius, kurie yra pateikti užduoties „Apkrovų skaičiavimas“ scenarijuje.
+
+\begin{enumerate}
+  \item Tam, kad atlikti prasmingą laisviausių laiko intervalų paiešką pirmiausiai rekomenduojama atlikti apkrovų prognozavimą.
+  \item Tada reikia \textbf{paspausti įrankių juostoje (pav. \ref{f:toolbar}) esantį mygtuką „Ieškoti intervalo“}.
+  \item Tai padarius, pagrindiniame interfeise pranešimų sekcijoje atsiras forma, leidžianti konfigūruoti intervalo paieškos parametrus (pav. \ref{f:main_season0}).
+  \item Tada galima \textbf{pasirinkti, ar ieškomo intervalo ilgis priklausys nuo sezoniškumo}. Šią savybę galima keisti pasinaudojant dviem radio-mygtukais esančiais intervalo paieškos formoje (pav. \ref{f:main_season0}).
+  \item Pakeitus sezoniškumo parametrą atitinkamai pasikeis formos turinys. Pasirinkus nepriklausymą nuo seziniškumo bus matoma forma pavaizduota pav. \ref{f:main_season0}. Priešingu atveju bus rodoma forma esanti pav. \ref{f:main_season1}
+  \item Suvedus atitinkamus formos parametrus ir \textbf{paspaudus mygtuką „Ieškoti mažiausiai apkrauto intervalo“} grafikuose bus užrašyti ir paryškinti rasti intervalai.
+\end{enumerate}
+
+
+\subsection{Terminija}
+TODO: ar sito reik?
