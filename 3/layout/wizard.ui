@@ -18,7 +18,7 @@
     <property name="geometry">
      <rect>
       <x>100</x>
-      <y>20</y>
+      <y>30</y>
       <width>431</width>
       <height>341</height>
      </rect>
@@ -33,7 +33,7 @@ p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Sveiki. &lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Jūs katik primą kartą paleidote &lt;/span&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;RSys&lt;/span&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; programą.&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Sekite vedlio nurodymus, kad įkelti pirmuosius pagrindinius nustatymus, kurie vėliau bus naudojami Jūsų darbe.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Sekite vedlio nurodymus, kad įkelti pirmuosius pagrindinius nustatymus, kurie vėliau bus naudojami Jums dirbant.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
   </widget>
