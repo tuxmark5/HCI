@@ -138,7 +138,7 @@ def xtable(src)
   (t = Table.new).with do
     z.reject! { |y| y.length < 2 }
     z.each do |y|
-      arg = y[1].split('|').map {|x| x.strip};
+      arg = y[1].split('|', -1).map { |x| x.strip }
       sep = t.send("xrow_" + y[0], *arg);
       "\n".xo
     end;
