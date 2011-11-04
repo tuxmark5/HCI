@@ -78,9 +78,18 @@
              <property name="lineWidth">
               <number>0</number>
              </property>
-             <layout class="QHBoxLayout" name="horizontalLayout_9">
-              <property name="margin">
+             <layout class="QVBoxLayout" name="verticalLayout_14">
+              <property name="leftMargin">
                <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>20</number>
               </property>
               <item>
                <widget class="QFrame" name="filtravimo_frame">
@@ -489,11 +498,215 @@
                 </layout>
                </widget>
               </item>
+              <item>
+               <widget class="QFrame" name="frame_7">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_3">
+                 <item>
+                  <spacer name="horizontalSpacer">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                 <item>
+                  <widget class="QGroupBox" name="Prisijungimo_group">
+                   <property name="minimumSize">
+                    <size>
+                     <width>370</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="title">
+                    <string>Duomenys</string>
+                   </property>
+                   <layout class="QFormLayout" name="formLayout">
+                    <property name="fieldGrowthPolicy">
+                     <enum>QFormLayout::AllNonFixedFieldsGrow</enum>
+                    </property>
+                    <property name="margin">
+                     <number>5</number>
+                    </property>
+                    <item row="1" column="0">
+                     <widget class="QLabel" name="DB_label">
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Duomenų bazės adresas</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="1" column="1">
+                     <widget class="QLineEdit" name="DB_input">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>127.0.0.1</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="0">
+                     <widget class="QLabel" name="DB_name_lbel">
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Duomenų bazės pavadinimas</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="2" column="1">
+                     <widget class="QLineEdit" name="db_name_input">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>db_name</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="0">
+                     <widget class="QLabel" name="username">
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Vartotojo vardas</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="3" column="1">
+                     <widget class="QLineEdit" name="username_input">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Vartotojas</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="0">
+                     <widget class="QLabel" name="password">
+                      <property name="minimumSize">
+                       <size>
+                        <width>150</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string>Slaptažodis</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="4" column="1">
+                     <widget class="QLineEdit" name="username_input_2">
+                      <property name="minimumSize">
+                       <size>
+                        <width>200</width>
+                        <height>0</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>300</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string notr="true">*********</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item row="5" column="1">
+                     <widget class="QPushButton" name="connect">
+                      <property name="enabled">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>Prisijungti</string>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <spacer name="horizontalSpacer_2">
+                   <property name="orientation">
+                    <enum>Qt::Horizontal</enum>
+                   </property>
+                   <property name="sizeHint" stdset="0">
+                    <size>
+                     <width>40</width>
+                     <height>20</height>
+                    </size>
+                   </property>
+                  </spacer>
+                 </item>
+                </layout>
+                <zorder>Prisijungimo_group</zorder>
+                <zorder>Prisijungimo_group</zorder>
+                <zorder>horizontalSpacer</zorder>
+                <zorder>horizontalSpacer_2</zorder>
+               </widget>
+              </item>
              </layout>
             </widget>
            </item>
            <item>
             <widget class="QTabWidget" name="tabWidget">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
              <property name="minimumSize">
               <size>
                <width>0</width>
@@ -540,7 +753,7 @@
                <item>
                 <widget class="QTableWidget" name="tableWidget">
                  <property name="enabled">
-                  <bool>true</bool>
+                  <bool>false</bool>
                  </property>
                  <property name="minimumSize">
                   <size>
@@ -666,7 +879,7 @@
                <item>
                 <widget class="QTableWidget" name="tableWidget_2">
                  <property name="enabled">
-                  <bool>true</bool>
+                  <bool>false</bool>
                  </property>
                  <property name="minimumSize">
                   <size>
@@ -812,7 +1025,7 @@
                <item>
                 <widget class="QTableWidget" name="tableWidget_3">
                  <property name="enabled">
-                  <bool>true</bool>
+                  <bool>false</bool>
                  </property>
                  <property name="minimumSize">
                   <size>
@@ -1551,6 +1764,9 @@
           </layout>
          </widget>
          <widget class="QTabWidget" name="Apkroveirprognozes">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
           <property name="cursor">
            <cursorShape>IBeamCursor</cursorShape>
           </property>
@@ -1599,19 +1815,13 @@
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>674</width>
-                    <height>602</height>
+                    <width>468</width>
+                    <height>585</height>
                    </rect>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_15">
                    <item>
                     <widget class="QLabel" name="label_9">
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>15</height>
-                      </size>
-                     </property>
                      <property name="text">
                       <string>PA1</string>
                      </property>
@@ -1653,12 +1863,6 @@
                    </item>
                    <item>
                     <widget class="QLabel" name="label_10">
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>13</height>
-                      </size>
-                     </property>
                      <property name="text">
                       <string>PA3</string>
                      </property>
@@ -1688,12 +1892,6 @@
                    </item>
                    <item>
                     <widget class="QLabel" name="label_11">
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>13</height>
-                      </size>
-                     </property>
                      <property name="text">
                       <string>PA8</string>
                      </property>
@@ -1720,19 +1918,6 @@
                       <number>0</number>
                      </property>
                     </widget>
-                   </item>
-                   <item>
-                    <spacer name="verticalSpacer">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
                    </item>
                   </layout>
                  </widget>
@@ -1928,8 +2113,8 @@
                    <rect>
                     <x>0</x>
                     <y>0</y>
-                    <width>674</width>
-                    <height>602</height>
+                    <width>468</width>
+                    <height>585</height>
                    </rect>
                   </property>
                   <layout class="QVBoxLayout" name="verticalLayout_10">
@@ -2264,7 +2449,6 @@
    </attribute>
    <addaction name="actionFile"/>
    <addaction name="actionAtverti_2"/>
-   <addaction name="actionAtsijungti"/>
    <addaction name="separator"/>
    <addaction name="actionPaie_ka"/>
    <addaction name="actionSpausdinti"/>
