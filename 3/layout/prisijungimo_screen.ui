@@ -529,7 +529,7 @@
                     </size>
                    </property>
                    <property name="title">
-                    <string>Duomenys</string>
+                    <string>Prisijungimo duomenys</string>
                    </property>
                    <layout class="QFormLayout" name="formLayout">
                     <property name="fieldGrowthPolicy">
@@ -693,7 +693,6 @@
                   </spacer>
                  </item>
                 </layout>
-                <zorder>Prisijungimo_group</zorder>
                 <zorder>Prisijungimo_group</zorder>
                 <zorder>horizontalSpacer</zorder>
                 <zorder>horizontalSpacer_2</zorder>
