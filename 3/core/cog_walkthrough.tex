@@ -13,11 +13,12 @@
   %
   ei [
     Prisijungti prie sistemos. |
-    Taip, paleidus programą, pradiniame lange yra sritis „Prisijungimas“,
-    su laukais, skirtais įvesti prisijungimo duomenis bei mygtukas
+    Taip, paleidus programą, iš karto matomi laukai, į kuriuos 
+    galima vesti prisijungimo informaciją bei yra mygtukas
     „Prisijungti“. |
-    Taip, parodomas pranešimas „Sėkmingai prisijungta!“ bei mygtukas
-    „Prisijungti“ tampa neaktyvus, o „Atsijungti“ – aktyvus. ]
+    Taip, parodomas pranešimas „Sėkmingai prisijungta!“ bei visos
+    kortelės tampa aktyviomis.
+    ]
   ei [
     Importuoti pradinius duomenis iš failo. |
     Ne, įrankių juostoje nėra mygtuko „importuoti“ bei meniu juostoje
@@ -106,6 +107,8 @@
 
 \subsection{Užduotis „Apkrovų prognozavimas“}
 
+\label{sec:cw_apkrovu_prognozavimas}
+
 \textbf{Pastaba:} kadangi prisijungimas prie sistemos, pradinių
 duomenų įvedimas bei rezultatų filtravimas jau buvo nagrinėti
 \nameref{sec:cw_apkrovu_skaiciavimas} skyrelyje, tai jie praleisti.
@@ -152,6 +155,61 @@ duomenų įvedimas bei rezultatų filtravimas jau buvo nagrinėti
   }
 
 \subsection{Užduotis „Laisviausių laiko intervalų paieška“}
+
+\textbf{Pastaba:} kadangi prisijungimas prie sistemos bei pradinių
+duomenų įvedimas jau buvo nagrinėti
+\nameref{sec:cw_apkrovu_skaiciavimas} skyrelyje, o informacinių
+sistemų / padalinių apkrovų prognozavimas
+\nameref{sec:cw_apkrovu_prognozavimas} skyrelyje, tai jie praleisti.
+
+\xtableu{
+  w [ 1 | 20 | 20 | 20 ]
+  a [ p | p | p | p ]
+  h [
+    |
+    Žingsnis |
+    Ar naudotojas žino (mato), ką ir kaip jam veikti? |
+    Ar naudotojui suprantamas sistemos atsakas? ]
+  %
+  ei [
+    Pasirinkti dominančią IS/padalinį. |
+    Taip, įrankių juostoje matomas mygtukas Informacinės sistemos
+    (Padaliniai). |
+    Taip, dešinėje pusėje vietoj padalinių sąrašo parodomas informacinių
+    sistemų sąrašas arba atvirkščiai.
+    ]
+  e [||
+    Taip, informacinių sistemų (padalinių) sąraše galima pažymėti norimas
+    sistemas (padalinius). |
+    Taip, pažymėjus (atžymėjus) sistemą (padalinį) atitinkantis
+    grafikas atsiranda (pradingsta).
+    ]
+  ei [
+    Pasirinkti laiko intervalą, kuriame ieškoma mažiausia apkrova. |
+    Taip, viršuje matomas pasirinkimas „Rodyti nuo … iki …“ bei
+    mygtukas „Rodyti“. |
+    Taip, pasikeičia grafikų rodomas laiko intervalas.
+    ]
+  ei [
+    Pasirinkti, ar ieškomas intervalo ilgis keičiasi dinamiškai nuo
+    dabartinio sezono. |
+    Taip, įrankių juostoje yra mygtukas „Ieškoti intervalo“. |
+    Taip, atsiranda papildomi laukai, skirti įvesti informacijai.
+    ]
+  e [||
+    Taip, yra pasirinkimas ar atsižvelgti į sezoniškumą ar
+    neatsižvelgti. |
+    ]
+  ei [
+    Pasirinkti, kokio ilgio intervalo ieškoma. |
+    Taip, yra laukelis(-iai) į kurį(-iuos) galima įvesti dienų kiekį. |
+    ]
+  ei [
+    Ieškoti mažiausių apkrovų. |
+    Taip, yra mygtukas „Ieškoti mažiausiai apkrauto intervalo“. |
+    Taip, diagramose pasikeičia atitinkamo intervalo spalva.
+    ]
+  }
 
 \subsection{Rasti defektai}
 
