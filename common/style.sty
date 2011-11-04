@@ -17,6 +17,21 @@
   \end{figure}
 }
 
+\newcommand\ximageH[4]
+{
+  \noindent
+  {
+    \begin{figure}[H]
+      \begin{center}
+        \includegraphics[width=\textwidth, height=#4, keepaspectratio]{\TARGET/#3}
+      \end{center}
+      \caption{#2}
+      \label{#1}
+    \end{figure}
+    \vspace{-1cm}
+  }
+}
+
 \newcommand\ximagerow[4]
 {
   \newcommand\ximagecell[3]
