@@ -9,3 +9,45 @@
 \renewcommand\labelenumii{\theenumi.\arabic{enumii}.}
 \renewcommand\labelenumiii{\theenumi.\theenumii.\arabic{enumiii}.}
 \renewcommand\labelenumiv{\theenumi.\theenumii.\theenumiii.\arabic{enumiv}.}
+
+% KLM
+\newcommand\klm[2]
+{
+  \xtableu
+  {
+    a [ p | p | p ]
+    w [ 3 | 1 | 1 ]
+    h [ Aprašas | Operacija | Laikas (sek.) ]
+    %
+    hh [ Riboto panaudojimo etapas ]
+    klm0 []
+    #1
+    klm2 []
+    %
+    hh [ Pilno panaudojimo etapas ]
+    klm0 []
+    #2
+    klm2 []
+  }
+}
+
+
+\newcommand\xscen[2]
+{
+  \xtableu
+  {
+    a [ p | p | p ]
+    w [ 3 | 1 | 1 ]
+    h [ Aprašas | Operacija | Laikas (sek.) ]
+    %
+    hh [ Riboto panaudojimo etapas ]
+    klm0 []
+    #1
+    klm2 []
+    %
+    hh [ Pilno panaudojimo etapas ]
+    klm0 []
+    #2
+    klm2 []
+  }
+}
