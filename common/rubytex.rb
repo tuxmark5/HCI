@@ -66,6 +66,16 @@ class Table
       {|>{\\columncolor[gray]{0.8}}c|}
       {\\bf #{cell}} \\\\ \\hline";
   end;
+
+  # EVIL EVIL HACK
+  def xrow_h2(*y)
+    @rows << y.each_with_index.map do |cell, index| 
+      width = @widths[index*2..index*2+1].inject(:+) * 1.06;
+      "\\multicolumn{2}
+      {|>{\\centering\\columncolor[gray]{0.8}}p{#{width}\\linewidth}|}
+      {\\textbf{#{cell}}}"
+    end.join2("", " & ", "\\\\ \\hline");
+  end;
   
   def xrow_ee(cell)
     @rows << 
@@ -114,9 +124,6 @@ class Table
 
   def xrow_klm2()
     xrow_e('\textbf{Iš viso}', "", '\textbf{%.2f}' % [@klm_time]);
-  end;
-
-  def xrow_klms(t, x)
   end;
   # KLM END
 end; 

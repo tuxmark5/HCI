@@ -152,9 +152,39 @@
   klm1 [ Pasirinkti norimą failą | MP | pelė ]
 }
 
+\subsection{Interpretavimas su panaudojamumo tikslais}
+Apskaičiuoti našumo įverčiai atitinka antrajame dokumente pateiktus įverčius:
+\xtableu
+{
+  a  [ p | p | p | p ]
+  w  [ 1 | 1 | 1 | 1 ]
+  h2 [ Riboto panaudojimo etapas | Pilno panaudojimo etapas ]
+  h  [ Tikslas | Apskaičiuota | Tikslas | Apskaičiuota ]
+  %
+  hh [ Suskaičiuoti 5 padalinių/IS apkrovas ]
+  e  [ < 60 min. | 15.25 s + 12.68 s + 29.15 s = 0.95 min 
+     | < 30 min. | 10.95 s + 11.95 s + 25.65 s = 0.80 min ]
+  %
+  hh [ Prognozuoti 5 padalinių apkrovas ]
+  e  [ < 60 min. | 1.43 min 
+     | < 30 min. | 0.85 min ]
+  %
+  hh [ Surasti mažiausios apkrovos laiko intervalą ]
+  e  [ < 60 min. | 0.39 min
+     | < 30 min. | 0.34 min ]
+}
+
+Pastabos:
+\begin{itemize}
+  \item Į apkrovos skaičiavimo laiką yra įskaičiuotas prisijungimo bei duomenų importavimo laikas, nes tokia veiksmų seka yra numatyta tipiniame scenarijuje.
+  \item Į padalinių/IS apkrovų prognozavimą yra įskaičiuotas tik pats prognozavimo procesas (remiamasi prielaida, jog šios užduotys yra atliekamos iš eilės).
+  \item Į mažiausios apkrovos intervalo paieškos laiką įskaičiuotas tik pats intervalo paieškos procesas.
+\end{itemize}
+
 \subsection{Našumo kėlimo galimybės}
 \begin{itemize}
   \item Laisviausių intervalų paieškos pagreitinimui galima sukurti papildomų klavišų kombinacijų, taip būtų išvengtą navigavimo tarp skirtingų formos elementų.
   \item Navigacijai tarp kortelių taip pat galima sukurti sparčiųjų klavišų kombinacijas, taip
   paspartinant naudojimąsi sistema.
 \end{itemize}
+  
