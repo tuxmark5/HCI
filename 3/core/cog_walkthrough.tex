@@ -1,5 +1,7 @@
 \subsection{Užduotis „Apkrovų skaičiavimas“}
 
+\label{sec:cw_apkrovu_skaiciavimas}
+
 \xtableu{
   w [ 1 | 20 | 20 | 20 ]
   a [ p | p | p | p ]
@@ -66,7 +68,8 @@
     ]
   ei [
     Skaičiuoti apkrovas. |
-    Taip, dešinėje lango pusėje, apačioje yra kortelė su užrašu „Apkrova“. |
+    Taip, dešinėje lango pusėje, apačioje yra kortelė su užrašu
+    „Apkrova“. |
     Taip, parodomos įvairios diagramos rodančios apkrovas.
     ]
   ei [
@@ -101,7 +104,57 @@
     ]
 }
 
-Rasti defektai:
+\subsection{Užduotis „Apkrovų prognozavimas“}
+
+\textbf{Pastaba:} kadangi prisijungimas prie sistemos, pradinių
+duomenų įvedimas bei rezultatų filtravimas jau buvo nagrinėti
+\nameref{sec:cw_apkrovu_skaiciavimas} skyrelyje, tai jie praleisti.
+
+\xtableu{
+  w [ 1 | 20 | 20 | 20 ]
+  a [ p | p | p | p ]
+  h [
+    |
+    Žingsnis |
+    Ar naudotojas žino (mato), ką ir kaip jam veikti? |
+    Ar naudotojui suprantamas sistemos atsakas? ]
+  %
+  ei [
+    Importuoti planuojamas apimtis iš failo. |
+    Ne, įrankių juostoje nėra mygtuko „importuoti“ bei meniu juostoje
+    nesimato jokio meniu su užrašu „importavimas“, „duomenys“ ar „failas“,
+    bet pasirinkus vienintelį neprieštaraujantį meniu „Sistema“, jame
+    pamatoma komanda „Importuoti“. |
+    Taip, parodomas standartinis failo atvėrimo dialogas.
+    ]
+  e [||
+    Taip, suradus norimą failą renkamasi vienintelį tinkamą pasirinkimą
+    „Atverti“. |
+    Taip, būsenos juostoje parodomas pranešimas kiek ir kokių duomenų
+    buvo importuota.
+    ]
+  ei [
+    Įvesti planuojamas apimtis klaviatūra. |
+    Taip, tarp kortelių yra viena su pavadinimu „Planuojami kiekiai“. |
+    Ją nuspaudus parodomas planuojamų kiekių sąrašas.
+    ]
+  e [||
+    Ne, nėra akivaizdu, kad paskutinė tuščia eilutė yra skirta naujų
+    duomenų įvedimui. |
+    Taip, įvedus duomenis atsiranda dar viena tuščia eilutė.
+    ]
+  ei [
+    Prognozuoti apkrovas. |
+    Taip, dešinėje lango pusėje, apačioje yra kortelė su užrašu
+    „Prognozė“. |
+    Taip, parodoma diagrama ir lentelė su prognozuojamomis apkrovomis.
+    ]
+  }
+
+\subsection{Užduotis „Laisviausių laiko intervalų paieška“}
+
+\subsection{Rasti defektai}
+
 \begin{itemize}
   \item Nėra akivaizdu, kad „importuoti“ reikia ieškoti meniu „Sistema“
     (\ref{fig:meniu_sistema}). TODO: Pasiūlyti pataisymą.
@@ -113,7 +166,3 @@ Rasti defektai:
 
 \ximage{fig:meniu_sistema}{Meniu „Sistema“.}{layout/images/Screens/Sistema_meniu.png}
 \ximage{fig:visas_langas_IS_su_prognoze}{Informacinių sistemų įvedimo langas.}{layout/images/Screens/visas_langas_IS_su_prognoze.png}
-
-\subsection{Užduotis „Apkrovų prognozavimas“}
-
-\subsection{Užduotis „Laisviausių laiko intervalų paieška“}
