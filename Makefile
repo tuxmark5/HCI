@@ -9,8 +9,9 @@ all: common/main.pdf
 	xelatex -shell-escape -output-directory dist "\def\TARGET{${TARGET}}\input{$*.tex}"
 
 pull:
-	git checkout -- dist/main.pdf
+	git stash
 	git pull
+	git stash pop
 
 show:
 	xdg-open dist/main.pdf
