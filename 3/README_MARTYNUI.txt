@@ -33,3 +33,5 @@ Pagarbiai,
 *** NEPAMIRSK PRISEGT SUBUILDINTO PDF'o !!! ***
 
 (čia kad nepamirštum anksti ryte atsikėlęs ;) 
+
+Ačiū :) -- Martynas
