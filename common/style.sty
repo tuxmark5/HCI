@@ -156,6 +156,12 @@
   \chapter*{#1}
 }
 
+\newcommand{\xsection}[1]
+{
+  \addcontentsline{toc}{chapter}{\protect\numberline{} #1}
+  \section*{#1}
+}
+
 \renewpagestyle{plain}
 {
   \setfoot{}{\hfill{}\thepage}{}
