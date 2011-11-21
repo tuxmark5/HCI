@@ -87,6 +87,19 @@ class Table
   def xrow_e(*y)
     @rows << y.join2("", " & ", "\\\\ \\hline")
   end;
+
+  def xrow_er0(r, c, *y)
+    cell = "\\multirow{#{r}}{\\linewidth}{#{c}}";
+    xrow_er1(cell, *y);
+  end;
+
+  def xrow_er1(*y)
+    @rows << y.join2("", " & ", "\\\\ \\cline{2-3}")
+  end;
+
+  def xrow_er2(*y)
+    @rows << y.join2("", " & ", "\\\\ \\hline")
+  end;
   
   def xrow_ei(*y)
     y.unshift(@line.to_s);
