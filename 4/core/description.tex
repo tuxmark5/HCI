@@ -27,13 +27,84 @@ intervalų paieška“. Užduočių formuluotės pateiktos
 Testuojant buvo siekiama išmatuoti kiek reikia laiko įvykdyti
 kiekvienai užduoties daliai bei dalies vykdymo sudėtingumą pagal tai
 keliems testuotojams pavyko visiškai sėkmingai atlikti tą dalį.
-Laikoma, kad testuojantysis visiškai sėkmingai įvykdė užduotį dalį,
-jei:
-\begin{itemize}
-  \item pasinaudodamas sistema gavo teisingus rezultatus;
-  \item nė karto nesikreipė pagalbos į asistentą.
-\end{itemize}
+Laikoma, kad testuojantysis visiškai sėkmingai įvykdė užduoties dalį,
+jei užduoties atlikimo eiga atitinka pateiktus kriterijus:
 
+\xtableu
+{
+  a [ p | p | p ]
+  w [ 3 | 2 | 1 ]
+  h [ Použduotis | Kriterijus | Sėkmės matas ]
+  hh [ Užduotis: „apkrovų skaičiavimas“ ]
+  %
+  er0 [ 3 | Prisijungti prie sistemos 
+    | Atlikimo laikas | < 45 s. ]
+  er1 [ 
+    | Pagalbos kreipinių skaičius | = 0 ]
+  er2 [ 
+    | Sustojimų skaičius | = 0 ]
+  %
+  er0 [ 3 | Duomenų importavimas 
+    | Atlikimo laikas | < 1 min. ]
+  er1 [
+    | Pagalbos kreipinių skaičius | = 0 ]
+  er2 [ 
+    | Sustojimų skaičius | = 0 ]
+  %
+  er0 [ 3 | Labiausiai apkrauto 2009 metų gruodžio mėnesio padalinio radimas 
+    | Atlikimo laikas | < 2 min. ]
+  er1 [
+    | Pagalbos kreipinių skaičius | <= 1 ]
+  er2 [ 
+    | Sustojimų skaičius | < 3 ]
+  %
+  er0 [ 3 | Intervalo, kada buvo labiausiai apkrautas padalinys 7 radimas 
+    | Atlikimo laikas | < 2 min. ]
+  er1 [
+    | Pagalbos kreipinių skaičius | <= 1 ]
+  er2 [ 
+    | Sustojimų skaičius | < 3 ]
+  %
+  er0 [ 3 | Labiausiai apkrautos 2011 metų rugsėjo menesį sistemos radimas 
+         | Atlikimo laikas | < 2 min. ]
+  er1 [ | Pagalbos kreipinių skaičius | <= 1 ]
+  er2 [ | Sustojimų skaičius | < 3 ]
+  %
+  er0 [ 3 | Labiausiai apkrauto 2010 metų vasario mėnesį padalinio radimas
+      (iš 1, 4, 5, 10, 11 ir 12 padalinių) 
+    | Atlikimo laikas | < 5 min. ]
+  er1 [
+    | Pagalbos kreipinių skaičius | <= 1 ]
+  er2 [ 
+    | Sustojimų skaičius | < 3 ]
+  %
+  er0 [ 3 | Radimas, kada buvo labiausiai apkrauta Patikros užduočių vykdymo IS 
+    | Atlikimo laikas | < 5 min. ]
+  er1 [
+    | Pagalbos kreipinių skaičius | <= 1 ]
+  er2 [ 
+    | Sustojimų skaičius | < 3 ]
+  %
+  hh [ Užduotis: „laisviausių laiko intervalų paieška“ ]
+  %
+  er0 [ 3 | Mažiausios apkrovos 15 dienų intervalo radimas padaliniui 
+      4 laikotarpyje 2012-01-01 – 2012-06-01 
+    | Atlikimo laikas | < 4 min. ]
+  er1 [
+    | Pagalbos kreipinių skaičius | <= 1 ]
+  er2 [ 
+    | Sustojimų skaičius | < 3 ]
+  %
+  er0 [ 3 | Mažiausios apkrovos 15 dienų intervalo radimas padaliniui 
+      9 laikotarpyje 2012-01-01 – 2012-06-01 
+    | Atlikimo laikas | < 4 min. ]
+  er1 [
+    | Pagalbos kreipinių skaičius | <= 1 ]
+  er2 [ 
+    | Sustojimų skaičius | < 3 ]
+}
+
+\subsection{Metodas}
 TODO: Surašyti sėkmės matus. Reikėtų remtis tuo kas buvo surašyta
 „Panaudojamumo tiksluose“ 2 ŽKS darbe, bet tai nebūtinai turi būti
 kopijavimas iš ten, nes mes dabar žinom daugiau informacijos.
