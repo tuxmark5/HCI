@@ -1,23 +1,3 @@
-%Bendri panaudojamumo vertinimo klausimynai:
-%\begin{itemize}
-  %\item SUMI (Software Usability Measurement Inventory)
-  %\item QUIS (Questionnaire for User Interaction Satisfaction)
-%\end{itemize}
-%Parengti savybių sąrašą (konspekto 96 psl.)
-
-
-%Vertinimo kriterijai testuojant:
-%\begin{itemize}
-  %\item kiek kartų teko grįžti į pagrindinį meniu be reikalo;
-  %\item kiek kartų buvo užuominų ar paraginimų;
-  %\item kiek kartų buvo atverstas puslapis nurodantis puslapio žemėlapį
-    %(struktūrą);
-  %\item abejojimų skaičius (ir jų trukmė);
-  %\item užduotys, kurios neatitinka sėkmės kriterijaus;
-  %\item klaidų aprašas ir sunkumų nustatymas;
-  %\item klaidų priežasčių nustatymas;
-%\end{itemize}
-
 \subsection{Testuojamos užduotys}
 
 Testavimo metu buvo tikrinama, kaip sistemos naudotojai atlieka
@@ -28,89 +8,37 @@ Testuojant buvo siekiama išmatuoti kiek reikia laiko įvykdyti
 kiekvienai užduoties daliai bei dalies vykdymo sudėtingumą pagal tai
 keliems testuotojams pavyko visiškai sėkmingai atlikti tą dalį.
 Laikoma, kad testuojantysis visiškai sėkmingai įvykdė užduoties dalį,
-jei užduoties atlikimo eiga atitinka pateiktus kriterijus:
-
+jei:
+\begin{itemize}
+  \item pasinaudodamas sistema gavo teisingus rezultatus;
+  \item užduoties dalį įvykdė greičiau nei per laiką nurodytą lentelėje:
 \xtableu
 {
-  a [ p | p | p ]
-  w [ 3 | 2 | 1 ]
-  h [ Použduotis | Kriterijus | Sėkmės matas ]
+  a [ p | p ]
+  w [ 3 | 1 ]
+  h [ Užduoties dalis | Maksimalus atlikimo laikas ]
   hh [ Užduotis: „apkrovų skaičiavimas“ ]
   %
-  er0 [ 3 | Prisijungti prie sistemos 
-    | Atlikimo laikas | < 45 s. ]
-  er1 [ 
-    | Pagalbos kreipinių skaičius | = 0 ]
-  er2 [ 
-    | Sustojimų skaičius | = 0 ]
-  %
-  er0 [ 3 | Duomenų importavimas 
-    | Atlikimo laikas | < 1 min. ]
-  er1 [
-    | Pagalbos kreipinių skaičius | = 0 ]
-  er2 [ 
-    | Sustojimų skaičius | = 0 ]
-  %
-  er0 [ 3 | Labiausiai apkrauto 2009 metų gruodžio mėnesio padalinio radimas 
-    | Atlikimo laikas | < 2 min. ]
-  er1 [
-    | Pagalbos kreipinių skaičius | <= 1 ]
-  er2 [ 
-    | Sustojimų skaičius | < 3 ]
-  %
-  er0 [ 3 | Intervalo, kada buvo labiausiai apkrautas padalinys 7 radimas 
-    | Atlikimo laikas | < 2 min. ]
-  er1 [
-    | Pagalbos kreipinių skaičius | <= 1 ]
-  er2 [ 
-    | Sustojimų skaičius | < 3 ]
-  %
-  er0 [ 3 | Labiausiai apkrautos 2011 metų rugsėjo menesį sistemos radimas 
-         | Atlikimo laikas | < 2 min. ]
-  er1 [ | Pagalbos kreipinių skaičius | <= 1 ]
-  er2 [ | Sustojimų skaičius | < 3 ]
-  %
-  er0 [ 3 | Labiausiai apkrauto 2010 metų vasario mėnesį padalinio radimas
+  e [ Prisijungti prie sistemos | 45 s. ]
+  e [ Duomenų importavimas | 1 min. ]
+  e [ Labiausiai apkrauto 2009 metų gruodžio mėnesio padalinio radimas 
+      | 2 min. ]
+  e [ Intervalo, kada buvo labiausiai apkrautas padalinys 7 radimas 
+      | 2 min. ]
+  e [ Labiausiai apkrautos 2011 metų rugsėjo menesį sistemos radimas 
+      | 2 min. ]
+  e [ Labiausiai apkrauto 2010 metų vasario mėnesį padalinio radimas
       (iš 1, 4, 5, 10, 11 ir 12 padalinių) 
-    | Atlikimo laikas | < 5 min. ]
-  er1 [
-    | Pagalbos kreipinių skaičius | <= 1 ]
-  er2 [ 
-    | Sustojimų skaičius | < 3 ]
-  %
-  er0 [ 3 | Radimas, kada buvo labiausiai apkrauta Patikros užduočių vykdymo IS 
-    | Atlikimo laikas | < 5 min. ]
-  er1 [
-    | Pagalbos kreipinių skaičius | <= 1 ]
-  er2 [ 
-    | Sustojimų skaičius | < 3 ]
-  %
+      | 5 min. ]
+  e [ Radimas, kada buvo labiausiai apkrauta Patikros užduočių vykdymo IS 
+      | 5 min. ]
   hh [ Užduotis: „laisviausių laiko intervalų paieška“ ]
-  %
-  er0 [ 3 | Mažiausios apkrovos 15 dienų intervalo radimas padaliniui 
-      4 laikotarpyje 2012-01-01 – 2012-06-01 
-    | Atlikimo laikas | < 4 min. ]
-  er1 [
-    | Pagalbos kreipinių skaičius | <= 1 ]
-  er2 [ 
-    | Sustojimų skaičius | < 3 ]
-  %
-  er0 [ 3 | Mažiausios apkrovos 15 dienų intervalo radimas padaliniui 
-      9 laikotarpyje 2012-01-01 – 2012-06-01 
-    | Atlikimo laikas | < 4 min. ]
-  er1 [
-    | Pagalbos kreipinių skaičius | <= 1 ]
-  er2 [ 
-    | Sustojimų skaičius | < 3 ]
+  e [ Mažiausios apkrovos 15 dienų intervalo radimas padaliniui 
+      4 laikotarpyje 2012-01-01 – 2012-06-01 | 4 min. ]
+  e [ Mažiausios apkrovos 15 dienų intervalo radimas padaliniui 
+      9 laikotarpyje 2012-01-01 – 2012-06-01 | 4 min. ]
 }
-
-\subsection{Metodas}
-TODO: Surašyti sėkmės matus. Reikėtų remtis tuo kas buvo surašyta
-„Panaudojamumo tiksluose“ 2 ŽKS darbe, bet tai nebūtinai turi būti
-kopijavimas iš ten, nes mes dabar žinom daugiau informacijos.
-
-TODO: Kriterijai: užduoties dalies įvykdymo laikas (sėkmės matai iš
-tikslų) ir ar įvykdė užduotį.
+\end{itemize}
 
 \begin{figure}[H]
   \begin{center}
