@@ -20,19 +20,15 @@
 
 \subsection{Testuojamos užduotys}
 
-Testavimo metu buvo tikrinama, kaip sistemos naudotojai atlieka užduotis
-„Apkrovų skaičiavimas“ (toliau bus ši užduotis vadinama užduotimi UA) ir 
-„Laisviausių laiko intervalų paieška“ (užduotis UB).
-Konkrečias užduočių formuluotes, kurios buvo pateiktos testuotojams
-galima pamatyti TODO priede. Laikoma, kad testuojantysis visiškai sėkmingai
-įvykdė užduotį, jei:
-\begin{itemize}
-  \item jis įvykdė visus nurodytus žingsnius (tvarka nesvarbi);
-  \item pasinaudodamas sistema gavo teisingus rezultatus;
-  \item nė karto nesikreipė pagalbos į asistentą.
-\end{itemize}
-TODO: DĖSTYTOJA: Ar teisingai suprasta, kas yra kriterijai ir kaip jie
-turėtų būti aprašyti?
+Testavimo metu buvo tikrinama, kaip sistemos naudotojai atlieka
+užduotis „Apkrovų skaičiavimas“ ir „Laisviausių laiko
+intervalų paieška“. Užduočių formuluotės pateiktos
+\ref{fig:uzduotis_1} ir \ref{fig:uzduotis_2} paveikslėliuose.
+Testuojant buvo siekiama išmatuoti kiek reikia laiko įvykdyti
+kiekvienai užduoties daliai bei dalies vykdymo sudėtingumą pagal tai
+keliems testuotojams pavyko visiškai sėkmingai atlikti tą dalį.
+Laikoma, kad testuojantysis visiškai sėkmingai įvykdė užduoties dalį,
+jei užduoties atlikimo eiga atitinka pateiktus kriterijus:
 
 \xtableu
 {
@@ -109,8 +105,30 @@ turėtų būti aprašyti?
 }
 
 \subsection{Metodas}
+TODO: Surašyti sėkmės matus. Reikėtų remtis tuo kas buvo surašyta
+„Panaudojamumo tiksluose“ 2 ŽKS darbe, bet tai nebūtinai turi būti
+kopijavimas iš ten, nes mes dabar žinom daugiau informacijos.
 
-TODO: DĖSTYTOJA: Ar teisingai suprasta, kas čia turi būti aprašyta.
+TODO: Kriterijai: užduoties dalies įvykdymo laikas (sėkmės matai iš
+tikslų) ir ar įvykdė užduotį.
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{./4/pdfs/uzduotis1.pdf}
+  \end{center}
+  \caption{Pirma užduotis}
+  \label{fig:uzduotis_1}
+\end{figure}
+
+\begin{figure}[H]
+  \begin{center}
+    \includegraphics[width=0.9\textwidth]{./4/pdfs/uzduotis2.pdf}
+  \end{center}
+  \caption{Antra užduotis}
+  \label{fig:uzduotis_2}
+\end{figure}
+
+\subsection{Metodas}
 
 Testavimo vykdymo eiga:
 \begin{enumerate}
@@ -138,21 +156,56 @@ Testavimo vykdymo eiga:
 
 \subsection{Aplinka}
 
-TODO: DĖSTYTOJA: Ar teisingai suprasta, kas čia turi būti aprašyta.
-
-Keturi žmonės sistemą testavo kavinėje: vienas sėdi su vykdytoju prie
-kompiuterio, kiti tuo tarpu sėdi netoliese ir šnekasi apie pašalinius
-dalykus.
-
-Vienas žmogus testavo sistemą namie, visą reikiamą įrangą įsirašęs į
-savo kompiuterį.
+Keturi žmonės sistemą testavo kavinėje: vienas sėdi su vykdytoju
+prie kompiuterio, kiti tuo tarpu sėdi netoliese ir šnekasi apie
+pašalinius dalykus. Vienas žmogus testavo sistemą namie, visą
+reikiamą įrangą įsirašęs į savo kompiuterį. Testavimo metu buvo
+naudojama šviežiai įdiegta Ubuntu 11.10 operacinė sistema su Unity
+grafine aplinka.
 
 \subsection{Dalyviai}
-
-TODO: DĖSTYTOJA: Ar teisingai suprasta, kas čia turi būti aprašyta.
 
 Visi dalyviai yra skirtingų profesijų atstovai, atitinkantys
 „Naudotojų kvalifikaciniai reikalavimai“ skyrelyje aprašytus reikalavimus
 vadovams ir asistentui. 4 iš 5 dalyvių su dalykine sritimi ir kuriamos
 sistemos paskirtimi buvo trumpai supažindinti prieš testavimą, o
-penktasis tai žinojo jau iš anksčiau.
+penktasis tai žinojo jau iš anksčiau. Visi testuotojai buvo jauni žmonės,
+19 – 30 metų amžiaus, turintys didesnę nei 3 metų darbo su skaičiuoklėmis
+ir rašyklėmis patirtį. Detalesnė informacija apie kiekvieną testuotoją
+pateikta lentelėse:
+
+\xtable
+{
+  w [ 1 | 1 | 1 | 1 | 1 ]
+  a [ p | p | p | p | p ]
+  h [
+    Testuotojas |
+    Užimamos pareigos |
+    Lytis |
+    Naudojasi Ubuntu |
+    Naudojasi Windows
+    ]
+  %
+  e [ A | Projektų vadovė | Moteris | Taip | Taip ]
+  e [ B | Inžinierius | Vyras | Taip | Taip ]
+  e [ C | Administratorius (savanoris) | Vyras | Ne | Taip ]
+  e [ D | Administratorė (savanorė) | Moteris | Ne | Taip ]
+  e [ E | Programų sistemų studentė | Moteris | Taip | Taip ]
+}
+
+\xtable
+{
+  w [ 1 | 2 | 2 ]
+  a [ p | p | p ]
+  h [
+    Testuotojas |
+    Prie kompiuterio būna namie |
+    Prie kompiuterio būna darbe
+    ]
+  %
+  e [ A | $< 1$ valandas | $> 8$ valandas ]
+  e [ B | $< 1$ valandas | $> 8$ valandas ]
+  e [ C | 3–8 valandas   | 3–8 valandas   ]
+  e [ D | 1–3 valandas   | 1–3 valandas   ]
+  e [ E | 3–8 valandas   | 1–3 valandas   ]
+}
