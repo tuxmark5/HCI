@@ -1,14 +1,57 @@
-TODO: DĖSTYTOJA: Ar teisingai suprasta, kas čia turi būti aprašyta.
-
-\begin{enumerate}
-  \item Jei renkantis kokio intervalo duomenis rodyti, pradžios data
-    buvo pasirinkta ankstesnė nei „prasideda duomenys“, ją automatiškai
-    „pavėlinti“ ir parodyti informacinį pranešimą.
-  \item Pakeisti mygtuką „Ieškoti intervalo“ į „Ieškoti mažiausios
-    apkrovos intervalo“.
-  \item Renkantis kokio intervalo duomenis rodyti, datos lauke nuspaudus
-    klavišą „Įvesti“, automatiškai įvykdyti „Rodyti“.
-  \item Nustatyti, kad paleidžiant programą ji startuotų išdidinto lango
-    rėžime.
-  \item Pašalinti 10 metų ilgiausios rodymo trukmės apribojimą.
-\end{enumerate}
+\xtable
+{
+  w [ 1 | 1 | 1 | 2 | 2 ]
+  a [ p | p | p | p | p ]
+  h [ Prioritetas | Sunkumo laipsnis | Dažnis | Problema | Rekomendacija ]
+  e [ 6 | 2 | 4 |
+    Ieškant didžiausios grafike nesimato, kuris iš stulpelių yra
+    aukščiausias. |
+    Padaryti, kad užvedus pelę ant stulpelio parodytų skaičių – reiškiantį
+    jo dydį.
+    ]
+  e [ 6 | 3 | 3 |
+    Mygtukas „Intervalų paieška“ nesusisieja su funkcija „laisviausių
+    laiko intervalų paieška“. |
+    Mygtuką pervadinti į „Laisviausių laiko intervalų paieška“.
+    ]
+  e [ 6 | 2 | 4 |
+    Nesimato nuo kada „prasideda“ duomenys ir sistema meta klaidą 
+    pasirinkus per didelį intervalą ($\geq 10$ metų). |
+    Jei pradžios data buvo pasirinkta ankstesnė už duomenų „pradžią“,
+    automatiškai ją nustatyti į duomenų „pradžios“ datą.
+    ]
+  e [ 6 | 2 | 4 |
+    Pasirinkus stulpelį nerodo duomenis atitinkančios datos. |
+    Padaryti, kad užvedus pelę ant stulpelio rodytų duomenis atitinkančią
+    datą.
+    ]
+  e [ 6 | 2 | 4 |
+    Nei vienas iš testuotojų nepastebėjo, kad yra kortelė apžvalga,
+    kur viename grafike galima pamatyti visų padalinių apkrovas |
+    Padaryti, kad pasirinkus rodyti intervalą išskaidytą į lygiai vieną
+    dalį (pavyzdžiui, jei pasirenkame rodyti nuo 2010-02-01 iki
+    2010-02-28 po mėnesį) sistema parodytų pranešimą su pasiūlymu
+    pažiūrėti į „Apžvalgos“ kortelę.
+    ]
+  e [ 5 | 2 | 2 |
+    Maišė padalinių (IS) pavadinimus ir identifikatorius. |
+    Sąrašuose rodyti ne tik identifikatorius, bet ir pavadinimus. Taip
+    pat, užvedus pelę ant padalinį ar IS reiškiančio elemento,
+    rodyti paaiškinimus su identifikatoriumi ir pilnu pavadinimu.
+    ]
+  e [ 5 | 1 | 4 |
+    Paleidžiant programą ji pasileidžia neišdidinto lango veiksenoje
+    ir nesimato mygtuko „rodyti“ skirto rodomo intervalo keitimui. |
+    Nustatyti, kad programa pasileistų išdidinto lango veiksenoje.
+    ]
+  e [ 3 | 1 | 2 |
+    Trūksta galimybės, renkantis kuriuos padalinius (IS) rodyti,
+    pažymėti (atžymėti) visus. |
+    Pridėti mygtukus leidžiančius tai atlikti.
+    ]
+  e [ 3 | 1 | 2 |
+    Trūksta galimybės, renkantis kokio intervalo duomenis rodyti,
+    datos laukelyje nuspaudus klavišą „įvesti“ įvykdyti „Rodyti“. |
+    Realizuoti šią galimybę.
+    ]
+}
