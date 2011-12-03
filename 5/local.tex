@@ -10,3 +10,13 @@
 \renewcommand\labelenumiii{\theenumi.\theenumii.\arabic{enumiii}.}
 \renewcommand\labelenumiv{\theenumi.\theenumii.\theenumiii.\arabic{enumiv}.}
 
+\newcommand\ximageS[3]
+{
+  \begin{figure}[H]
+    \begin{center}
+      \includegraphics[width=0.95\textwidth, height=10.0cm, keepaspectratio]{\TARGET/#3}
+    \end{center}
+    \caption{#2}
+    \label{#1}
+  \end{figure}
+}
