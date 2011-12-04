@@ -22,6 +22,12 @@ class String
     out = gsub("&L", "[").gsub("&R", "]").gsub("&&", "&").gsub("&A", "@");
     $dst.write(" #{out} ");
   end;
+
+  def h_mc(num)
+    "\\multicolumn{#{num}} 
+    {|>{\\columncolor[gray]{0.8}}c|}
+    {\\bf #{self}}";
+  end;
 end;
 
 class Table
@@ -112,6 +118,10 @@ class Table
     @widthMult  = 1 - 0.025 * y.length;
     sum         = y.inject(:+) / @widthMult;
     @widths     = y.map { |x| x / sum }
+  end;
+
+  def xrow_spec(*y)
+    xrow_e(y[0].h_mc(1), y[1].h_mc(1), y[2].h_mc(5), y[3].h_mc(6), y[4].h_mc(1));
   end;
 
   # KLM BEGIN
