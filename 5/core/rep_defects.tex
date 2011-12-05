@@ -56,7 +56,7 @@ spec[ Nr. | Aprašas | Rado              | Sunkumas                 | Lok. ]
   rėžimo, šis vis tiek vartotojui netampa prieinamu.     
                     |   |   | + |   |   | 3 |   | 4 |   |   |      | Admin. sąsaja ]
   e [ 10  | Į pranešimų žurnalą keliauja ne visi pranešimai     
-                    |   |   | + |   |   | 2 |   | 2 |   |   |      | Pranešimų žurnalas ]
+                    |   | + | + |   |   | 2 | 2 | 2 |   |   |      | Pranešimų žurnalas ]
   e [ 11  | Pašalinus viską iš duomenų bazės ir importuojant duomenis iš failo,
   sistema skundžiasi, jog tokie elementai jau yra, nors tiką buvo pašalinti.     
                     |   |   | + |   |   | 3 |   | 4 |   |   |      | Pagr. sąsaja ]
@@ -95,4 +95,21 @@ spec[ Nr. | Aprašas | Rado              | Sunkumas                 | Lok. ]
   „1“, tai jokio klaidos pranešimo neparodo ir pakeičia į tuščią.
                     |   |   |   |   | + |   |   |   |   | 2 |      | IS adm. sąsaja ]
 % Galimas sprendimas: Parodyti pranešimą, kad „1“ – taip, visa kita – „ne“.
+  e [ 20 | Kaskart atsijungus ir vėl prisijungus, meniu „Rodyti“ atsiranda papildomas 
+  pasirinkimas „Pateikti visus rezultatus“.
+                    |   | + |   |   |   |   | 2 |   |   |   |      | Pagr. sąsaja ]
+  e [ 21 | Renkantis vietinės duomenų bazės failą sistema neatsimena direktorijos,
+  kur paskutinį kartą buvo vykdytas failo pasirinkimas.
+                    |   | + |   |   |   |   | 1 |   |   |   |      | Pagr. sąsaja ]
+  e [ 22 | Renkantis vietinės duomenų bazės failą sistema leidžia pasirinkti bet kokio
+  formato failą ir neparodo jokio pranešimo nei vartotojo sąsajoje, nei pranešimų 
+  žurnale.
+                    |   | + |   |   |   |   | 3 |   |   |   |      | Pagr. sąsaja ]
+  e [ 23 | Pasirinkus netinkamo formato vietinės duomenų bazės failą ir mėginant 
+  išsaugoti, sistema parodo pranešimą „Duomenys išsaugoti“, tačiau iš tikro sistemai 
+  nepavyksta to padaryti.
+                    |   | + |   |   |   |   | 3 |   |   |   |      | Pagr. sąsaja ]
+  e [ 24 | Įvedus neegzistuojančios priemonės pavadinimą lentelėje „Planuojami kiekiai“,
+  sistema lūžta neparodžiusi jokio klaidos pranešimo.
+                    |   | + |   |   |   |   | 3 |   |   |   |      | Pagr. sąsaja ]
 }
