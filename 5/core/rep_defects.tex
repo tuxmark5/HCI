@@ -31,46 +31,46 @@ Klaidų indentifikatorių paaiškinimai:
   w [ 2   | 20      | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2 | 2    | 8    ]
 spec[ Nr. | Aprašas | Rado              | Sunkumas                 | Lok. ]
   h [     |         | A | E | J | M | V | A | E | J | M | V | Vid. |      ]
-  e [ 1   | Mygtukas "Rodyti" yra ne savo vietoje (turi būti arčiau intervalo 
-  pasirinkimo laukų)
-                    | + |   |   |   |   | 2 | 1 | 1 |   |   |      | Pagr. sąsaja ]
-  e [ 2   | Pakeitus rezultatų skaičiaivmo granuliarumą rezultatai neatsinaujina
-                    | + |   |   |   |   | 2 | 2 | 3 |   |   |      | Rezult. sąsaja ]
+  e [ 1   | Mygtukas „Rodyti“ yra ne savo vietoje (turi būti arčiau intervalo
+  pasirinkimo laukų).
+                    | + |   |   |   |   | 2 | 1 | 1 |   | 1 |      | Pagr. sąsaja ]
+  e [ 2   | Pakeitus rezultatų skaičiavimo granuliarumą rezultatai neatsinaujina.
+                    | + |   |   |   |   | 2 | 2 | 3 |   | 3 |      | Rezult. sąsaja ]
   e [ 3   | Pakeitus skaičiavimo rėžimą, rezultatų rodymo rėžimas atsistato
   į pradinį.
-                    | + |   |   |   |   | 3 | 3 | 3 |   |   |      | Pagr. sąsaja ]
-  e [ 4   | Netyčia paspaudus "Atstatyti", naudotojas gali prarasti savo visus duomenis
-  iki paskutinio išsaugojimo. 
-                    | + |   |   |   |   | 3 | 2 | 2 |   |   |      | Pagr. sąsaja ]
-  e [ 5   | Apžvalgos interfeise nesimato, koks rodymo rėžimas dabar yra aktyvus.
-                    | + |   |   |   |   | 2 | 2 | 2 |   |   |      | Pagr. sąsaja ]
+                    | + |   |   |   |   | 3 | 3 | 3 |   | 3 |      | Pagr. sąsaja ]
+  e [ 4   | Netyčia paspaudus „Atstatyti“, naudotojas gali prarasti visus pakeitimus
+  atliktus po paskutinio išsaugojimo.
+                    | + |   |   |   |   | 3 | 2 | 2 |   | 3 |      | Pagr. sąsaja ]
+  e [ 5   | Apžvalgos sąsajoje nesimato, koks rodymo rėžimas dabar yra aktyvus.
+                    | + |   |   |   |   | 2 | 2 | 2 |   | 2 |      | Pagr. sąsaja ]
   e [ 6   | Ištrynus įrašus iš bet kurios lentelės, rezultatai automatiškai neatsinaujina.
-                    | + |   | + |   |   | 3 | 3 | 3 |   |   |      | Pagr. sąsaja ]
-  e [ 7   | Pasirinkus savaitinį granuliaruma sistema pati modifikuoja intervalo galus,
+                    | + |   | + |   |   | 3 | 3 | 3 |   | 3 |      | Pagr. sąsaja ]
+  e [ 7   | Pasirinkus savaitinį granuliarumą sistema pati modifikuoja intervalo galus,
   nepaaiškindama kodėl taip daro.
-                    | + |   | + |   |   | 3 | 4 | 4 |   |   |      | Pagr. sąsaja ]
+                    | + |   | + |   |   | 3 | 4 | 4 |   | 3 |      | Pagr. sąsaja ]
   e [ 8   | Šalinant ne iš eilės pažymėtas eilutes, sistema arba išmeta ne išmetimui
-  skirtas eilutes, arba nulūžta.  
-                    |   |   | + |   |   | 4 | 4 | 3 |   |   |      | Priem. sąsaja ]
-  e [ 9   | Administratoriaus interfeise vartotojui įjungus prieeigą prie sistemų
-  rėžimo, šis vis tiek vartotojui netampa prieinamu.     
-                    |   |   | + |   |   | 3 | 3 | 4 |   |   |      | Admin. sąsaja ]
-  e [ 10  | Į pranešimų žurnalą keliauja ne visi pranešimai     
-                    |   | + | + |   |   | 2 | 2 | 2 |   |   |      | Pranešimų žurnalas ]
+  skirtas eilutes, arba nulūžta.
+                    |   |   | + |   |   | 4 | 4 | 3 |   | 4 |      | Priem. sąsaja ]
+  e [ 9   | Administratoriaus sąsajoje naudotojui įjungus prieigą prie sistemų
+  rėžimo, šis vis tiek naudotojui netampa prieinamu.
+                    |   |   | + |   |   | 3 | 3 | 4 |   | 3 |      | Admin. sąsaja ]
+  e [ 10  | Į pranešimų žurnalą keliauja ne visi pranešimai
+                    |   | + | + |   |   | 2 | 2 | 2 |   | 2 |      | Pranešimų žurnalas ]
   e [ 11  | Pašalinus viską iš duomenų bazės ir importuojant duomenis iš failo,
-  sistema skundžiasi, jog tokie elementai jau yra, nors tiką buvo pašalinti.     
-                    |   |   | + |   |   | 3 | 3 | 4 |   |   |      | Pagr. sąsaja ]
-  e [ 12  | Importuojant failą sistema neatsimena direktorijos, kur paskutinį
-  kartą buvo vykdytas importavimas.   
-                    |   |   | + |   |   | 1 | 1 | 2 |   |   |      | Import. sąsaja ]
-  e [ 13  | Vartotojų administravimo interfeisas ne visose platformose reaguoja į
-  aktyvaus naudotojo pasikeitimus  
-                    |   |   |   | + |   | 4 | 4 | 4 |   |   |      | Adm. sąsaja ]
+  sistema skundžiasi, jog tokie elementai jau yra, nors ką tik buvo pašalinti.
+                    |   |   | + |   |   | 3 | 3 | 4 |   | 4 |      | Pagr. sąsaja ]
+  e [ 12  | Importuojant failą sistema neatsimena katalogo, kur paskutinį
+  kartą buvo vykdytas importavimas.
+                    |   |   | + |   | + | 1 | 1 | 2 |   | 1 |      | Import. sąsaja ]
+  e [ 13  | Naudotojų administravimo sąsaja ne visose platformose reaguoja į
+  aktyvaus naudotojo pasikeitimus.
+                    |   |   |   | + |   | 4 | 4 | 4 |   | 4 |      | Adm. sąsaja ]
   e [ 14  | Kai kuriais atvejais dėl panaudoto apkrovų skaičiavimo algoritmo,
   apkrovos gaunasi neigiamos.
-                    | + |   | + | + |   | 3 | 3 | 4 |   |   |      | Rezult. sąsaja ]
+                    | + |   | + | + |   | 3 | 3 | 4 |   | 4 |      | Rezult. sąsaja ]
   e [ 15 | Grafikuose aiškiai nesimato, ties kuria vieta prasideda prognozės
-                    | + |   |   |   | + | 2 | 2 | 3 |   |   |      | Adm. sąsaja ]
+                    | + |   |   |   | + | 2 | 2 | 3 |   | 3 |      | Adm. sąsaja ]
   e [ 16 | Iš karto nėra aišku, ką reiškia pasirinkimas „Leisti ir rašyti“.
                     |   |   |   |   | + |   | 1 |   |   | 2 |      | Adm. sąsaja ]
 % Galimas sprendimas: Pakeisti į „Skaityti ir rašyti“. Kitus
@@ -95,21 +95,21 @@ spec[ Nr. | Aprašas | Rado              | Sunkumas                 | Lok. ]
   „1“, tai jokio klaidos pranešimo neparodo ir pakeičia į tuščią.
                     |   |   |   |   | + |   | 2 |   |   | 2 |      | IS adm. sąsaja ]
 % Galimas sprendimas: Parodyti pranešimą, kad „1“ – taip, visa kita – „ne“.
-  e [ 20 | Kaskart atsijungus ir vėl prisijungus, meniu „Rodyti“ atsiranda papildomas 
+  e [ 20 | Kaskart atsijungus ir vėl prisijungus, meniu „Rodyti“ atsiranda papildomas
   pasirinkimas „Pateikti visus rezultatus“.
-                    |   | + |   |   |   |   | 2 |   |   |   |      | Pagr. sąsaja ]
-  e [ 21 | Renkantis vietinės duomenų bazės failą sistema neatsimena direktorijos,
+                    |   | + |   |   |   |   | 2 |   |   | 2 |      | Pagr. sąsaja ]
+  e [ 21 | Renkantis vietinės duomenų bazės failą sistema neatsimena katalogo,
   kur paskutinį kartą buvo vykdytas failo pasirinkimas.
-                    |   | + |   |   |   |   | 1 |   |   |   |      | Pagr. sąsaja ]
+                    |   | + |   |   |   |   | 1 |   |   | 1 |      | Pagr. sąsaja ]
   e [ 22 | Renkantis vietinės duomenų bazės failą sistema leidžia pasirinkti bet kokio
-  formato failą ir neparodo jokio pranešimo nei vartotojo sąsajoje, nei pranešimų 
+  formato failą ir neparodo jokio pranešimo nei naudotojo sąsajoje, nei pranešimų
   žurnale.
-                    |   | + |   |   |   |   | 3 |   |   |   |      | Pagr. sąsaja ]
-  e [ 23 | Pasirinkus netinkamo formato vietinės duomenų bazės failą ir mėginant 
-  išsaugoti, sistema parodo pranešimą „Duomenys išsaugoti“, tačiau iš tikro sistemai 
+                    |   | + |   |   |   |   | 3 |   |   | 3 |      | Pagr. sąsaja ]
+  e [ 23 | Pasirinkus netinkamo formato vietinės duomenų bazės failą ir mėginant
+  išsaugoti, sistema parodo pranešimą „Duomenys išsaugoti“, tačiau iš tikro sistemai
   nepavyksta to padaryti.
-                    |   | + |   |   |   |   | 3 |   |   |   |      | Pagr. sąsaja ]
+                    |   | + |   |   |   |   | 3 |   |   | 4 |      | Pagr. sąsaja ]
   e [ 24 | Įvedus neegzistuojančios priemonės pavadinimą lentelėje „Planuojami kiekiai“,
   sistema lūžta neparodžiusi jokio klaidos pranešimo.
-                    |   | + |   |   |   |   | 3 |   |   |   |      | Pagr. sąsaja ]
+                    |   | + |   |   |   |   | 3 |   |   | 4 |      | Pagr. sąsaja ]
 }
