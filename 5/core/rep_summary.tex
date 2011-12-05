@@ -1,8 +1,63 @@
-Pagrindinės problemos:
+Interfeiso euristinį vertinimą atliko visi komandos nariai jiems patogiu laiku.
+Kadangi kuriama portabili darbalaukinė informacinė sistema, tai ji buvo testuojama
+keliose operacinėse sistemose bei platformose vienu metu (pagrinde -- Ubuntu 11.10 64-bit,
+Windows XP). Buvo atrasta klaidų būdingų konkrečiai OS (konkrečiai -- Windows).
+
+Testavimas buvo vykdomas trimis etapais: pirmajame etape testuotojai atliko vieną iš
+pagrindinių užduočių (apkrovų testavimą). Kadangi visi testuotojai jau yra gerai susipažinę
+su sistema, tai šiame etape kėblumų nekilo. Antrajame etape testuotojai bandė taip paveikti
+sistemos elgseną, kad šios elgsena sutriktų -- bandant įvesti nelogiškus ar nevalidžius duomenis
+ar sukuriant kokį kitą mažai tikėtiną vykdymo scenarijų, kuriame sistemos elsena nukrypsta
+nuo apibrėžtų normos ribų. Atliekant šią "grubaus" testavimo stadiją, pavyko rasti nemažai
+klaidų ir jas ištaisyti. Galiausiai trečiajame etape buvo bandoma pereiti per visą sistemos
+teikiamą funkcionalumą (paspausti kiekvieną mygtuką ir pan.) ir taip atrasti galimus
+interfeise arba su juo susijusioje elgsenoje defektus.
+
+Iš visų rastų problemų, šios laikomos pačiomis svarbiausiomis:
 \xtableu
 {
   a [ p | p | p | p ]
   w [ 1 | 4 | 1 | 2 ]
   h [ Nr. | Aprašas | Rado | Pažeistas principas ]
-  e [ X | X | X | X ]
+  e [  7  | Pasirinkus savaitinį granuliarumą sistema pati modifikuoja intervalo galus,
+  nepaaiškindama kodėl taip daro. | J | Nuspėjamumas ]
+  e [  8  | Šalinant ne iš eilės pažymėtas eilutes, sistema arba išmeta ne išmetimui
+  skirtas eilutes, arba nulūžta.  | J | Nuspėjamumas ]
+  e [ 11  | Pašalinus viską iš duomenų bazės ir importuojant duomenis iš failo,
+  sistema skundžiasi, jog tokie elementai jau yra, nors ką tik buvo pašalinti. | J | Nuspėjamumas ]
+  e [ 13  | Naudotojų administravimo sąsaja ne visose platformose reaguoja į
+  aktyvaus naudotojo pasikeitimus. | M | Nuspėjamumas, darna ]
+  e [ 14  | Kai kuriais atvejais dėl panaudoto apkrovų skaičiavimo algoritmo,
+  apkrovos gaunasi neigiamos. | J | Nuspėjamumas ]
+  e [ 21  | Kaskart atsijungus ir vėl prisijungus, meniu „Rodyti“ atsiranda papildomas
+    pasirinkimas „Pateikti visus rezultatus“. | E | Darna ]
+  e [ 25  | Įvedus neegzistuojančios priemonės pavadinimą lentelėje „Planuojami kiekiai“,
+  sistema lūžta neparodžiusi jokio klaidos pranešimo. | E | Nuspėjamumas ]
 }
+
+Kadangi dauguma klaidų savo principu yra panašios, tai kiekvienai klaidai jos taisymo
+rekomendacijos nebus pateikiamos, tačiau vietoj jos galima daryti apibendrintas klaidų
+taisymo rekomendacijas:
+\begin{itemize}
+  \item Dauguma klaidų susijusios su nuspėjamumu kyla dėl programavimo klaidos interfeise.
+  Tokių klaidų ištaisymas apima interfeiso kode esančios klaidos pataisymą.
+  \item Kita dalis klaidų susijusios su nuspėjamumu atsiranda dėl vartotojo užduočių
+  koregavimo/automatizavimo. Pvz.: sistema automatiškai pareguliuodavo pateikiamus intervalus
+  taip, kad šie tilptų į duomenis ir sudarytų sveiką savaičių/mėnesių/ketvirčių skaičių.
+  Kadangi sistemos toks elgesys vartotojui gali sukelti nuostabą, tai dabar į sistemą yra
+  įdėta atitinkama žinutė su paaiškinimu, kuri pasirodo, jei sistema koreguoja intervalo galus.
+  \item Yra keletas klaidų susijusių su darnos nebuvimu (pvz.: tas pats objektas yra vadinamas
+  skirtingai skirtinguose interfeisuose). Tokios klaidos ištaisomos yra suvienodinant sąvokas.
+  \item Taip pat yra keletas klaidų susijusių su klaidų prevencijų nebuvimu. Pvz.: sistema nepatikrino, ar pateikiamas failas yra duomenų bazė ar ne, todėl iš esmės be jokios klaidos gali atidaryti bet kokį pateiktą failą nepriklausomai nuo jo formato, kas žinoma yra klaidingas elgesys. Tokios klaidos taip pat yra taisomos įdedant papildomus funkcinius patikrinimus ir pranešimus.
+\end{itemize}
+
+\vspace{1cm}
+Iš teigiamos pusės taip pat atrasta nemažai dalykų, padidinančių panaudojamumą. Pavyzdžiui:
+\begin{itemize}
+  \item Klaidų žurnalas, kuriame pateikiama detali informacija apie įvykusias klaidas.
+  \item Netrikdantys pranešimai, kurie patys užsidaro po atitinkamo laiko.
+  \item ir kt.
+\end{itemize}
+
+Plačiau apie teigiamus sistemos aspektus žr. skyrelį "teigiami įspūdžiai".
+
