@@ -72,44 +72,44 @@ spec[ Nr. | Aprašas | Rado              | Sunkumas                 | Lok. ]
   e [ 15 | Grafikuose aiškiai nesimato, ties kuria vieta prasideda prognozės
                     | + |   |   |   | + | 2 | 2 | 3 |   | 3 |      | Adm. sąsaja ]
   e [ 16 | Iš karto nėra aišku, ką reiškia pasirinkimas „Leisti ir rašyti“.
-                    |   |   |   |   | + |   | 1 |   |   | 2 |      | Adm. sąsaja ]
+                    |   |   |   |   | + | 1 | 1 |   |   | 2 |      | Adm. sąsaja ]
 % Galimas sprendimas: Pakeisti į „Skaityti ir rašyti“. Kitus
 % atitinkamai į „Tik skaityti“, „Nerodyti“ bei sugrūsti viską
 % į rėmelį su antrašte „Leidimai“.
-  e [ 16 | Nėra aišku, kad norint, jog kortelės „Naud. adm.“ turinys taptų aktyvus,
+  e [ 17 | Nėra aišku, kad norint, jog kortelės „Naud. adm.“ turinys taptų aktyvus,
   reikia kortelėje „Naudotojai“ paspausti ant kurio nors iš naudotojų.
-                    |   |   |   |   | + |   | 3 |   |   | 3 |      | Adm. sąsaja ]
+                    |   |   |   |   | + | 2 | 3 |   |   | 3 |      | Adm. sąsaja ]
 % Galimas sprendimas: „Naud. adm.“ kortelės nerodyti tarp pasirinkimų,
 % o ją automatiškai parodyti, kai naudotojas pasirenka „Naudotojai“.
-  e [ 17 | Naudotojui pačiam sau pasikeitus, jog rodytų apžvalgos kortelę, ji
+  e [ 18 | Naudotojui pačiam sau pasikeitus, jog rodytų apžvalgos kortelę, ji
   atsiranda tik iš naujo prisijungus.
-                    |   |   |   |   | + |   | 3 |   |   | 3 |      | Adm. sąsaja ]
+                    |   |   |   |   | + | 0 | 3 |   |   | 3 |      | Adm. sąsaja ]
 % FIXME Ar skiriasi nuo 13?
 % Galimas sprendimas: Parodyti pranešimą, jog pakeitimai įsigalios tik
 % prisijungus iš naujo.
-  e [ 18 | Prisijungiant prašo „Vartotojo vardas“, o naudotojų administravimui
+  e [ 19 | Prisijungiant prašo „Vartotojo vardas“, o naudotojų administravimui
   yra skirta kortelė „Naudotojai“.
-                    |   |   |   |   | + |   | 1 |   |   | 1 |      | Adm. sąsaja ]
+                    |   |   |   |   | + | 1 | 1 |   |   | 1 |      | Adm. sąsaja ]
 % Galimas sprendimas: „Vartotojo vardas“ → „Naudotojo vardas“.
-  e [ 19 | Įvedimo laukas leidžia įvesti bet kokį skaičių, bet jei jis nėra
+  e [ 20 | Įvedimo laukas leidžia įvesti bet kokį skaičių, bet jei jis nėra
   „1“, tai jokio klaidos pranešimo neparodo ir pakeičia į tuščią.
-                    |   |   |   |   | + |   | 2 |   |   | 2 |      | IS adm. sąsaja ]
+                    |   |   |   |   | + | 2 | 2 |   |   | 2 |      | IS adm. sąsaja ]
 % Galimas sprendimas: Parodyti pranešimą, kad „1“ – taip, visa kita – „ne“.
-  e [ 20 | Kaskart atsijungus ir vėl prisijungus, meniu „Rodyti“ atsiranda papildomas
+  e [ 21 | Kaskart atsijungus ir vėl prisijungus, meniu „Rodyti“ atsiranda papildomas
   pasirinkimas „Pateikti visus rezultatus“.
-                    |   | + |   |   |   |   | 2 |   |   | 2 |      | Pagr. sąsaja ]
-  e [ 21 | Renkantis vietinės duomenų bazės failą sistema neatsimena katalogo,
+                    |   | + |   |   |   | 3 | 2 |   |   | 2 |      | Pagr. sąsaja ]
+  e [ 22 | Renkantis vietinės duomenų bazės failą sistema neatsimena katalogo,
   kur paskutinį kartą buvo vykdytas failo pasirinkimas.
-                    |   | + |   |   |   |   | 1 |   |   | 1 |      | Pagr. sąsaja ]
-  e [ 22 | Renkantis vietinės duomenų bazės failą sistema leidžia pasirinkti bet kokio
+                    |   | + |   |   |   | 1 | 1 |   |   | 1 |      | Pagr. sąsaja ]
+  e [ 23 | Renkantis vietinės duomenų bazės failą sistema leidžia pasirinkti bet kokio
   formato failą ir neparodo jokio pranešimo nei naudotojo sąsajoje, nei pranešimų
   žurnale.
-                    |   | + |   |   |   |   | 3 |   |   | 3 |      | Pagr. sąsaja ]
-  e [ 23 | Pasirinkus netinkamo formato vietinės duomenų bazės failą ir mėginant
+                    |   | + |   |   |   | 3 | 3 |   |   | 3 |      | Pagr. sąsaja ]
+  e [ 24 | Pasirinkus netinkamo formato vietinės duomenų bazės failą ir mėginant
   išsaugoti, sistema parodo pranešimą „Duomenys išsaugoti“, tačiau iš tikro sistemai
   nepavyksta to padaryti.
-                    |   | + |   |   |   |   | 3 |   |   | 4 |      | Pagr. sąsaja ]
-  e [ 24 | Įvedus neegzistuojančios priemonės pavadinimą lentelėje „Planuojami kiekiai“,
+                    |   | + |   |   |   | 3 | 3 |   |   | 4 |      | Pagr. sąsaja ]
+  e [ 25 | Įvedus neegzistuojančios priemonės pavadinimą lentelėje „Planuojami kiekiai“,
   sistema lūžta neparodžiusi jokio klaidos pranešimo.
-                    |   | + |   |   |   |   | 3 |   |   | 4 |      | Pagr. sąsaja ]
+                    |   | + |   |   |   | 4 | 3 |   |   | 4 |      | Pagr. sąsaja ]
 }
