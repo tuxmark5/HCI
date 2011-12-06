@@ -147,6 +147,117 @@
   ekstrapoliaciją, jei to vartotojas nepageidauja.
 }
 
+\xbug{15}{Ištaisytas interfeisas prognozes žymi žaliai}
+{
+  Grafikuose aiškiai nesimato, ties kuria vieta prasideda prognozės
+}
+{
+  Vieta ties kuria sistema pradeda skaičiuoti apkrovas remdamasi fiktyviais prognozuojamais
+  duomenimis turėtų būti aiškiai išryškinta tam, kad palengvinti naudotojo orientaciją
+  duomenyse.
+}
 
+\xbug{16}{Privilegijos pasirinkimas administratoriaus interfeise}
+{
+  Iš karto nėra aišku, ką reiškia pasirinkimas „Leisti ir rašyti“.
+}
+{
+  Kiekvienas vartotojas turi tam tikras privilegijas prie lentelių duomenų bazėje. Viso 
+  sistemoje gali būti trys privilegijos lygiai:
+  \begin{itemize}
+    \item Slėpti - nerodyti minimo interfeiso visai.
+    \item Leisti tik skaityti - leisti tik peržiūrėti duomenis.
+    \item Leisti ir rašyti - leisti ir skaityti, ir rašyti duomenis.
+  \end{itemize}
+  Kad būtų aiškiau, reikia paskutinį privilegijos lygį pervadinti.
+}
 
+\xbug{17}{Užblokuotas administratoriaus interfeisas, nes nepasirinktas joks vartotojas}
+{
+  Nėra aišku, kad norint, jog kortelės „Naud. adm.“ turinys taptų aktyvus,
+  reikia kortelėje „Naudotojai“ paspausti ant kurio nors iš naudotojų.
+}
+{
+  Reikėtų uždėti pranešimą, skatinantį pasirinkti aktyvų naudotoją.
+}
 
+\xbugN{18}
+{
+  Naudotojui pačiam sau pasikeitus, jog (ne)rodytų apžvalgos kortelę, ji
+  atsiranda tik iš naujo prisijungus.
+}
+{
+  Šios klaidos pataisymas greičiausiai realizuotas nebus, nes tik administratorius
+  turi teisę keisti privilegijas, o tokio pakankamai nereikalingo pataisymo realizacija
+  yra pakankamai sudėtinga. Kaip alternatyvą, galima administratoriui pateikti pranešimą,
+  jog norint išvysti pakeitimus reikėtų prisijungti per naujo prie sistemos.
+}
+
+\xbugN{19}
+{
+  Prisijungiant prašo „Vartotojo vardas“, o naudotojų administravimui
+  yra skirta kortelė „Naudotojai“.
+}
+{
+  Norint ištaisyti šią klaidą, pakanka suvienodinti pavadinimus.
+}
+
+\xbug{20}{Pataisytas interfeisas: dabar rodomas atitinkamas klaidos pranešimas}
+{
+  Įvedimo laukas sistemų administravimo interfeise leidžia įvesti bet kokį skaičių, 
+  bet jei jis nėra „1“, tai jokio klaidos pranešimo neparodo ir pakeičia į tuščią.
+}
+{
+  Pataisymas trivialus - paprasčiausiai parodyti klaidos pranešimą.
+}
+
+\xbug{21}{Papildomi menu punktai}
+{
+  Kaskart atsijungus ir vėl prisijungus, meniu „Rodyti“ atsiranda papildomas
+  pasirinkimas „Pateikti visus rezultatus“.
+}
+{
+  Tai yra algoritmavimo klaida.
+}
+
+\xbugN{22}
+{
+  Renkantis vietinės duomenų bazės failą, sistema neatsimena aplanko,
+  kuriame paskutinį kartą buvo vykdytas failo pasirinkimas.
+}
+{
+  Pataisymas analogiškas klaidai nr. 12.
+}
+
+\xbug{23}{Failų pasirinkimo dialoge nefiltruojami netinkami failai}
+{
+  Renkantis vietinės duomenų bazės failą, sistema leidžia pasirinkti
+  bet kokio formato failą ir neparodo jokio pranešimo nei naudotojo sąsajoje,
+  nei pranešimų žurnale.
+}
+{
+  Reikia įdėti failų filtravimą pagal plėtinį.
+}
+
+\xbugN{24}
+{
+  Pasirinkus netinkamo formato vietinės duomenų bazės failą ir mėginant
+  išsaugoti, sistema parodo pranešimą „Duomenys išsaugoti“, tačiau iš tikro sistemai
+  nepavyksta to padaryti.
+}
+{
+  Ši klaida yra susijusi su klaida nr. 23. Kolkas dar vietinės duomenų bazės
+  interfeisas nėra pilnai realizuotas, užtat testavimo metu pasimato vietos,
+  kurių realizavimas dar neįvykdytas.
+}
+
+\xbugN{25}
+{
+  Įvedus neegzistuojančios priemonės pavadinimą lentelėje „Planuojami kiekiai“,
+  sistema lūžta neparodžiusi jokio klaidos pranešimo.
+}
+{
+  Programiniu požiūriu tai pati sudėtingiausia klaida, nes ji buvo ne sistemos viduje,
+  o C++ kompiliatoriuje, naudojamame sistemai kompiliuoti. Į sistemą buvo integruotas
+  pakeitimas, išvengiantis šios kompiliatoriaus klaidos.
+}
