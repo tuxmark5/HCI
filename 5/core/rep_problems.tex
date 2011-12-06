@@ -4,7 +4,7 @@
   pasirinkimo laukų):
 }
 {
-  Taip nuspręsta dėl to, kad mygtuką rodyti reikia paspausti tik tuomet, kai yra
+  Taip nuspręsta dėl to, kad mygtuką „Rodyti“ reikia paspausti tik tuomet, kai yra
   pakeičiamas rodomas intervalas. Keičiant intervalą ar jo granuliarumą kitais mygtukais,
   rezultatai yra atnaujinami automatiškai.
 }
@@ -15,39 +15,44 @@
 }
 {
   Norint atnaujinti rezultatus, reikia dar papildomai paspausti „Rodyti“, o tai yra papildomas
-  nereikalingas žingsnis, mažinantis interfeiso efektyvumą.
+  nereikalingas žingsnis, mažinantis naudotojo sąsajos efektyvumą.
 }
 
-\xbug{3}{Pradinė būsena, kurioje visų padalinių/IS rodymo rėžimai sutampa}
+\xbug{3}{Pradinė būsena, kurioje visų padalinių/IS rodymo režimai sutampa}
 {
-  Pakeitus skaičiavimo rėžimą, rezultatų rodymo rėžimas atsistato į pradinį.
+  Pakeitus skaičiavimo režimą, rezultatų rodymo režimas atsistato į pradinį.
 }
 {
-  Rezultatų lange kiekvieno padalinio/IS vaizdavimo rėžimą galima reguliuoti keliais skirtingais
-  parametrais. Pagal savo poreikius sukonfigūravus kelis padalinius/IS ir pakeitus skaičiavimo rėžimą pvz. iš IS į padalinių apkrovų skaičiavimą, sitema „pamiršta“, koks vaizdavimo rėžimas
-  buvo parinktas kiekvienam padaliniui/IS. Dėl to labai stipriai nukenčia efektyvumas, nes norint
-  atgal susigrąžinti seną konfigūraciją, reikia sugaišti nemažai laiko.
+  Rezultatų lange kiekvieno padalinio/IS vaizdavimo režimą galima reguliuoti
+  keliais skirtingais parametrais. Pagal savo poreikius sukonfigūravus kelis
+  padalinius/IS ir pakeitus skaičiavimo režimą, pvz. iš IS į padalinių
+  apkrovų skaičiavimą, sistema „pamiršta“, koks vaizdavimo režimas buvo
+  parinktas kiekvienam padaliniui/IS. Dėl to labai stipriai nukenčia
+  efektyvumas, nes norint susigrąžinti seną konfigūraciją, reikia sugaišti
+  nemažai laiko.
 }
 
 \xbug{4}{Mygtukas „Atstatyti“ šalia „Išsaugoti“ ir „Mažiausios apkrovos intervalai“}
 {
-  Netyčia paspaudus „Atstatyti“, naudotojas gali prarasti visus pakeitimus
+  Netyčia paspaudus „Atstatyti“, naudotojas gali prarasti visus pakeitimus,
   atliktus po paskutinio išsaugojimo.
 }
 {
-  Mygtukas „Atstatyti“ yra negrįžtama operacija, kuri pašalina visus padarytus pakeitimus.
-  Kadangi tai yra tokia destruktyvi operacija, kurią nesunkiai galima iškviesti per klaidą,
-  tai vertėtų įdėti modalinį dialogą, prašantį patvirtinti vartotojo veiksmą.
+  Mygtukas „Atstatyti“ yra negrįžtama operacija, kuri pašalina visus
+  padarytus pakeitimus. Kadangi tai yra tokia destruktyvi operacija, kurią
+  nesunkiai galima iškviesti per klaidą, tai vertėtų įdėti modalinį dialogą,
+  prašantį patvirtinti naudotojo veiksmą.
 }
 
 \xbug{5}{Pataisyta apžvalgos sąsaja su tinkama antrašte}
 {
-  Apžvalgos sąsajoje nesimatė, koks rodymo rėžimas dabar yra aktyvus.
+  Apžvalgos sąsajoje nesimatė, koks rodymo režimas dabar yra aktyvus.
 }
 {
-  Kadangi apžvalgos interfeise yra pateikiama viena lentelė/grafikas, kuriame vaizduojami
-  apibendrinti duomenys, tai vartotojui pirmą kartą įėjus į šį interfeisą (arba sugrįžus po
-  pertraukos) gali būti neaišku, kas konkrečiai toje lentelėje/grafike yra vaizduojama.
+  Kadangi apžvalgos sąsajoje yra pateikiama viena lentelė/grafikas, kuriame
+  vaizduojami apibendrinti duomenys, tai naudotojui pirmą kartą įėjus į šią
+  sąsają (arba sugrįžus po pertraukos) gali būti neaišku, kas konkrečiai
+  toje lentelėje/grafike yra vaizduojama.
 }
 
 \xbugN{6}
@@ -55,23 +60,25 @@
   Ištrynus įrašus iš bet kurios lentelės, rezultatai automatiškai neatsinaujina.
 }
 {
-  Keičiant duomenis, arba įdedant naujus įrašus, sistema automatiškai atnaujina rezultatus
-  pagal vartotojo atliktus veiksmus. Tačiau pašalinus vieną arba daugiau įrašų sistema
-  rezultatų neperskaičiuoja ir interfeiso neatnaujina.
+  Keičiant duomenis arba įdedant naujus įrašus, sistema automatiškai
+  atnaujina rezultatus pagal naudotojo atliktus veiksmus. Tačiau pašalinus
+  vieną arba daugiau įrašų sistema rezultatų neperskaičiuoja ir naudotojo
+  sąsajos neatnaujina.
 }
 
-\xbug{7}{Orginalus ir pakoreguotas intervalai savaitiniame granuliarume}
+\xbug{7}{Originalus ir pakoreguotas intervalai savaitiniame granuliarume}
 {
-  Pasirinkus savaitinį granuliarumą sistema pati modifikuoja intervalo galus,
-  nepaaiškindama, kodėl taip daro.
+  Pasirinkus savaitinį granuliarumą, sistema pati modifikuoja intervalo
+  galus, nepaaiškindama, kodėl taip daro.
 }
 {
-  Tam kad supaprastinti skaičiavimus ir padidinti jų tikslumą, sistema automatiškai
-  pagoreguoja intervalo galus taip, kad šie atitiktu turimus duomenis, prasidėtų ties 
-  granuliaraus vieneto pradžia (jei pasirinktas savaitinis rodymas - tai pirmadieniu,
-  jei mėnėsinis - tai pirmąja mėnesio diena ir t.t), tačiau vartotojui gali neišku, dėl
-  ko intervalai savaime pajuda. Dėl to reikėtų įdėti pranešimą, kuriame yra paaiškinama,
-  kodėl intervalo galai buvo paslinkti.
+  Tam, kad būtų supaprastinti skaičiavimai ir padidintas jų tikslumas,
+  sistema automatiškai pakoreguoja intervalo galus taip, kad šie atitiktu
+  turimus duomenis, prasidėtų ties granuliaraus vieneto pradžia (jei
+  pasirinktas savaitinis rodymas - tai pirmadieniu, jei mėnesinis - tai
+  pirma mėnesio diena ir t.~t.), tačiau naudotojui gali būti neaišku, dėl
+  ko intervalai savaime pakinta. Dėl to reikėtų įdėti pranešimą, kuriame tai
+  paaiškinama.
 }
 
 \xbug{8}{Ne iš eilės pažymėtos eilutės}
@@ -80,17 +87,18 @@
   skirtas eilutes, arba nulūžta.
 }
 {
-  Tai yra paprasčiausia algoritmavimo klaida kode, atsakingame už elementų pašalinimą
-  iš lentelių.
+  Tai yra paprasčiausia algoritmavimo klaida kode, atsakingame už elementų
+  pašalinimą iš lentelių.
 }
 
-\xbug{9}{Užblokuota prieiga prie sistemų rėžimo}
+\xbug{9}{Užblokuota prieiga prie sistemų režimo}
 {
   Administratoriaus sąsajoje naudotojui įjungus prieigą prie sistemų
-  rėžimo, šis vis tiek naudotojui netampa prieinamu.
+  režimo, šis vis tiek naudotojui netampa prieinamu.
 }
 {
-  Tai vėl yra dar viena algoritmavimo klaida, šį kartą dėl sumaišytų privilegijų deskriptorių.
+  Tai yra dar viena algoritmavimo klaida, šį kartą dėl sumaišytų privilegijų
+  deskriptorių.
 }
 
 \xbugN{10}
@@ -98,8 +106,8 @@
   Į pranešimų žurnalą keliauja ne visi pranešimai.
 }
 {
-  Kadangi pranešimų žurnalo funkcija yra kaupti pranešimus, tai šis turėtu tai atlikti
-  visiems sistemos pateikiamiems pranešimais. Kadangi dabar taip nėra, tai nukenčia
+  Kadangi pranešimų žurnalo funkcija yra kaupti pranešimus, tai šis turėtų tai atlikti
+  visiems sistemos pateikiamiems pranešimams. Kadangi dabar taip nėra, tai nukenčia
   nuspėjamumas.
 }
 
@@ -109,8 +117,8 @@
   sistema skundžiasi, jog tokie elementai jau yra, nors ką tik buvo pašalinti.
 }
 {
-  Ši problema vėl susijusi su algoritmavimo klaida kode, atsakingame už elementų pašalinimą
-  iš konteinerių.
+  Ši problema vėl susijusi su algoritmavimo klaida kode, atsakingame už
+  elementų pašalinimą iš konteinerių.
 }
 
 \xbugN{12}
@@ -120,7 +128,7 @@
 }
 {
   Gana smulki klaida, nes duomenys į sistemą įkeliami yra gana retai. Tačiau norint
-  padidinti našumą, galima įsiminti paskutinę direktoriją, iš kurios failas importuotas.
+  padidinti našumą, galima įsiminti paskutinį aplanką, iš kurio failas importuotas.
 }
 
 \xbugN{13}
@@ -130,7 +138,7 @@
 }
 {
   Tai problema, kuri pasireiškia tik kai kuriose platformose/OS, potencialiai susijusi
-  su galima klaida Qt biblitekos kode, atsakingame už pranešimą apie paspaudimus ant 
+  su galima klaida Qt biblitekos kode, atsakingame už pranešimus apie paspaudimus ant 
   lentelės.
 }
 
@@ -140,13 +148,10 @@
   apkrovos gaunasi neigiamos.
 }
 {
-  Tam, kad duomenys rezultatuose atrodytų tolydžiau, sistema naudoja ekstrapoliaciją
-  apkrovų skaičiavimo algoritme, tačiau dėl jo kai kuriais atvejais gaunasi neigiamos
-  apkrovos. Norint šią klaidą ištaisyti reikėtų kode įdėti minimalios apkrovos apribojimą ir
-  taip išvengti neigiamų apkrovų. Taip pat pravartu būtų galimybė laikinai išjungti
-  ekstrapoliaciją, jei to vartotojas nepageidauja.
+  Tam, kad duomenys rezultatuose atrodytų tolydžiau, sistema naudoja
+  ekstrapoliaciją apkrovų skaičiavimo algoritme, tačiau dėl to kai kuriais
+  atvejais gaunasi neigiamos apkrovos. Norint šią klaidą ištaisyti, reikia
+  padaryti, kad intervaluose, kuriuose pritaikius ekstrapoliaciją gaunamos
+  neigiamos reikšmės, ji nebūtų nenaudojama. Taip pat praverstų galimybė
+  laikinai išvis išjungti ekstrapoliaciją, jei jos naudotojas nepageidauja.
 }
-
-
-
-
