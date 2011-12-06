@@ -59,3 +59,94 @@
   pagal vartotojo atliktus veiksmus. Tačiau pašalinus vieną arba daugiau įrašų sistema
   rezultatų neperskaičiuoja ir interfeiso neatnaujina.
 }
+
+\xbug{7}{Orginalus ir pakoreguotas intervalai savaitiniame granuliarume}
+{
+  Pasirinkus savaitinį granuliarumą sistema pati modifikuoja intervalo galus,
+  nepaaiškindama, kodėl taip daro.
+}
+{
+  Tam kad supaprastinti skaičiavimus ir padidinti jų tikslumą, sistema automatiškai
+  pagoreguoja intervalo galus taip, kad šie atitiktu turimus duomenis, prasidėtų ties 
+  granuliaraus vieneto pradžia (jei pasirinktas savaitinis rodymas - tai pirmadieniu,
+  jei mėnėsinis - tai pirmąja mėnesio diena ir t.t), tačiau vartotojui gali neišku, dėl
+  ko intervalai savaime pajuda. Dėl to reikėtų įdėti pranešimą, kuriame yra paaiškinama,
+  kodėl intervalo galai buvo paslinkti.
+}
+
+\xbug{8}{Ne iš eilės pažymėtos eilutės}
+{
+  Šalinant ne iš eilės pažymėtas eilutes, sistema arba išmeta ne išmetimui
+  skirtas eilutes, arba nulūžta.
+}
+{
+  Tai yra paprasčiausia algoritmavimo klaida kode, atsakingame už elementų pašalinimą
+  iš lentelių.
+}
+
+\xbug{9}{Užblokuota prieiga prie sistemų rėžimo}
+{
+  Administratoriaus sąsajoje naudotojui įjungus prieigą prie sistemų
+  rėžimo, šis vis tiek naudotojui netampa prieinamu.
+}
+{
+  Tai vėl yra dar viena algoritmavimo klaida, šį kartą dėl sumaišytų privilegijų deskriptorių.
+}
+
+\xbugN{10}
+{
+  Į pranešimų žurnalą keliauja ne visi pranešimai.
+}
+{
+  Kadangi pranešimų žurnalo funkcija yra kaupti pranešimus, tai šis turėtu tai atlikti
+  visiems sistemos pateikiamiems pranešimais. Kadangi dabar taip nėra, tai nukenčia
+  nuspėjamumas.
+}
+
+\xbug{11}{Ištrauka iš pranešimų žurnalo apie įvykusias importo klaidas}
+{
+  Pašalinus viską iš duomenų bazės ir importuojant duomenis iš failo,
+  sistema skundžiasi, jog tokie elementai jau yra, nors ką tik buvo pašalinti.
+}
+{
+  Ši problema vėl susijusi su algoritmavimo klaida kode, atsakingame už elementų pašalinimą
+  iš konteinerių.
+}
+
+\xbugN{12}
+{
+  Importuojant failą, sistema neatsimena aplanko, kuriame paskutinį
+  kartą buvo vykdytas importavimas.
+}
+{
+  Gana smulki klaida, nes duomenys į sistemą įkeliami yra gana retai. Tačiau norint
+  padidinti našumą, galima įsiminti paskutinę direktoriją, iš kurios failas importuotas.
+}
+
+\xbugN{13}
+{
+  Naudotojų administravimo sąsaja ne visose platformose reaguoja į
+  aktyvaus naudotojo pasikeitimus.
+}
+{
+  Tai problema, kuri pasireiškia tik kai kuriose platformose/OS, potencialiai susijusi
+  su galima klaida Qt biblitekos kode, atsakingame už pranešimą apie paspaudimus ant 
+  lentelės.
+}
+
+\xbug{14}{Neigiamos apkrovos}
+{
+  Kai kuriais atvejais dėl panaudoto apkrovų skaičiavimo algoritmo,
+  apkrovos gaunasi neigiamos.
+}
+{
+  Tam, kad duomenys rezultatuose atrodytų tolydžiau, sistema naudoja ekstrapoliaciją
+  apkrovų skaičiavimo algoritme, tačiau dėl jo kai kuriais atvejais gaunasi neigiamos
+  apkrovos. Norint šią klaidą ištaisyti reikėtų kode įdėti minimalios apkrovos apribojimą ir
+  taip išvengti neigiamų apkrovų. Taip pat pravartu būtų galimybė laikinai išjungti
+  ekstrapoliaciją, jei to vartotojas nepageidauja.
+}
+
+
+
+
