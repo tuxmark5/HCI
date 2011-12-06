@@ -1,0 +1,61 @@
+\xbug{1}{picture}
+{
+  Mygtukas „Rodyti“ yra ne savo vietoje (turi būti arčiau intervalo
+  pasirinkimo laukų):
+}
+{
+  Taip nuspręsta dėl to, kad mygtuką rodyti reikia paspausti tik tuomet, kai yra
+  pakeičiamas rodomas intervalas. Keičiant intervalą ar jo granuliarumą kitais mygtukais,
+  rezultatai yra atnaujinami automatiškai.
+}
+
+\xbugN{2}
+{
+  Pakeitus rezultatų skaičiavimo granuliarumą rezultatai neatsinaujina.
+}
+{
+  Norint atnaujinti rezultatus, reikia dar papildomai paspausti „Rodyti“, o tai yra papildomas
+  nereikalingas žingsnis, mažinantis interfeiso efektyvumą.
+}
+
+\xbug{3}{Pradinė būsena, kurioje visų padalinių/IS rodymo rėžimai sutampa}
+{
+  Pakeitus skaičiavimo rėžimą, rezultatų rodymo rėžimas atsistato į pradinį.
+}
+{
+  Rezultatų lange kiekvieno padalinio/IS vaizdavimo rėžimą galima reguliuoti keliais skirtingais
+  parametrais. Pagal savo poreikius sukonfigūravus kelis padalinius/IS ir pakeitus skaičiavimo rėžimą pvz. iš IS į padalinių apkrovų skaičiavimą, sitema „pamiršta“, koks vaizdavimo rėžimas
+  buvo parinktas kiekvienam padaliniui/IS. Dėl to labai stipriai nukenčia efektyvumas, nes norint
+  atgal susigrąžinti seną konfigūraciją, reikia sugaišti nemažai laiko.
+}
+
+\xbug{4}{Mygtukas „Atstatyti“ šalia „Išsaugoti“ ir „Mažiausios apkrovos intervalai“}
+{
+  Netyčia paspaudus „Atstatyti“, naudotojas gali prarasti visus pakeitimus
+  atliktus po paskutinio išsaugojimo.
+}
+{
+  Mygtukas „Atstatyti“ yra negrįžtama operacija, kuri pašalina visus padarytus pakeitimus.
+  Kadangi tai yra tokia destruktyvi operacija, kurią nesunkiai galima iškviesti per klaidą,
+  tai vertėtų įdėti modalinį dialogą, prašantį patvirtinti vartotojo veiksmą.
+}
+
+\xbug{5}{Pataisyta apžvalgos sąsaja su tinkama antrašte}
+{
+  Apžvalgos sąsajoje nesimatė, koks rodymo rėžimas dabar yra aktyvus.
+}
+{
+  Kadangi apžvalgos interfeise yra pateikiama viena lentelė/grafikas, kuriame vaizduojami
+  apibendrinti duomenys, tai vartotojui pirmą kartą įėjus į šį interfeisą (arba sugrįžus po
+  pertraukos) gali būti neaišku, kas konkrečiai toje lentelėje/grafike yra vaizduojama.
+}
+
+\xbugN{6}
+{
+  Ištrynus įrašus iš bet kurios lentelės, rezultatai automatiškai neatsinaujina.
+}
+{
+  Keičiant duomenis, arba įdedant naujus įrašus, sistema automatiškai atnaujina rezultatus
+  pagal vartotojo atliktus veiksmus. Tačiau pašalinus vieną arba daugiau įrašų sistema
+  rezultatų neperskaičiuoja ir interfeiso neatnaujina.
+}
